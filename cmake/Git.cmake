@@ -45,6 +45,12 @@ execute_process(
 )
 # cmake_print_variables(QGC_APP_VERSION_STR)
 
+set(QGC_VERSION_BASE "Stable_V5.0" CACHE STRING "Custom QGC version base label")
+
+if(GStreamer_FIND_VERSION)
+    set(QGC_APP_VERSION_STR "${QGC_VERSION_BASE}-gst-${GStreamer_FIND_VERSION}")
+endif()
+
 execute_process(
     COMMAND ${GIT_EXECUTABLE} describe --always --abbrev=0
     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}

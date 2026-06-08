@@ -104,6 +104,22 @@ elseif(ANDROID)
         # URL_HASH be92cf477d140c270b480bd8ba0e26b1e01c8db042c46b9e234d87352112e485
     )
 
+    # 修复GStreamer 1.16.3 的 pkg-config 文件和当前 NDK r26/Qt 6.8 构建链兼容问题
+    if(GStreamer_FIND_VERSION VERSION_EQUAL "1.16.3")
+        message(STATUS "Patching GStreamer 1.16.3 pkg-config files: removing gnustl backtick libs")
+
+        file(GLOB_RECURSE GSTREAMER_PC_FILES
+            "${gstreamer_SOURCE_DIR}/*.pc"
+        )
+
+        foreach(_pc_file IN LISTS GSTREAMER_PC_FILES)
+            file(READ "${_pc_file}" _pc_content)
+            string(REPLACE "`pkg-config --libs gnustl`" "" _pc_content "${_pc_content}")
+            string(REPLACE "\`pkg-config --libs gnustl\`" "" _pc_content "${_pc_content}")
+            file(WRITE "${_pc_file}" "${_pc_content}")
+        endforeach()
+    endif()
+
     if(NOT DEFINED GStreamer_ROOT_DIR)
         if(CMAKE_ANDROID_ARCH_ABI STREQUAL "armeabi-v7a")
             set(GStreamer_ROOT_DIR "${gstreamer_SOURCE_DIR}/armv7")
@@ -230,7 +246,7 @@ if(GStreamer_USE_STATIC_LIBS)
         gstreamer-base-1.0
         gstreamer-video-1.0
         gstreamer-gl-1.0
-        gstreamer-gl-prototypes-1.0
+        # gstreamer-gl-prototypes-1.0
         gstreamer-rtsp-1.0
         # gstreamer-gl-egl-1.0
         # gstreamer-gl-wayland-1.0
@@ -339,7 +355,10 @@ find_gstreamer_component(Core gstreamer-1.0)
 find_gstreamer_component(Base gstreamer-base-1.0)
 find_gstreamer_component(Video gstreamer-video-1.0)
 find_gstreamer_component(Gl gstreamer-gl-1.0)
-find_gstreamer_component(GlPrototypes gstreamer-gl-prototypes-1.0)
+# find_gstreamer_component(GlPrototypes gstreamer-gl-prototypes-1.0)
+if(GlPrototypes IN_LIST GStreamer_FIND_COMPONENTS)
+    find_gstreamer_component(GlPrototypes gstreamer-gl-prototypes-1.0)
+endif()
 find_gstreamer_component(Rtsp gstreamer-rtsp-1.0)
 
 ################################################################################
@@ -399,6 +418,11 @@ if(GStreamer_FOUND AND NOT TARGET GStreamer::GStreamer)
     endif()
 
     target_link_directories(GStreamer::GStreamer INTERFACE ${GSTREAMER_LIB_PATH})
+    if(EXISTS "${GSTREAMER_INCLUDE_PATH}/gstreamer-1.0")
+        target_include_directories(GStreamer::GStreamer INTERFACE
+            "${GSTREAMER_INCLUDE_PATH}/gstreamer-1.0"
+        )
+    endif()
 
     target_link_libraries(GStreamer::GStreamer
         INTERFACE
@@ -406,9 +430,11 @@ if(GStreamer_FOUND AND NOT TARGET GStreamer::GStreamer)
             GStreamer::Base
             GStreamer::Video
             GStreamer::Gl
-            GStreamer::GlPrototypes
             GStreamer::Rtsp
     )
+    if(TARGET GStreamer::GlPrototypes)
+        target_link_libraries(GStreamer::GStreamer INTERFACE GStreamer::GlPrototypes)
+    endif()
 
     foreach(component IN LISTS GStreamer_FIND_COMPONENTS)
         if(GStreamer_${component}_FOUND)
