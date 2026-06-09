@@ -52,6 +52,7 @@ CPMAddPackage(
     GIT_TAG release-2.32.4
     OPTIONS
         "SDL2_DISABLE_INSTALL ON"
+        "SDL2_DISABLE_INSTALL ON"
         "SDL2_DISABLE_UNINSTALL ON"
         "SDL2_DISABLE_SDL2MAIN ON"
         "SDL_SHARED OFF"
@@ -83,19 +84,7 @@ CPMAddPackage(
         "${SDL2_EXTRA_OPTIONS}"
 )
 
-# ==================== 修复 SDL2 target ====================
-if(TARGET SDL2::SDL2-static)
-    message(STATUS "Using SDL2::SDL2-static")
-    target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE SDL_MAIN_HANDLED)
-    target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE SDL2::SDL2-static)
-elseif(TARGET SDL2::SDL2)
-    message(STATUS "Falling back to SDL2::SDL2 (shared)")
-    target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE SDL_MAIN_HANDLED)
-    target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE SDL2::SDL2)
-else()
-    message(FATAL_ERROR "Neither SDL2::SDL2-static nor SDL2::SDL2 target found!")
-endif()
-
+target_compile_definitions(SDL2-static PRIVATE SDL_MAIN_HANDLED)
 target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE SDL2::SDL2-static)
 
 # Default list of config overrides - TODO: Add to Custom Build Options
