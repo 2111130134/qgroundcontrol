@@ -323,7 +323,7 @@
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMCameraSubComponent.qml" line="198"/>
       <source>Channel 16</source>
-      <translation>?? 16</translation>
+      <translation type="unfinished">Channel 16</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMCameraSubComponent.qml" line="203"/>
@@ -584,12 +584,12 @@
     <message>
       <location filename="../src/FirmwarePlugin/APM/APMFirmwarePlugin.cc" line="857"/>
       <source>Unable to pause vehicle.</source>
-      <translation>?? </translation>
+      <translation type="unfinished">Unable to pause vehicle.</translation>
     </message>
     <message>
       <location filename="../src/FirmwarePlugin/APM/APMFirmwarePlugin.cc" line="933"/>
       <source>Vehicle does not support guided rotate</source>
-      <translation>??????????</translation>
+      <translation type="unfinished">Vehicle does not support guided rotate</translation>
     </message>
     <message>
       <location filename="../src/FirmwarePlugin/APM/APMFirmwarePlugin.cc" line="987"/>
@@ -619,12 +619,12 @@
     <message>
       <location filename="../src/FirmwarePlugin/APM/APMFirmwarePlugin.cc" line="1032"/>
       <source>Unable to start takeoff: Vehicle failed to change to Takeoff mode.</source>
-      <translation>????????????????????</translation>
+      <translation type="unfinished">Unable to start takeoff: Vehicle failed to change to Takeoff mode.</translation>
     </message>
     <message>
       <location filename="../src/FirmwarePlugin/APM/APMFirmwarePlugin.cc" line="1037"/>
       <source>Unable to start takeoff: Vehicle failed to arm.</source>
-      <translation>???????????????</translation>
+      <translation type="unfinished">Unable to start takeoff: Vehicle failed to arm.</translation>
     </message>
     <message>
       <location filename="../src/FirmwarePlugin/APM/APMFirmwarePlugin.cc" line="1048"/>
@@ -653,17 +653,17 @@
     <message>
       <location filename="../src/UI/toolbar/APMFlightModeIndicator.qml" line="46"/>
       <source>Return At</source>
-      <translation>????</translation>
+      <translation type="unfinished">Return At</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/APMFlightModeIndicator.qml" line="52"/>
       <source>Current alttiude</source>
-      <translation>????</translation>
+      <translation type="unfinished">Current alttiude</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/APMFlightModeIndicator.qml" line="52"/>
       <source>Specified altitude</source>
-      <translation>????</translation>
+      <translation type="unfinished">Specified altitude</translation>
     </message>
   </context>
   <context>
@@ -923,47 +923,47 @@
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMFollowComponentSummary.qml" line="29"/>
       <source>Follow Enabled</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Follow Enabled</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMFollowComponentSummary.qml" line="30"/>
       <source>Follow System ID</source>
-      <translation>???? ID</translation>
+      <translation type="unfinished">Follow System ID</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMFollowComponentSummary.qml" line="31"/>
       <source>Max Distance</source>
-      <translation>????</translation>
+      <translation type="unfinished">Max Distance</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMFollowComponentSummary.qml" line="32"/>
       <source>Offset X</source>
-      <translation>X ??</translation>
+      <translation type="unfinished">Offset X</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMFollowComponentSummary.qml" line="33"/>
       <source>Offset Y</source>
-      <translation>Y ??</translation>
+      <translation type="unfinished">Offset Y</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMFollowComponentSummary.qml" line="34"/>
       <source>Offset Z</source>
-      <translation>Z ??</translation>
+      <translation type="unfinished">Offset Z</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMFollowComponentSummary.qml" line="35"/>
       <source>Offset Type</source>
-      <translation>????</translation>
+      <translation type="unfinished">Offset Type</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMFollowComponentSummary.qml" line="36"/>
       <source>Altitude Type</source>
-      <translation>????</translation>
+      <translation type="unfinished">Altitude Type</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMFollowComponentSummary.qml" line="37"/>
       <source>Yaw Behavior</source>
-      <translation>????</translation>
+      <translation type="unfinished">Yaw Behavior</translation>
     </message>
   </context>
   <context>
@@ -1210,17 +1210,17 @@
     <message>
       <location filename="../src/UI/toolbar/APMMainStatusIndicatorContentItem.qml" line="32"/>
       <source>Vehicle Action</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Vehicle Action</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/APMMainStatusIndicatorContentItem.qml" line="40"/>
       <source>Loss Timeout</source>
-      <translation>????</translation>
+      <translation type="unfinished">Loss Timeout</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/APMMainStatusIndicatorContentItem.qml" line="47"/>
       <source>Failsafe Options</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Failsafe Options</translation>
     </message>
   </context>
   <context>
@@ -1712,22 +1712,22 @@
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMRemoteSupportComponent.qml" line="54"/>
       <source>Connect</source>
-      <translation>??</translation>
+      <translation type="unfinished">Connect</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMRemoteSupportComponent.qml" line="63"/>
       <source>Forwarding traffic: Mavlink traffic will keep being forwarded until application restarts</source>
-      <translation>???????Mavlink ???????????????</translation>
+      <translation type="unfinished">Forwarding traffic: Mavlink traffic will keep being forwarded until application restarts</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMRemoteSupportComponent.h" line="32"/>
       <source>Remote Support</source>
-      <translation>????</translation>
+      <translation type="unfinished">Remote Support</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMRemoteSupportComponent.h" line="24"/>
       <source>On this menu you can forward mavlink telemetry to an ardupilot support engineer.</source>
-      <translation>????????? mavlink ????? ArduPilot ??????</translation>
+      <translation type="unfinished">On this menu you can forward mavlink telemetry to an ardupilot support engineer.</translation>
     </message>
   </context>
   <context>
@@ -1937,7 +1937,7 @@
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="442"/>
       <source>Maximum Altitude</source>
-      <translation>????</translation>
+      <translation type="unfinished">Maximum Altitude</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="459"/>
@@ -2291,7 +2291,7 @@
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponentSub.qml" line="141"/>
       <source>Logic when Dry:</source>
-      <translation>??</translation>
+      <translation type="unfinished">Logic when Dry:</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponentSub.qml" line="164"/>
@@ -2306,12 +2306,12 @@
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponentSub.qml" line="185"/>
       <source>Voltage:</source>
-      <translation>???</translation>
+      <translation type="unfinished">Voltage:</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponentSub.qml" line="199"/>
       <source>Remaining Capacity:</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Remaining Capacity:</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponentSub.qml" line="221"/>
@@ -2913,12 +2913,12 @@
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="494"/>
       <source>Magnetic Declination</source>
-      <translation>???</translation>
+      <translation type="unfinished">Magnetic Declination</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="506"/>
       <source>Manual Magnetic Declination</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Manual Magnetic Declination</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="528"/>
@@ -2948,32 +2948,32 @@
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="545"/>
       <source>Fast Calibration</source>
-      <translation>????</translation>
+      <translation type="unfinished">Fast Calibration</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="553"/>
       <source>Vehicle has no Valid positon, please provide it</source>
-      <translation>???????????????</translation>
+      <translation type="unfinished">Vehicle has no Valid positon, please provide it</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="559"/>
       <source>Use GCS position instead</source>
-      <translation>???????</translation>
+      <translation type="unfinished">Use GCS position instead</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="565"/>
       <source>Use current map position instead</source>
-      <translation>????????</translation>
+      <translation type="unfinished">Use current map position instead</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="572"/>
       <source>Lat: </source>
-      <translation>??: </translation>
+      <translation type="unfinished">Lat: </translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="599"/>
       <source>Compass Motor Interference Calibration</source>
-      <translation>????????</translation>
+      <translation type="unfinished">Compass Motor Interference Calibration</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="612"/>
@@ -3271,7 +3271,7 @@ Click Ok to start calibration.</source>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponentSummary.qml" line="86"/>
       <source>Barometer(s):</source>
-      <translation>????</translation>
+      <translation type="unfinished">Barometer(s):</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponentSummary.qml" line="87"/>
@@ -3457,7 +3457,7 @@ Please place your vehicle in water, click the button, and wait. Note that the th
     <message>
       <location filename="../src/UI/toolbar/APMSupportForwardingIndicator.qml" line="36"/>
       <source>Server name:</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Server name:</translation>
     </message>
   </context>
   <context>
@@ -3727,7 +3727,7 @@ Please place your vehicle in water, click the button, and wait. Note that the th
     <message>
       <location filename="../src/Vehicle/Actuators/ActuatorActions.cc" line="54"/>
       <source>Actuator action command failed</source>
-      <translation>?????????</translation>
+      <translation type="unfinished">Actuator action command failed</translation>
     </message>
   </context>
   <context>
@@ -3735,67 +3735,67 @@ Please place your vehicle in water, click the button, and wait. Note that the th
     <message>
       <location filename="../src/AutoPilotPlugins/PX4/ActuatorComponent.qml" line="39"/>
       <source>Geometry</source>
-      <translation>????</translation>
+      <translation type="unfinished">Geometry</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/PX4/ActuatorComponent.qml" line="177"/>
       <source>Actuator Testing</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Actuator Testing</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/PX4/ActuatorComponent.qml" line="196"/>
       <source>Configure some outputs in order to test them.</source>
-      <translation>?????????????</translation>
+      <translation type="unfinished">Configure some outputs in order to test them.</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/PX4/ActuatorComponent.qml" line="233"/>
       <source>Careful: Actuator sliders are enabled</source>
-      <translation>???????????</translation>
+      <translation type="unfinished">Careful: Actuator sliders are enabled</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/PX4/ActuatorComponent.qml" line="233"/>
       <source>Propellers are removed - Enable sliders</source>
-      <translation>?????? - ????</translation>
+      <translation type="unfinished">Propellers are removed - Enable sliders</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/PX4/ActuatorComponent.qml" line="322"/>
       <source>Actuator Outputs</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Actuator Outputs</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/PX4/ActuatorComponent.qml" line="327"/>
       <source>One or more actuator still needs to be assigned to an output.</source>
-      <translation>????????????????</translation>
+      <translation type="unfinished">One or more actuator still needs to be assigned to an output.</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/PX4/ActuatorComponent.qml" line="369"/>
       <source>Identify &amp; Assign Motors</source>
-      <translation>???????</translation>
+      <translation type="unfinished">Identify &amp; Assign Motors</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/PX4/ActuatorComponent.qml" line="385"/>
       <source>Motor Order Identification and Assignment</source>
-      <translation>?????????</translation>
+      <translation type="unfinished">Motor Order Identification and Assignment</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/PX4/ActuatorComponent.qml" line="401"/>
       <source>Error</source>
-      <translation>??</translation>
+      <translation type="unfinished">Error</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/PX4/ActuatorComponent.qml" line="406"/>
       <source>Spin Motor Again</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Spin Motor Again</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/PX4/ActuatorComponent.qml" line="413"/>
       <source>Abort</source>
-      <translation>??</translation>
+      <translation type="unfinished">Abort</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/PX4/ActuatorComponent.cc" line="21"/>
       <source>Actuators</source>
-      <translation>???</translation>
+      <translation type="unfinished">Actuators</translation>
     </message>
   </context>
   <context>
@@ -3803,7 +3803,7 @@ Please place your vehicle in water, click the button, and wait. Note that the th
     <message>
       <location filename="../src/AutoPilotPlugins/PX4/ActuatorFact.qml" line="46"/>
       <source>(Param not available)</source>
-      <translation>???????</translation>
+      <translation type="unfinished">(Param not available)</translation>
     </message>
   </context>
   <context>
@@ -3811,27 +3811,27 @@ Please place your vehicle in water, click the button, and wait. Note that the th
     <message>
       <location filename="../src/Vehicle/Actuators/ActuatorTesting.cc" line="49"/>
       <source>All Motors</source>
-      <translation>????</translation>
+      <translation type="unfinished">All Motors</translation>
     </message>
     <message>
       <location filename="../src/Vehicle/Actuators/ActuatorTesting.cc" line="148"/>
       <source>Actuator test command temporarily rejected</source>
-      <translation>????????????</translation>
+      <translation type="unfinished">Actuator test command temporarily rejected</translation>
     </message>
     <message>
       <location filename="../src/Vehicle/Actuators/ActuatorTesting.cc" line="150"/>
       <source>Actuator test command denied</source>
-      <translation>??????????</translation>
+      <translation type="unfinished">Actuator test command denied</translation>
     </message>
     <message>
       <location filename="../src/Vehicle/Actuators/ActuatorTesting.cc" line="152"/>
       <source>Actuator test command not supported</source>
-      <translation>??????????</translation>
+      <translation type="unfinished">Actuator test command not supported</translation>
     </message>
     <message>
       <location filename="../src/Vehicle/Actuators/ActuatorTesting.cc" line="154"/>
       <source>Actuator test command failed</source>
-      <translation>?????????</translation>
+      <translation type="unfinished">Actuator test command failed</translation>
     </message>
   </context>
   <context>
@@ -3839,7 +3839,7 @@ Please place your vehicle in water, click the button, and wait. Note that the th
     <message>
       <location filename="../src/Comms/AirLink/AirLinkLink.h" line="37"/>
       <source>AirLink Link Settings</source>
-      <translation>AirLink ????</translation>
+      <translation type="unfinished">AirLink Link Settings</translation>
     </message>
   </context>
   <context>
@@ -3847,37 +3847,37 @@ Please place your vehicle in water, click the button, and wait. Note that the th
     <message>
       <location filename="../src/Comms/AirLink/AirLinkSettings.qml" line="42"/>
       <source>Login:</source>
-      <translation>???</translation>
+      <translation type="unfinished">Login:</translation>
     </message>
     <message>
       <location filename="../src/Comms/AirLink/AirLinkSettings.qml" line="51"/>
       <source>Password:</source>
-      <translation>???</translation>
+      <translation type="unfinished">Password:</translation>
     </message>
     <message>
       <location filename="../src/Comms/AirLink/AirLinkSettings.qml" line="79"/>
       <source>Don&apos;t have an account?</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Don&apos;t have an account?</translation>
     </message>
     <message>
       <location filename="../src/Comms/AirLink/AirLinkSettings.qml" line="85"/>
       <source>Register</source>
-      <translation>??</translation>
+      <translation type="unfinished">Register</translation>
     </message>
     <message>
       <location filename="../src/Comms/AirLink/AirLinkSettings.qml" line="95"/>
       <source>List of available devices</source>
-      <translation>??????</translation>
+      <translation type="unfinished">List of available devices</translation>
     </message>
     <message>
       <location filename="../src/Comms/AirLink/AirLinkSettings.qml" line="119"/>
       <source>Refresh</source>
-      <translation>??</translation>
+      <translation type="unfinished">Refresh</translation>
     </message>
     <message>
       <location filename="../src/Comms/AirLink/AirLinkSettings.qml" line="133"/>
       <source>Click &quot;Refresh&quot; to authorize</source>
-      <translation>??????????</translation>
+      <translation type="unfinished">Click &quot;Refresh&quot; to authorize</translation>
     </message>
   </context>
   <context>
@@ -4007,12 +4007,12 @@ Please place your vehicle in water, click the button, and wait. Note that the th
     <message>
       <location filename="../src/QmlControls/AltModeDialog.qml" line="51"/>
       <source>Relative To Launch</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Relative To Launch</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/AltModeDialog.qml" line="52"/>
       <source>Specified altitudes are relative to launch position height.</source>
-      <translation>?????????????</translation>
+      <translation type="unfinished">Specified altitudes are relative to launch position height.</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/AltModeDialog.qml" line="56"/>
@@ -4022,12 +4022,12 @@ Please place your vehicle in water, click the button, and wait. Note that the th
     <message>
       <location filename="../src/QmlControls/AltModeDialog.qml" line="57"/>
       <source>Specified altitudes are Above Mean Sea Level.</source>
-      <translation>???????????????</translation>
+      <translation type="unfinished">Specified altitudes are Above Mean Sea Level.</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/AltModeDialog.qml" line="61"/>
       <source>Calculated Above Terrain</source>
-      <translation>???????</translation>
+      <translation type="unfinished">Calculated Above Terrain</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/AltModeDialog.qml" line="62"/>
@@ -4037,7 +4037,7 @@ Please place your vehicle in water, click the button, and wait. Note that the th
     <message>
       <location filename="../src/QmlControls/AltModeDialog.qml" line="66"/>
       <source>Terrain Frame</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Terrain Frame</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/AltModeDialog.qml" line="67"/>
@@ -4047,12 +4047,12 @@ Please place your vehicle in water, click the button, and wait. Note that the th
     <message>
       <location filename="../src/QmlControls/AltModeDialog.qml" line="71"/>
       <source>Mixed Modes</source>
-      <translation>????</translation>
+      <translation type="unfinished">Mixed Modes</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/AltModeDialog.qml" line="72"/>
       <source>The altitude mode can differ for each individual item.</source>
-      <translation>????????????????</translation>
+      <translation type="unfinished">The altitude mode can differ for each individual item.</translation>
     </message>
   </context>
   <context>
@@ -4060,12 +4060,12 @@ Please place your vehicle in water, click the button, and wait. Note that the th
     <message>
       <location filename="../src/QmlControls/AppMessages.qml" line="115"/>
       <source>GStreamer Debug Level</source>
-      <translation>GStreamer ????</translation>
+      <translation type="unfinished">GStreamer Debug Level</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/AppMessages.qml" line="159"/>
       <source>Logging categories</source>
-      <translation>????</translation>
+      <translation type="unfinished">Logging categories</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/AppMessages.qml" line="197"/>
@@ -4158,22 +4158,22 @@ Please place your vehicle in water, click the button, and wait. Note that the th
     <message>
       <location filename="../src/Settings/AppSettings.cc" line="117"/>
       <source>Save to SD card specified for application data. But no SD card present. Using internal storage.</source>
-      <translation>??????????? SD ??????? SD ??????????</translation>
+      <translation type="unfinished">Save to SD card specified for application data. But no SD card present. Using internal storage.</translation>
     </message>
     <message>
       <location filename="../src/Settings/AppSettings.cc" line="120"/>
       <source>Save to SD card specified for application data. But SD card is write protected. Using internal storage.</source>
-      <translation>??????????? SD ??? SD ?????????????</translation>
+      <translation type="unfinished">Save to SD card specified for application data. But SD card is write protected. Using internal storage.</translation>
     </message>
     <message>
       <location filename="../src/Settings/AppSettings.cc" line="204"/>
       <source> (Partial)</source>
-      <translation>??????</translation>
+      <translation type="unfinished"> (Partial)</translation>
     </message>
     <message>
       <location filename="../src/Settings/AppSettings.cc" line="212"/>
       <source> (Test Only)</source>
-      <translation>?????</translation>
+      <translation type="unfinished"> (Test Only)</translation>
     </message>
   </context>
   <context>
@@ -4204,7 +4204,7 @@ Please place your vehicle in water, click the button, and wait. Note that the th
     <message>
       <location filename="../src/Utilities/Audio/AudioOutput.cc" line="159"/>
       <source>%1</source>
-      <translation>???</translation>
+      <translation type="unfinished">%1</translation>
     </message>
   </context>
   <context>
@@ -4225,32 +4225,32 @@ Please place your vehicle in water, click the button, and wait. Note that the th
     <message>
       <location filename="../src/Vehicle/Autotune.cpp" line="85"/>
       <source>Autotune: initializing</source>
-      <translation>?????????</translation>
+      <translation type="unfinished">Autotune: initializing</translation>
     </message>
     <message>
       <location filename="../src/Vehicle/Autotune.cpp" line="88"/>
       <source>Autotune: roll</source>
-      <translation>???????</translation>
+      <translation type="unfinished">Autotune: roll</translation>
     </message>
     <message>
       <location filename="../src/Vehicle/Autotune.cpp" line="91"/>
       <source>Autotune: pitch</source>
-      <translation>???????</translation>
+      <translation type="unfinished">Autotune: pitch</translation>
     </message>
     <message>
       <location filename="../src/Vehicle/Autotune.cpp" line="94"/>
       <source>Autotune: yaw</source>
-      <translation>???????</translation>
+      <translation type="unfinished">Autotune: yaw</translation>
     </message>
     <message>
       <location filename="../src/Vehicle/Autotune.cpp" line="97"/>
       <source>Wait for disarm</source>
-      <translation>????</translation>
+      <translation type="unfinished">Wait for disarm</translation>
     </message>
     <message>
       <location filename="../src/Vehicle/Autotune.cpp" line="100"/>
       <source>Land and disarm the vehicle in order to apply the parameters.</source>
-      <translation>???????????????</translation>
+      <translation type="unfinished">Land and disarm the vehicle in order to apply the parameters.</translation>
     </message>
     <message>
       <location filename="../src/Vehicle/Autotune.cpp" line="105"/>
@@ -4260,32 +4260,32 @@ Please place your vehicle in water, click the button, and wait. Note that the th
     <message>
       <location filename="../src/Vehicle/Autotune.cpp" line="112"/>
       <source>Autotune: Success</source>
-      <translation>???????</translation>
+      <translation type="unfinished">Autotune: Success</translation>
     </message>
     <message>
       <location filename="../src/Vehicle/Autotune.cpp" line="114"/>
       <source>Autotune successful.</source>
-      <translation>???????</translation>
+      <translation type="unfinished">Autotune successful.</translation>
     </message>
     <message>
       <location filename="../src/Vehicle/Autotune.cpp" line="117"/>
       <source>Autotune: Unknown error</source>
-      <translation>?????????</translation>
+      <translation type="unfinished">Autotune: Unknown error</translation>
     </message>
     <message>
       <location filename="../src/Vehicle/Autotune.cpp" line="129"/>
       <source>Autotune: Failed</source>
-      <translation>???????</translation>
+      <translation type="unfinished">Autotune: Failed</translation>
     </message>
     <message>
       <location filename="../src/Vehicle/Autotune.cpp" line="139"/>
       <source>Autotune: Ack error %1</source>
-      <translation>????????? %1</translation>
+      <translation type="unfinished">Autotune: Ack error %1</translation>
     </message>
     <message>
       <location filename="../src/Vehicle/Autotune.h" line="56"/>
       <source>Autotune: Not performed</source>
-      <translation>????????</translation>
+      <translation type="unfinished">Autotune: Not performed</translation>
     </message>
   </context>
   <context>
@@ -4293,7 +4293,7 @@ Please place your vehicle in water, click the button, and wait. Note that the th
     <message>
       <location filename="../src/QmlControls/AutotuneUI.qml" line="31"/>
       <source>Start AutoTune</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Start AutoTune</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/AutotuneUI.qml" line="35"/>
@@ -4346,12 +4346,12 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/QmlControls/BatteryIndicator.qml" line="224"/>
       <source>Battery %1</source>
-      <translation>?? %1</translation>
+      <translation type="unfinished">Battery %1</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/BatteryIndicator.qml" line="224"/>
       <source>Status</source>
-      <translation>??</translation>
+      <translation type="unfinished">Status</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/BatteryIndicator.qml" line="238"/>
@@ -4372,7 +4372,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/QmlControls/BatteryIndicator.qml" line="261"/>
       <source>Consumed</source>
-      <translation>??</translation>
+      <translation type="unfinished">Consumed</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/BatteryIndicator.qml" line="267"/>
@@ -4382,42 +4382,42 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/QmlControls/BatteryIndicator.qml" line="273"/>
       <source>Function</source>
-      <translation>??</translation>
+      <translation type="unfinished">Function</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/BatteryIndicator.qml" line="291"/>
       <source>Battery Display</source>
-      <translation>????</translation>
+      <translation type="unfinished">Battery Display</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/BatteryIndicator.qml" line="296"/>
       <source>Value</source>
-      <translation>?</translation>
+      <translation type="unfinished">Value</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/BatteryIndicator.qml" line="304"/>
       <source>Coloring</source>
-      <translation>??</translation>
+      <translation type="unfinished">Coloring</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/BatteryIndicator.qml" line="377"/>
       <source>Low</source>
-      <translation>?</translation>
+      <translation type="unfinished">Low</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/BatteryIndicator.qml" line="390"/>
       <source>Critical</source>
-      <translation>??</translation>
+      <translation type="unfinished">Critical</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/BatteryIndicator.qml" line="406"/>
       <source>Vehicle Power</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Vehicle Power</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/BatteryIndicator.qml" line="407"/>
       <source>Configure</source>
-      <translation>??</translation>
+      <translation type="unfinished">Configure</translation>
     </message>
   </context>
   <context>
@@ -4425,7 +4425,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/MissionManager/BlankPlanCreator.cc" line="14"/>
       <source>Empty Plan</source>
-      <translation>???</translation>
+      <translation type="unfinished">Empty Plan</translation>
     </message>
   </context>
   <context>
@@ -4459,17 +4459,17 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/BluetoothSettings.qml" line="31"/>
       <source>Device</source>
-      <translation>??</translation>
+      <translation type="unfinished">Device</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/BluetoothSettings.qml" line="37"/>
       <source>Address</source>
-      <translation>??</translation>
+      <translation type="unfinished">Address</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/BluetoothSettings.qml" line="44"/>
       <source>Bluetooth Devices</source>
-      <translation>????</translation>
+      <translation type="unfinished">Bluetooth Devices</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/BluetoothSettings.qml" line="67"/>
@@ -4492,22 +4492,22 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/Comms/BluetoothLink.cc" line="270"/>
       <source>Socket is not connected</source>
-      <translation>Socket ???</translation>
+      <translation type="unfinished">Socket is not connected</translation>
     </message>
     <message>
       <location filename="../src/Comms/BluetoothLink.cc" line="275"/>
       <source>Socket is not Writable</source>
-      <translation>Socket ???</translation>
+      <translation type="unfinished">Socket is not Writable</translation>
     </message>
     <message>
       <location filename="../src/Comms/BluetoothLink.cc" line="283"/>
       <source>Could Not Send Data - Write Failed: %1</source>
-      <translation>?????? - ?????%1</translation>
+      <translation type="unfinished">Could Not Send Data - Write Failed: %1</translation>
     </message>
     <message>
       <location filename="../src/Comms/BluetoothLink.cc" line="286"/>
       <source>Could Not Send Data - Write Returned 0 Bytes</source>
-      <translation>?????? - ???? 0 ??</translation>
+      <translation type="unfinished">Could Not Send Data - Write Returned 0 Bytes</translation>
     </message>
   </context>
   <context>
@@ -4960,7 +4960,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="47"/>
       <source>Font Point Size 10</source>
-      <translation>????? 10</translation>
+      <translation type="unfinished">Font Point Size 10</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="53"/>
@@ -4970,7 +4970,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="63"/>
       <source>Font Point Size 10.5</source>
-      <translation>????? 10.5</translation>
+      <translation type="unfinished">Font Point Size 10.5</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="69"/>
@@ -4980,7 +4980,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="79"/>
       <source>Font Point Size 11</source>
-      <translation>????? 11</translation>
+      <translation type="unfinished">Font Point Size 11</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="85"/>
@@ -4990,7 +4990,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="95"/>
       <source>Font Point Size 11.5</source>
-      <translation>????? 11.5</translation>
+      <translation type="unfinished">Font Point Size 11.5</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="101"/>
@@ -5000,7 +5000,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="111"/>
       <source>Font Point Size 12</source>
-      <translation>????? 12</translation>
+      <translation type="unfinished">Font Point Size 12</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="117"/>
@@ -5010,7 +5010,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="127"/>
       <source>Font Point Size 12.5</source>
-      <translation>????? 12.5</translation>
+      <translation type="unfinished">Font Point Size 12.5</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="133"/>
@@ -5020,7 +5020,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="143"/>
       <source>Font Point Size 13</source>
-      <translation>????? 13</translation>
+      <translation type="unfinished">Font Point Size 13</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="149"/>
@@ -5030,7 +5030,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="159"/>
       <source>Font Point Size 13.5</source>
-      <translation>????? 13.5</translation>
+      <translation type="unfinished">Font Point Size 13.5</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="165"/>
@@ -5040,7 +5040,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="175"/>
       <source>Font Point Size 14</source>
-      <translation>????? 14</translation>
+      <translation type="unfinished">Font Point Size 14</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="181"/>
@@ -5050,7 +5050,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="191"/>
       <source>Font Point Size 14.5</source>
-      <translation>????? 14.5</translation>
+      <translation type="unfinished">Font Point Size 14.5</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="197"/>
@@ -5060,7 +5060,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="207"/>
       <source>Font Point Size 15</source>
-      <translation>????? 15</translation>
+      <translation type="unfinished">Font Point Size 15</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="213"/>
@@ -5070,7 +5070,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="223"/>
       <source>Font Point Size 15.5</source>
-      <translation>????? 15.5</translation>
+      <translation type="unfinished">Font Point Size 15.5</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="229"/>
@@ -5080,7 +5080,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="239"/>
       <source>Font Point Size 16</source>
-      <translation>????? 16</translation>
+      <translation type="unfinished">Font Point Size 16</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="245"/>
@@ -5090,7 +5090,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="255"/>
       <source>Font Point Size 16.5</source>
-      <translation>????? 16.5</translation>
+      <translation type="unfinished">Font Point Size 16.5</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="261"/>
@@ -5100,7 +5100,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/DebugWindow.qml" line="271"/>
       <source>Font Point Size 17</source>
-      <translation>????? 17</translation>
+      <translation type="unfinished">Font Point Size 17</translation>
     </message>
   </context>
   <context>
@@ -5419,7 +5419,7 @@ Click Ok to start the auto-tuning process.
       <location filename="../src/QmlControls/EditPositionDialog.qml" line="132"/>
       <location filename="../src/QmlControls/EditPositionDialog.qml" line="142"/>
       <source>Set position</source>
-      <translation>??</translation>
+      <translation type="unfinished">Set position</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/EditPositionDialog.qml" line="73"/>
@@ -5653,7 +5653,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/FactSystem/Fact.cc" line="747"/>
       <source>Restart application for changes to take effect.</source>
-      <translation>??????????</translation>
+      <translation type="unfinished">Restart application for changes to take effect.</translation>
     </message>
   </context>
   <context>
@@ -5923,7 +5923,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/Vehicle/VehicleSetup/FirmwareUpgrade.qml" line="48"/>
       <source>Plug in your device</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Plug in your device</translation>
     </message>
     <message>
       <location filename="../src/Vehicle/VehicleSetup/FirmwareUpgrade.qml" line="48"/>
@@ -5933,12 +5933,12 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/Vehicle/VehicleSetup/FirmwareUpgrade.qml" line="48"/>
       <source>start</source>
-      <translation>??</translation>
+      <translation type="unfinished">start</translation>
     </message>
     <message>
       <location filename="../src/Vehicle/VehicleSetup/FirmwareUpgrade.qml" line="48"/>
       <source> firmware upgrade.</source>
-      <translation> ?????</translation>
+      <translation type="unfinished"> firmware upgrade.</translation>
     </message>
     <message>
       <location filename="../src/Vehicle/VehicleSetup/FirmwareUpgrade.qml" line="49"/>
@@ -5978,7 +5978,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/Vehicle/VehicleSetup/FirmwareUpgrade.qml" line="52"/>
       <source>Please unplug your Pixhawk and/or Radio from USB.</source>
-      <translation>?? USB ?? Pixhawk ?/????</translation>
+      <translation type="unfinished">Please unplug your Pixhawk and/or Radio from USB.</translation>
     </message>
     <message>
       <location filename="../src/Vehicle/VehicleSetup/FirmwareUpgrade.qml" line="76"/>
@@ -6019,12 +6019,12 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/Vehicle/VehicleSetup/FirmwareUpgrade.qml" line="204"/>
       <source>You must choose a board type.</source>
-      <translation>?????????</translation>
+      <translation type="unfinished">You must choose a board type.</translation>
     </message>
     <message>
       <location filename="../src/Vehicle/VehicleSetup/FirmwareUpgrade.qml" line="211"/>
       <source>No firmware was found for the current selection.</source>
-      <translation>??????????</translation>
+      <translation type="unfinished">No firmware was found for the current selection.</translation>
     </message>
     <message>
       <location filename="../src/Vehicle/VehicleSetup/FirmwareUpgrade.qml" line="239"/>
@@ -6369,22 +6369,22 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/QmlControls/FlightModeIndicator.qml" line="176"/>
       <source>Some Modes Hidden</source>
-      <translation>???????</translation>
+      <translation type="unfinished">Some Modes Hidden</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/FlightModeIndicator.qml" line="212"/>
       <source>Edit Displayed Flight Modes</source>
-      <translation>?????????</translation>
+      <translation type="unfinished">Edit Displayed Flight Modes</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/FlightModeIndicator.qml" line="222"/>
       <source>Flight Modes</source>
-      <translation>????</translation>
+      <translation type="unfinished">Flight Modes</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/FlightModeIndicator.qml" line="223"/>
       <source>Configure</source>
-      <translation>??</translation>
+      <translation type="unfinished">Configure</translation>
     </message>
   </context>
   <context>
@@ -6402,22 +6402,22 @@ Click Ok to start the auto-tuning process.
       <location filename="../src/QmlControls/FlightModeMenuIndicator.qml" line="59"/>
       <source>N/A</source>
       <comment>No data to display</comment>
-      <translation>???</translation>
+      <translation type="unfinished">N/A</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/FlightModeMenuIndicator.qml" line="129"/>
       <source>RTL Altitude</source>
-      <translation>RTL ??</translation>
+      <translation type="unfinished">RTL Altitude</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/FlightModeMenuIndicator.qml" line="140"/>
       <source>Land Descent Rate:</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Land Descent Rate:</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/FlightModeMenuIndicator.qml" line="151"/>
       <source>Precision Landing</source>
-      <translation>????</translation>
+      <translation type="unfinished">Precision Landing</translation>
     </message>
   </context>
   <context>
@@ -6456,7 +6456,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/FlightDisplay/FlyViewAdditionalActionsButton.qml" line="21"/>
       <source>Actions</source>
-      <translation>????</translation>
+      <translation type="unfinished">Actions</translation>
     </message>
   </context>
   <context>
@@ -6493,52 +6493,52 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/FlightDisplay/FlyViewMap.qml" line="699"/>
       <source>Orbit at location</source>
-      <translation>????</translation>
+      <translation type="unfinished">Orbit at location</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/FlyViewMap.qml" line="710"/>
       <source>ROI at location</source>
-      <translation>?????</translation>
+      <translation type="unfinished">ROI at location</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/FlyViewMap.qml" line="720"/>
       <source>Set home here</source>
-      <translation>???? Home</translation>
+      <translation type="unfinished">Set home here</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/FlyViewMap.qml" line="730"/>
       <source>Set Estimator Origin</source>
-      <translation>???????</translation>
+      <translation type="unfinished">Set Estimator Origin</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/FlyViewMap.qml" line="740"/>
       <source>Set Heading</source>
-      <translation>????</translation>
+      <translation type="unfinished">Set Heading</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/FlyViewMap.qml" line="750"/>
       <source>Lat: %1</source>
-      <translation>??: %1</translation>
+      <translation type="unfinished">Lat: %1</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/FlyViewMap.qml" line="751"/>
       <source>Lon: %1</source>
-      <translation>??: %1</translation>
+      <translation type="unfinished">Lon: %1</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/FlyViewMap.qml" line="627"/>
       <source>Edit ROI Position</source>
-      <translation>???????</translation>
+      <translation type="unfinished">Edit ROI Position</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/FlyViewMap.qml" line="648"/>
       <source>Cancel ROI</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Cancel ROI</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/FlyViewMap.qml" line="657"/>
       <source>Edit Position</source>
-      <translation>????</translation>
+      <translation type="unfinished">Edit Position</translation>
     </message>
   </context>
   <context>
@@ -6592,173 +6592,173 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="50"/>
       <source>&lt;None&gt;</source>
-      <translation>&lt;?&gt;</translation>
+      <translation type="unfinished">&lt;None&gt;</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="56"/>
       <source>General</source>
-      <translation>??</translation>
+      <translation type="unfinished">General</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="61"/>
       <source>Use Preflight Checklist</source>
-      <translation>???????</translation>
+      <translation type="unfinished">Use Preflight Checklist</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="69"/>
       <source>Enforce Preflight Checklist</source>
-      <translation>?????????</translation>
+      <translation type="unfinished">Enforce Preflight Checklist</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="78"/>
       <source>Enable Multi-Vehicle Panel</source>
-      <translation>????????</translation>
+      <translation type="unfinished">Enable Multi-Vehicle Panel</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="85"/>
       <source>Keep Map Centered On Vehicle</source>
-      <translation>???????????</translation>
+      <translation type="unfinished">Keep Map Centered On Vehicle</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="93"/>
       <source>Show Telemetry Log Replay Status Bar</source>
-      <translation>???????????</translation>
+      <translation type="unfinished">Show Telemetry Log Replay Status Bar</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="101"/>
       <source>Show simple camera controls (DIGICAM_CONTROL)</source>
-      <translation>?????????DIGICAM_CONTROL?</translation>
+      <translation type="unfinished">Show simple camera controls (DIGICAM_CONTROL)</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="110"/>
       <source>Update return to home position based on device location.</source>
-      <translation>????????????</translation>
+      <translation type="unfinished">Update return to home position based on device location.</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="119"/>
       <source>Guided Commands</source>
-      <translation>????</translation>
+      <translation type="unfinished">Guided Commands</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="126"/>
       <source>Minimum Altitude</source>
-      <translation>????</translation>
+      <translation type="unfinished">Minimum Altitude</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="133"/>
       <source>Maximum Altitude</source>
-      <translation>????</translation>
+      <translation type="unfinished">Maximum Altitude</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="140"/>
       <source>Go To Location Max Distance</source>
-      <translation>????????</translation>
+      <translation type="unfinished">Go To Location Max Distance</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="147"/>
       <source>Loiter Radius in Forward Flight Guided Mode</source>
-      <translation>??????????</translation>
+      <translation type="unfinished">Loiter Radius in Forward Flight Guided Mode</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="154"/>
       <source>Require Confirmation for Go To Location in Guided Mode</source>
-      <translation>?????????????</translation>
+      <translation type="unfinished">Require Confirmation for Go To Location in Guided Mode</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="163"/>
       <source>MAVLink Actions</source>
-      <translation>MAVLink ??</translation>
+      <translation type="unfinished">MAVLink Actions</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="164"/>
       <source>Action JSON files should be created in the &apos;%1&apos; folder.</source>
-      <translation>?? JSON ?????? '%1' ?????</translation>
+      <translation type="unfinished">Action JSON files should be created in the &apos;%1&apos; folder.</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="168"/>
       <source>Fly View Actions</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Fly View Actions</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="181"/>
       <source>Joystick Actions</source>
-      <translation>????</translation>
+      <translation type="unfinished">Joystick Actions</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="195"/>
       <source>Virtual Joystick</source>
-      <translation>????</translation>
+      <translation type="unfinished">Virtual Joystick</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="200"/>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="249"/>
       <source>Enabled</source>
-      <translation>???</translation>
+      <translation type="unfinished">Enabled</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="207"/>
       <source>Auto-Center Throttle</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Auto-Center Throttle</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="215"/>
       <source>Left-Handed Mode (swap sticks)</source>
-      <translation>??????????</translation>
+      <translation type="unfinished">Left-Handed Mode (swap sticks)</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="224"/>
       <source>Instrument Panel</source>
-      <translation>????</translation>
+      <translation type="unfinished">Instrument Panel</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="229"/>
       <source>Show additional heading indicators on Compass</source>
-      <translation>????????????</translation>
+      <translation type="unfinished">Show additional heading indicators on Compass</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="236"/>
       <source>Lock Compass Nose-Up</source>
-      <translation>????????</translation>
+      <translation type="unfinished">Lock Compass Nose-Up</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="244"/>
       <source>3D View</source>
-      <translation>3D ??</translation>
+      <translation type="unfinished">3D View</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="267"/>
       <source>3D Map File:</source>
-      <translation>3D ?????</translation>
+      <translation type="unfinished">3D Map File:</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="287"/>
       <source>Clear</source>
-      <translation>??</translation>
+      <translation type="unfinished">Clear</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="296"/>
       <source>Select File</source>
-      <translation>????</translation>
+      <translation type="unfinished">Select File</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="310"/>
       <source>OpenStreetMap files (*.osm)</source>
-      <translation>OpenStreetMap ?? (*.osm)</translation>
+      <translation type="unfinished">OpenStreetMap files (*.osm)</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="311"/>
       <source>Select map file</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Select map file</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="324"/>
       <source>Average Building Level Height</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Average Building Level Height</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="332"/>
       <source>Vehicles Altitude Bias</source>
-      <translation>???????</translation>
+      <translation type="unfinished">Vehicles Altitude Bias</translation>
     </message>
   </context>
   <context>
@@ -6766,17 +6766,17 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/QmlControls/FlyViewToolBar.qml" line="81"/>
       <source>Disconnect</source>
-      <translation>????</translation>
+      <translation type="unfinished">Disconnect</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/FlyViewToolBar.qml" line="193"/>
       <source>Downloading</source>
-      <translation>????</translation>
+      <translation type="unfinished">Downloading</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/FlyViewToolBar.qml" line="201"/>
       <source>Click anywhere to hide</source>
-      <translation>????????</translation>
+      <translation type="unfinished">Click anywhere to hide</translation>
     </message>
   </context>
   <context>
@@ -6785,7 +6785,7 @@ Click Ok to start the auto-tuning process.
       <location filename="../src/FlightDisplay/FlyViewToolStripActionList.qml" line="27"/>
       <location filename="../src/FlightDisplay/FlyViewToolStripActionList.qml" line="43"/>
       <source>3D View</source>
-      <translation>3D ??</translation>
+      <translation type="unfinished">3D View</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/FlyViewToolStripActionList.qml" line="40"/>
@@ -6798,47 +6798,47 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/FlightDisplay/FlyViewTopRightPanel.qml" line="66"/>
       <source>Selected: </source>
-      <translation>????</translation>
+      <translation type="unfinished">Selected: </translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/FlyViewTopRightPanel.qml" line="138"/>
       <source>Multi Vehicle Selection</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Multi Vehicle Selection</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/FlyViewTopRightPanel.qml" line="147"/>
       <source>Select All</source>
-      <translation>??</translation>
+      <translation type="unfinished">Select All</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/FlyViewTopRightPanel.qml" line="153"/>
       <source>Deselect All</source>
-      <translation>????</translation>
+      <translation type="unfinished">Deselect All</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/FlyViewTopRightPanel.qml" line="162"/>
       <source>Multi Vehicle Actions</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Multi Vehicle Actions</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/FlyViewTopRightPanel.qml" line="171"/>
       <source>Arm</source>
-      <translation>??</translation>
+      <translation type="unfinished">Arm</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/FlyViewTopRightPanel.qml" line="180"/>
       <source>Disarm</source>
-      <translation>??</translation>
+      <translation type="unfinished">Disarm</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/FlyViewTopRightPanel.qml" line="189"/>
       <source>Start</source>
-      <translation>??</translation>
+      <translation type="unfinished">Start</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/FlyViewTopRightPanel.qml" line="198"/>
       <source>Pause</source>
-      <translation>??</translation>
+      <translation type="unfinished">Pause</translation>
     </message>
   </context>
   <context>
@@ -6846,7 +6846,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/FlightDisplay/FlyViewVideo.qml" line="72"/>
       <source>Double-click to exit full screen</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Double-click to exit full screen</translation>
     </message>
   </context>
   <context>
@@ -6905,22 +6905,22 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/toolbar/GCSControlIndicator.qml" line="242"/>
       <source>This GCS</source>
-      <translation>????</translation>
+      <translation type="unfinished">This GCS</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GCSControlIndicator.qml" line="250"/>
       <source>Takeover allowed</source>
-      <translation>????</translation>
+      <translation type="unfinished">Takeover allowed</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GCSControlIndicator.qml" line="250"/>
       <source>Takeover NOT allowed</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Takeover NOT allowed</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GCSControlIndicator.qml" line="266"/>
       <source>Send Control Request:</source>
-      <translation>???????</translation>
+      <translation type="unfinished">Send Control Request:</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GCSControlIndicator.qml" line="271"/>
@@ -6935,7 +6935,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/toolbar/GCSControlIndicator.qml" line="282"/>
       <source>Allow takeover</source>
-      <translation>????</translation>
+      <translation type="unfinished">Allow takeover</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GCSControlIndicator.qml" line="287"/>
@@ -6945,22 +6945,22 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/toolbar/GCSControlIndicator.qml" line="287"/>
       <source>Send Request</source>
-      <translation>????</translation>
+      <translation type="unfinished">Send Request</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GCSControlIndicator.qml" line="301"/>
       <source>Request Timeout (sec):</source>
-      <translation>????????</translation>
+      <translation type="unfinished">Request Timeout (sec):</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GCSControlIndicator.qml" line="311"/>
       <source>Change</source>
-      <translation>??</translation>
+      <translation type="unfinished">Change</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GCSControlIndicator.qml" line="328"/>
       <source>This GCS Mavlink System ID: </source>
-      <translation>???? Mavlink ?? ID?</translation>
+      <translation type="unfinished">This GCS Mavlink System ID: </translation>
     </message>
   </context>
   <context>
@@ -6977,7 +6977,7 @@ Click Ok to start the auto-tuning process.
       <location filename="../src/QmlControls/GPSIndicatorPage.qml" line="27"/>
       <source>N/A</source>
       <comment>No data to display</comment>
-      <translation>???</translation>
+      <translation type="unfinished">N/A</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/GPSIndicatorPage.qml" line="28"/>
@@ -6988,18 +6988,18 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/QmlControls/GPSIndicatorPage.qml" line="37"/>
       <source>Vehicle GPS Status</source>
-      <translation>??? GPS ??</translation>
+      <translation type="unfinished">Vehicle GPS Status</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/GPSIndicatorPage.qml" line="41"/>
       <location filename="../src/QmlControls/GPSIndicatorPage.qml" line="75"/>
       <source>Satellites</source>
-      <translation>???</translation>
+      <translation type="unfinished">Satellites</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/GPSIndicatorPage.qml" line="46"/>
       <source>GPS Lock</source>
-      <translation>GPS ??</translation>
+      <translation type="unfinished">GPS Lock</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/GPSIndicatorPage.qml" line="51"/>
@@ -7014,57 +7014,57 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/QmlControls/GPSIndicatorPage.qml" line="61"/>
       <source>Course Over Ground</source>
-      <translation>????</translation>
+      <translation type="unfinished">Course Over Ground</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/GPSIndicatorPage.qml" line="67"/>
       <source>RTK GPS Status</source>
-      <translation>RTK GPS ??</translation>
+      <translation type="unfinished">RTK GPS Status</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/GPSIndicatorPage.qml" line="71"/>
       <source>Survey-in Active</source>
-      <translation>Survey-In ???</translation>
+      <translation type="unfinished">Survey-in Active</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/GPSIndicatorPage.qml" line="71"/>
       <source>RTK Streaming</source>
-      <translation>RTK ???</translation>
+      <translation type="unfinished">RTK Streaming</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/GPSIndicatorPage.qml" line="80"/>
       <source>Duration</source>
-      <translation>????</translation>
+      <translation type="unfinished">Duration</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/GPSIndicatorPage.qml" line="85"/>
       <source>Accuracy</source>
-      <translation>??</translation>
+      <translation type="unfinished">Accuracy</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/GPSIndicatorPage.qml" line="85"/>
       <source>Current Accuracy</source>
-      <translation>????</translation>
+      <translation type="unfinished">Current Accuracy</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/GPSIndicatorPage.qml" line="95"/>
       <source>RTK GPS Settings</source>
-      <translation>RTK GPS ??</translation>
+      <translation type="unfinished">RTK GPS Settings</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/GPSIndicatorPage.qml" line="101"/>
       <source>AutoConnect</source>
-      <translation>????</translation>
+      <translation type="unfinished">AutoConnect</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/GPSIndicatorPage.qml" line="110"/>
       <source>Survey-In</source>
-      <translation>Survey-In</translation>
+      <translation type="unfinished">Survey-In</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/GPSIndicatorPage.qml" line="116"/>
       <source>Specify position</source>
-      <translation>????</translation>
+      <translation type="unfinished">Specify position</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/GPSIndicatorPage.qml" line="125"/>
@@ -7074,22 +7074,22 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/QmlControls/GPSIndicatorPage.qml" line="134"/>
       <source>Min Duration</source>
-      <translation>????</translation>
+      <translation type="unfinished">Min Duration</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/GPSIndicatorPage.qml" line="165"/>
       <source>Current Base Position</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Current Base Position</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/GPSIndicatorPage.qml" line="166"/>
       <source>Save</source>
-      <translation>??</translation>
+      <translation type="unfinished">Save</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/GPSIndicatorPage.qml" line="166"/>
       <source>Not Yet Valid</source>
-      <translation>????</translation>
+      <translation type="unfinished">Not Yet Valid</translation>
     </message>
   </context>
   <context>
@@ -7154,12 +7154,12 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/GeneralSettings.qml" line="68"/>
       <source>Save application data to SD Card</source>
-      <translation>???????? SD ?</translation>
+      <translation type="unfinished">Save application data to SD Card</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/GeneralSettings.qml" line="143"/>
       <source>&lt;default location&gt;</source>
-      <translation>&lt;????&gt;</translation>
+      <translation type="unfinished">&lt;default location&gt;</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/GeneralSettings.qml" line="180"/>
@@ -7190,7 +7190,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/GeneralSettings.qml" line="257"/>
       <source>Reset</source>
-      <translation>??</translation>
+      <translation type="unfinished">Reset</translation>
     </message>
   </context>
   <context>
@@ -7524,22 +7524,22 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/toolbar/GimbalIndicator.qml" line="52"/>
       <source>&lt;br&gt; Controls</source>
-      <translation>&lt;br&gt; ??</translation>
+      <translation type="unfinished">&lt;br&gt; Controls</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GimbalIndicator.qml" line="66"/>
       <source>Yaw &lt;br&gt; Follow</source>
-      <translation>?? &lt;br&gt; ??</translation>
+      <translation type="unfinished">Yaw &lt;br&gt; Follow</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GimbalIndicator.qml" line="66"/>
       <source>Yaw &lt;br&gt; Lock</source>
-      <translation>?? &lt;br&gt; ??</translation>
+      <translation type="unfinished">Yaw &lt;br&gt; Lock</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GimbalIndicator.qml" line="67"/>
       <source>Center</source>
-      <translation>??</translation>
+      <translation type="unfinished">Center</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GimbalIndicator.qml" line="68"/>
@@ -7549,57 +7549,57 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/toolbar/GimbalIndicator.qml" line="69"/>
       <source>Point &lt;br&gt; Home</source>
-      <translation>?? &lt;br&gt; Home</translation>
+      <translation type="unfinished">Point &lt;br&gt; Home</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GimbalIndicator.qml" line="70"/>
       <source>Retract</source>
-      <translation>??</translation>
+      <translation type="unfinished">Retract</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GimbalIndicator.qml" line="71"/>
       <source>Release &lt;br&gt; Control</source>
-      <translation>?? &lt;br&gt; ??</translation>
+      <translation type="unfinished">Release &lt;br&gt; Control</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GimbalIndicator.qml" line="71"/>
       <source>Acquire &lt;br&gt; Control</source>
-      <translation>?? &lt;br&gt; ??</translation>
+      <translation type="unfinished">Acquire &lt;br&gt; Control</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GimbalIndicator.qml" line="119"/>
       <source>Active &lt;br&gt; Gimbal: </source>
-      <translation>?? &lt;br&gt; ???</translation>
+      <translation type="unfinished">Active &lt;br&gt; Gimbal: </translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GimbalIndicator.qml" line="131"/>
       <source>Select &lt;br&gt; Gimbal</source>
-      <translation>?? &lt;br&gt; ??</translation>
+      <translation type="unfinished">Select &lt;br&gt; Gimbal</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GimbalIndicator.qml" line="217"/>
       <source>Settings</source>
-      <translation>??</translation>
+      <translation type="unfinished">Settings</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GimbalIndicator.qml" line="254"/>
       <source>Control type: </source>
-      <translation>?????</translation>
+      <translation type="unfinished">Control type: </translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GimbalIndicator.qml" line="264"/>
       <source>Horizontal FOV</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Horizontal FOV</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GimbalIndicator.qml" line="273"/>
       <source>Vertical FOV</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Vertical FOV</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GimbalIndicator.qml" line="282"/>
       <source>Max speed:</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Max speed:</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GimbalIndicator.qml" line="300"/>
@@ -7609,32 +7609,32 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/toolbar/GimbalIndicator.qml" line="321"/>
       <source>Show gimbal Azimuth indicator in map</source>
-      <translation>?????????????</translation>
+      <translation type="unfinished">Show gimbal Azimuth indicator in map</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GimbalIndicator.qml" line="330"/>
       <source>Use Azimuth instead of local yaw on top toolbar indicator</source>
-      <translation>????????????????????</translation>
+      <translation type="unfinished">Use Azimuth instead of local yaw on top toolbar indicator</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GimbalIndicator.qml" line="339"/>
       <source>Show Acquire/Release control button</source>
-      <translation>????/??????</translation>
+      <translation type="unfinished">Show Acquire/Release control button</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GimbalIndicator.qml" line="388"/>
       <source>Retracted</source>
-      <translation>???</translation>
+      <translation type="unfinished">Retracted</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GimbalIndicator.qml" line="389"/>
       <source>Yaw locked</source>
-      <translation>????</translation>
+      <translation type="unfinished">Yaw locked</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GimbalIndicator.qml" line="389"/>
       <source>Yaw follow</source>
-      <translation>????</translation>
+      <translation type="unfinished">Yaw follow</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/GimbalIndicator.qml" line="395"/>
@@ -7690,7 +7690,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/FlightDisplay/GuidedActionsController.qml" line="40"/>
       <source>Disarm (MV)</source>
-      <translation>??</translation>
+      <translation type="unfinished">Disarm (MV)</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/GuidedActionsController.qml" line="41"/>
@@ -7785,17 +7785,17 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/FlightDisplay/GuidedActionsController.qml" line="52"/>
       <source>Change Loiter Radius</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Change Loiter Radius</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/GuidedActionsController.qml" line="53"/>
       <source>Change Max Ground Speed</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Change Max Ground Speed</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/GuidedActionsController.qml" line="54"/>
       <source>Change Airspeed</source>
-      <translation>????</translation>
+      <translation type="unfinished">Change Airspeed</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/GuidedActionsController.qml" line="60"/>
@@ -7810,17 +7810,17 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/FlightDisplay/GuidedActionsController.qml" line="62"/>
       <source>Set Estimator origin</source>
-      <translation>???????</translation>
+      <translation type="unfinished">Set Estimator origin</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/GuidedActionsController.qml" line="63"/>
       <source>Set Flight Mode</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Set Flight Mode</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/GuidedActionsController.qml" line="64"/>
       <source>Change Heading</source>
-      <translation>????</translation>
+      <translation type="unfinished">Change Heading</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/GuidedActionsController.qml" line="66"/>
@@ -7980,22 +7980,22 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/FlightDisplay/GuidedActionsController.qml" line="232"/>
       <source>Height (rel)</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Height (rel)</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/GuidedActionsController.qml" line="240"/>
       <source>Airspeed</source>
-      <translation>??</translation>
+      <translation type="unfinished">Airspeed</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/GuidedActionsController.qml" line="247"/>
       <source>Speed</source>
-      <translation>??</translation>
+      <translation type="unfinished">Speed</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/GuidedActionsController.qml" line="257"/>
       <source>Alt (rel)</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Alt (rel)</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/GuidedActionsController.qml" line="497"/>
@@ -8109,22 +8109,22 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/QmlControls/InstrumentValueEditDialog.qml" line="55"/>
       <source>Telemetry</source>
-      <translation>??</translation>
+      <translation type="unfinished">Telemetry</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/InstrumentValueEditDialog.qml" line="59"/>
       <source>Group</source>
-      <translation>??</translation>
+      <translation type="unfinished">Group</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/InstrumentValueEditDialog.qml" line="75"/>
       <source>Value</source>
-      <translation>?</translation>
+      <translation type="unfinished">Value</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/InstrumentValueEditDialog.qml" line="136"/>
       <source>Change</source>
-      <translation>??</translation>
+      <translation type="unfinished">Change</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/InstrumentValueEditDialog.qml" line="173"/>
@@ -8144,7 +8144,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/QmlControls/InstrumentValueEditDialog.qml" line="201"/>
       <source>Type</source>
-      <translation>??</translation>
+      <translation type="unfinished">Type</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/InstrumentValueEditDialog.qml" line="293"/>
@@ -8597,7 +8597,7 @@ Click Ok to start the auto-tuning process.
       <location filename="../src/UI/toolbar/JoystickIndicator.qml" line="42"/>
       <location filename="../src/UI/toolbar/JoystickIndicator.qml" line="47"/>
       <source>No</source>
-      <translation>?</translation>
+      <translation type="unfinished">No</translation>
     </message>
     <message>
       <location filename="../src/UI/toolbar/JoystickIndicator.qml" line="45"/>
@@ -8797,47 +8797,47 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/LinkSettings.qml" line="58"/>
       <source>Device</source>
-      <translation>??</translation>
+      <translation type="unfinished">Device</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/LinkSettings.qml" line="71"/>
       <source>Disabled</source>
-      <translation>???</translation>
+      <translation type="unfinished">Disabled</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/LinkSettings.qml" line="72"/>
       <source>UDP Port</source>
-      <translation>UDP ??</translation>
+      <translation type="unfinished">UDP Port</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/LinkSettings.qml" line="75"/>
       <source>Serial &lt;none available&gt;</source>
-      <translation>?? &lt;???&gt;</translation>
+      <translation type="unfinished">Serial &lt;none available&gt;</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/LinkSettings.qml" line="91"/>
       <source>Baudrate</source>
-      <translation>???</translation>
+      <translation type="unfinished">Baudrate</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/LinkSettings.qml" line="108"/>
       <source>NMEA stream UDP port</source>
-      <translation>NMEA ? UDP ??</translation>
+      <translation type="unfinished">NMEA stream UDP port</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/LinkSettings.qml" line="114"/>
       <source>Links</source>
-      <translation>??</translation>
+      <translation type="unfinished">Links</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/LinkSettings.qml" line="169"/>
       <source>Delete Link</source>
-      <translation>????</translation>
+      <translation type="unfinished">Delete Link</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/LinkSettings.qml" line="170"/>
       <source>Are you sure you want to delete &apos;%1&apos;?</source>
-      <translation>????? '%1' ??</translation>
+      <translation type="unfinished">Are you sure you want to delete &apos;%1&apos;?</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/LinkSettings.qml" line="178"/>
@@ -8848,22 +8848,22 @@ Click Ok to start the auto-tuning process.
       <location filename="../src/UI/AppSettings/LinkSettings.qml" line="191"/>
       <location filename="../src/UI/AppSettings/LinkSettings.qml" line="205"/>
       <source>Add New Link</source>
-      <translation>????</translation>
+      <translation type="unfinished">Add New Link</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/LinkSettings.qml" line="205"/>
       <source>Edit Link</source>
-      <translation>????</translation>
+      <translation type="unfinished">Edit Link</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/LinkSettings.qml" line="233"/>
       <source>Name</source>
-      <translation>??</translation>
+      <translation type="unfinished">Name</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/LinkSettings.qml" line="238"/>
       <source>Enter name</source>
-      <translation>????</translation>
+      <translation type="unfinished">Enter name</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/LinkSettings.qml" line="244"/>
@@ -9024,7 +9024,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/LogReplaySettings.qml" line="25"/>
       <source>Log File</source>
-      <translation>????</translation>
+      <translation type="unfinished">Log File</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/LogReplaySettings.qml" line="34"/>
@@ -9039,12 +9039,12 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/LogReplaySettings.qml" line="41"/>
       <source>Telemetry Logs (*.%1)</source>
-      <translation>???? (*.%1)</translation>
+      <translation type="unfinished">Telemetry Logs (*.%1)</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/LogReplaySettings.qml" line="41"/>
       <source>All Files (*)</source>
-      <translation>???? (*)</translation>
+      <translation type="unfinished">All Files (*)</translation>
     </message>
   </context>
   <context>
@@ -9446,7 +9446,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/AnalyzeView/MAVLinkInspectorPage.qml" line="199"/>
       <source>Disabled</source>
-      <translation>???</translation>
+      <translation type="unfinished">Disabled</translation>
     </message>
     <message>
       <location filename="../src/AnalyzeView/MAVLinkInspectorPage.qml" line="200"/>
@@ -9456,67 +9456,67 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/AnalyzeView/MAVLinkInspectorPage.qml" line="201"/>
       <source>1Hz</source>
-      <translation>1Hz</translation>
+      <translation type="unfinished">1Hz</translation>
     </message>
     <message>
       <location filename="../src/AnalyzeView/MAVLinkInspectorPage.qml" line="202"/>
       <source>2Hz</source>
-      <translation>2Hz</translation>
+      <translation type="unfinished">2Hz</translation>
     </message>
     <message>
       <location filename="../src/AnalyzeView/MAVLinkInspectorPage.qml" line="203"/>
       <source>3Hz</source>
-      <translation>3Hz</translation>
+      <translation type="unfinished">3Hz</translation>
     </message>
     <message>
       <location filename="../src/AnalyzeView/MAVLinkInspectorPage.qml" line="204"/>
       <source>4Hz</source>
-      <translation>4Hz</translation>
+      <translation type="unfinished">4Hz</translation>
     </message>
     <message>
       <location filename="../src/AnalyzeView/MAVLinkInspectorPage.qml" line="205"/>
       <source>5Hz</source>
-      <translation>5Hz</translation>
+      <translation type="unfinished">5Hz</translation>
     </message>
     <message>
       <location filename="../src/AnalyzeView/MAVLinkInspectorPage.qml" line="206"/>
       <source>6Hz</source>
-      <translation>6Hz</translation>
+      <translation type="unfinished">6Hz</translation>
     </message>
     <message>
       <location filename="../src/AnalyzeView/MAVLinkInspectorPage.qml" line="207"/>
       <source>7Hz</source>
-      <translation>7Hz</translation>
+      <translation type="unfinished">7Hz</translation>
     </message>
     <message>
       <location filename="../src/AnalyzeView/MAVLinkInspectorPage.qml" line="208"/>
       <source>8Hz</source>
-      <translation>8Hz</translation>
+      <translation type="unfinished">8Hz</translation>
     </message>
     <message>
       <location filename="../src/AnalyzeView/MAVLinkInspectorPage.qml" line="209"/>
       <source>9Hz</source>
-      <translation>9Hz</translation>
+      <translation type="unfinished">9Hz</translation>
     </message>
     <message>
       <location filename="../src/AnalyzeView/MAVLinkInspectorPage.qml" line="210"/>
       <source>10Hz</source>
-      <translation>10Hz</translation>
+      <translation type="unfinished">10Hz</translation>
     </message>
     <message>
       <location filename="../src/AnalyzeView/MAVLinkInspectorPage.qml" line="211"/>
       <source>25Hz</source>
-      <translation>25Hz</translation>
+      <translation type="unfinished">25Hz</translation>
     </message>
     <message>
       <location filename="../src/AnalyzeView/MAVLinkInspectorPage.qml" line="212"/>
       <source>50Hz</source>
-      <translation>50Hz</translation>
+      <translation type="unfinished">50Hz</translation>
     </message>
     <message>
       <location filename="../src/AnalyzeView/MAVLinkInspectorPage.qml" line="213"/>
       <source>100Hz</source>
-      <translation>100Hz</translation>
+      <translation type="unfinished">100Hz</translation>
     </message>
     <message>
       <location filename="../src/AnalyzeView/MAVLinkInspectorPage.qml" line="244"/>
@@ -9550,7 +9550,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/Comms/MAVLinkProtocol.cc" line="415"/>
       <source>Unable to save telemetry log. Error copying telemetry to &apos;%1&apos;: &apos;%2&apos;.</source>
-      <translation>??</translation>
+      <translation type="unfinished">Unable to save telemetry log. Error copying telemetry to &apos;%1&apos;: &apos;%2&apos;.</translation>
     </message>
     <message>
       <location filename="../src/Comms/MAVLinkProtocol.cc" line="427"/>
@@ -9568,27 +9568,27 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/QmlControls/MainStatusIndicator.qml" line="46"/>
       <source>Ready To Fly</source>
-      <translation>???</translation>
+      <translation type="unfinished">Ready To Fly</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/MainStatusIndicator.qml" line="47"/>
       <source>Not Ready</source>
-      <translation>???</translation>
+      <translation type="unfinished">Not Ready</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/MainStatusIndicator.qml" line="49"/>
       <source>Armed</source>
-      <translation>???</translation>
+      <translation type="unfinished">Armed</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/MainStatusIndicator.qml" line="50"/>
       <source>Flying</source>
-      <translation>???</translation>
+      <translation type="unfinished">Flying</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/MainStatusIndicator.qml" line="51"/>
       <source>Landing</source>
-      <translation>???</translation>
+      <translation type="unfinished">Landing</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/MainStatusIndicator.qml" line="153"/>
@@ -9603,17 +9603,17 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/QmlControls/MainStatusIndicator.qml" line="228"/>
       <source>Sensor Status</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Sensor Status</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/MainStatusIndicator.qml" line="194"/>
       <source>Disarm</source>
-      <translation>??</translation>
+      <translation type="unfinished">Disarm</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/MainStatusIndicator.qml" line="45"/>
       <source>Comms Lost</source>
-      <translation>????</translation>
+      <translation type="unfinished">Comms Lost</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/MainStatusIndicator.qml" line="48"/>
@@ -9623,22 +9623,22 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/QmlControls/MainStatusIndicator.qml" line="194"/>
       <source>Force Arm</source>
-      <translation>????</translation>
+      <translation type="unfinished">Force Arm</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/MainStatusIndicator.qml" line="194"/>
       <source>Arm</source>
-      <translation>??</translation>
+      <translation type="unfinished">Arm</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/MainStatusIndicator.qml" line="218"/>
       <source>Vehicle Messages</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Vehicle Messages</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/MainStatusIndicator.qml" line="251"/>
       <source>Overall Status</source>
-      <translation>????</translation>
+      <translation type="unfinished">Overall Status</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/MainStatusIndicator.qml" line="326"/>
@@ -9648,18 +9648,18 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/QmlControls/MainStatusIndicator.qml" line="360"/>
       <source>Vehicle Parameters</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Vehicle Parameters</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/MainStatusIndicator.qml" line="362"/>
       <location filename="../src/QmlControls/MainStatusIndicator.qml" line="371"/>
       <source>Configure</source>
-      <translation>??</translation>
+      <translation type="unfinished">Configure</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/MainStatusIndicator.qml" line="369"/>
       <source>Vehicle Configuration</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Vehicle Configuration</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/MainStatusIndicator.qml" line="388"/>
@@ -9697,7 +9697,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/QmlControls/MainStatusIndicatorOfflinePage.qml" line="76"/>
       <source>Configure</source>
-      <translation>??</translation>
+      <translation type="unfinished">Configure</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/MainStatusIndicatorOfflinePage.qml" line="79"/>
@@ -9707,7 +9707,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/QmlControls/MainStatusIndicatorOfflinePage.qml" line="86"/>
       <source>AutoConnect</source>
-      <translation>????</translation>
+      <translation type="unfinished">AutoConnect</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/MainStatusIndicatorOfflinePage.qml" line="101"/>
@@ -9746,19 +9746,19 @@ Click Ok to start the auto-tuning process.
       <location filename="../src/UI/MainWindow.qml" line="143"/>
       <location filename="../src/UI/MainWindow.qml" line="367"/>
       <source>Analyze Tools</source>
-      <translation>????</translation>
+      <translation type="unfinished">Analyze Tools</translation>
     </message>
     <message>
       <location filename="../src/UI/MainWindow.qml" line="147"/>
       <location filename="../src/UI/MainWindow.qml" line="382"/>
       <source>Vehicle Configuration</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Vehicle Configuration</translation>
     </message>
     <message>
       <location filename="../src/UI/MainWindow.qml" line="164"/>
       <location filename="../src/UI/MainWindow.qml" line="396"/>
       <source>Application Settings</source>
-      <translation>????</translation>
+      <translation type="unfinished">Application Settings</translation>
     </message>
     <message>
       <location filename="../src/UI/MainWindow.qml" line="226"/>
@@ -9784,28 +9784,28 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/MainWindow.qml" line="295"/>
       <source>Debug Touch Areas</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Debug Touch Areas</translation>
     </message>
     <message>
       <location filename="../src/UI/MainWindow.qml" line="296"/>
       <source>Touch Area display toggled</source>
-      <translation>?????????</translation>
+      <translation type="unfinished">Touch Area display toggled</translation>
     </message>
     <message>
       <location filename="../src/UI/MainWindow.qml" line="302"/>
       <location filename="../src/UI/MainWindow.qml" line="314"/>
       <source>Advanced Mode</source>
-      <translation>????</translation>
+      <translation type="unfinished">Advanced Mode</translation>
     </message>
     <message>
       <location filename="../src/UI/MainWindow.qml" line="315"/>
       <source>Turn off Advanced Mode?</source>
-      <translation>???????</translation>
+      <translation type="unfinished">Turn off Advanced Mode?</translation>
     </message>
     <message>
       <location filename="../src/UI/MainWindow.qml" line="353"/>
       <source>Plan Flight</source>
-      <translation>????</translation>
+      <translation type="unfinished">Plan Flight</translation>
     </message>
     <message>
       <location filename="../src/UI/MainWindow.qml" line="429"/>
@@ -9815,17 +9815,17 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/MainWindow.qml" line="519"/>
       <source>Exit</source>
-      <translation>??</translation>
+      <translation type="unfinished">Exit</translation>
     </message>
     <message>
       <location filename="../src/UI/MainWindow.qml" line="600"/>
       <source>Vehicle Error</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Vehicle Error</translation>
     </message>
     <message>
       <location filename="../src/UI/MainWindow.qml" line="624"/>
       <source>Additional errors received</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Additional errors received</translation>
     </message>
   </context>
   <context>
@@ -9876,27 +9876,27 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/MapSettings.qml" line="78"/>
       <source>Type</source>
-      <translation>??</translation>
+      <translation type="unfinished">Type</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/MapSettings.qml" line="91"/>
       <source>Elevation Provider</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Elevation Provider</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/MapSettings.qml" line="106"/>
       <source>Offline Maps</source>
-      <translation>????</translation>
+      <translation type="unfinished">Offline Maps</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/MapSettings.qml" line="107"/>
       <source>Download map tiles for use when offline</source>
-      <translation>????????????</translation>
+      <translation type="unfinished">Download map tiles for use when offline</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/MapSettings.qml" line="120"/>
       <source>Add New Set</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Add New Set</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/MapSettings.qml" line="121"/>
@@ -9906,7 +9906,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/MapSettings.qml" line="127"/>
       <source>Import Map Tiles</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Import Map Tiles</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/MapSettings.qml" line="128"/>
@@ -9916,7 +9916,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/MapSettings.qml" line="138"/>
       <source>Export Map Tiles</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Export Map Tiles</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/MapSettings.qml" line="139"/>
@@ -9926,22 +9926,22 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/MapSettings.qml" line="151"/>
       <source>Exporting</source>
-      <translation>????</translation>
+      <translation type="unfinished">Exporting</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/MapSettings.qml" line="151"/>
       <source>Importing</source>
-      <translation>????</translation>
+      <translation type="unfinished">Importing</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/MapSettings.qml" line="165"/>
       <source>Tokens</source>
-      <translation>??</translation>
+      <translation type="unfinished">Tokens</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/MapSettings.qml" line="166"/>
       <source>Allows access to additional providers</source>
-      <translation>???????????</translation>
+      <translation type="unfinished">Allows access to additional providers</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/MapSettings.qml" line="170"/>
@@ -9966,17 +9966,17 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/MapSettings.qml" line="193"/>
       <source>Account</source>
-      <translation>??</translation>
+      <translation type="unfinished">Account</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/MapSettings.qml" line="199"/>
       <source>Map Style</source>
-      <translation>????</translation>
+      <translation type="unfinished">Map Style</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/MapSettings.qml" line="206"/>
       <source>Custom Map URL</source>
-      <translation>????? URL</translation>
+      <translation type="unfinished">Custom Map URL</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/MapSettings.qml" line="207"/>
@@ -9986,12 +9986,12 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/MapSettings.qml" line="211"/>
       <source>Server URL</source>
-      <translation>??? URL</translation>
+      <translation type="unfinished">Server URL</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/MapSettings.qml" line="218"/>
       <source>Tile Cache</source>
-      <translation>????</translation>
+      <translation type="unfinished">Tile Cache</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/MapSettings.qml" line="232"/>
@@ -10006,7 +10006,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/MapSettings.qml" line="255"/>
       <source>Export Tiles</source>
-      <translation>????</translation>
+      <translation type="unfinished">Export Tiles</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/MapSettings.qml" line="279"/>
@@ -10016,22 +10016,22 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/AppSettings/MapSettings.qml" line="284"/>
       <source>Import Tiles</source>
-      <translation>????</translation>
+      <translation type="unfinished">Import Tiles</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/MapSettings.qml" line="292"/>
       <source>Append to existing sets</source>
-      <translation>???????</translation>
+      <translation type="unfinished">Append to existing sets</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/MapSettings.qml" line="297"/>
       <source>Replace existing sets</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Replace existing sets</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/MapSettings.qml" line="309"/>
       <source>Error Message</source>
-      <translation>????</translation>
+      <translation type="unfinished">Error Message</translation>
     </message>
   </context>
   <context>
@@ -10493,7 +10493,7 @@ Do you wish to proceed?</translation>
     <message>
       <location filename="../src/Vehicle/Actuators/MotorAssignment.cc" line="211"/>
       <source>Actuator test command failed</source>
-      <translation>?????????</translation>
+      <translation type="unfinished">Actuator test command failed</translation>
     </message>
   </context>
   <context>
@@ -10669,7 +10669,7 @@ Do you wish to proceed?</translation>
     <message>
       <location filename="../src/UI/toolbar/MultiVehicleSelector.qml" line="97"/>
       <source>Enable Multi-Vehicle Panel</source>
-      <translation>????????</translation>
+      <translation type="unfinished">Enable Multi-Vehicle Panel</translation>
     </message>
   </context>
   <context>
@@ -10738,7 +10738,7 @@ Do you wish to proceed?</translation>
     <message>
       <location filename="../src/QmlControls/OfflineMapEditor.qml" line="352"/>
       <source>Close</source>
-      <translation>??</translation>
+      <translation type="unfinished">Close</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/OfflineMapEditor.qml" line="352"/>
@@ -10764,7 +10764,7 @@ Do you wish to proceed?</translation>
     <message>
       <location filename="../src/QmlControls/OfflineMapEditor.qml" line="483"/>
       <source>Add New Set</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Add New Set</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/OfflineMapEditor.qml" line="511"/>
@@ -10804,7 +10804,7 @@ Do you wish to proceed?</translation>
     <message>
       <location filename="../src/QmlControls/OfflineMapEditor.qml" line="745"/>
       <source>Error Message</source>
-      <translation>????</translation>
+      <translation type="unfinished">Error Message</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/OfflineMapEditor.qml" line="755"/>
@@ -10955,7 +10955,7 @@ Is this really what you want?</translation>
     <message>
       <location filename="../src/FirmwarePlugin/PX4/PX4BatteryIndicator.qml" line="33"/>
       <source>Vehicle Action</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Vehicle Action</translation>
     </message>
     <message>
       <location filename="../src/FirmwarePlugin/PX4/PX4BatteryIndicator.qml" line="40"/>
@@ -11240,7 +11240,7 @@ Is this really what you want?</translation>
     <message>
       <location filename="../src/FirmwarePlugin/PX4/PX4FlightModeIndicator.qml" line="48"/>
       <source>RTL Altitude</source>
-      <translation>RTL ??</translation>
+      <translation type="unfinished">RTL Altitude</translation>
     </message>
     <message>
       <location filename="../src/FirmwarePlugin/PX4/PX4FlightModeIndicator.qml" line="57"/>
@@ -11255,7 +11255,7 @@ Is this really what you want?</translation>
     <message>
       <location filename="../src/FirmwarePlugin/PX4/PX4FlightModeIndicator.qml" line="68"/>
       <source>Max Distance</source>
-      <translation>????</translation>
+      <translation type="unfinished">Max Distance</translation>
     </message>
     <message>
       <location filename="../src/FirmwarePlugin/PX4/PX4FlightModeIndicator.qml" line="96"/>
@@ -11477,17 +11477,17 @@ Is this really what you want?</translation>
     <message>
       <location filename="../src/FirmwarePlugin/PX4/PX4MainStatusIndicatorContentItem.qml" line="28"/>
       <source>Ground Control Comm Loss Failsafe</source>
-      <translation>???????????</translation>
+      <translation type="unfinished">Ground Control Comm Loss Failsafe</translation>
     </message>
     <message>
       <location filename="../src/FirmwarePlugin/PX4/PX4MainStatusIndicatorContentItem.qml" line="37"/>
       <source>Vehicle Action</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Vehicle Action</translation>
     </message>
     <message>
       <location filename="../src/FirmwarePlugin/PX4/PX4MainStatusIndicatorContentItem.qml" line="49"/>
       <source>Loss Timeout</source>
-      <translation>????</translation>
+      <translation type="unfinished">Loss Timeout</translation>
     </message>
   </context>
   <context>
@@ -11597,7 +11597,7 @@ Is this really what you want?</translation>
     <message>
       <location filename="../src/AutoPilotPlugins/PX4/PX4TuningComponent.cc" line="17"/>
       <source>PID Tuning</source>
-      <translation>???</translation>
+      <translation type="unfinished">PID Tuning</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/PX4/PX4TuningComponent.cc" line="28"/>
@@ -12097,7 +12097,7 @@ Is this really what you want?</translation>
     <message>
       <location filename="../src/QmlControls/ParameterDiffDialog.qml" line="75"/>
       <source>Name</source>
-      <translation>??</translation>
+      <translation type="unfinished">Name</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/ParameterDiffDialog.qml" line="81"/>
@@ -12112,7 +12112,7 @@ Is this really what you want?</translation>
     <message>
       <location filename="../src/QmlControls/ParameterDiffDialog.qml" line="90"/>
       <source>N/A</source>
-      <translation>???</translation>
+      <translation type="unfinished">N/A</translation>
     </message>
   </context>
   <context>
@@ -12176,7 +12176,7 @@ Is this really what you want?</translation>
     <message>
       <location filename="../src/QmlControls/ParameterEditor.qml" line="107"/>
       <source>All Files (*)</source>
-      <translation>??</translation>
+      <translation type="unfinished">All Files (*)</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/ParameterEditor.qml" line="150"/>
@@ -12365,7 +12365,7 @@ Note that this will also completely reset everything, including UAVCAN nodes, al
     <message>
       <location filename="../src/FlightMap/Widgets/PhotoVideoControl.qml" line="317"/>
       <source>Settings</source>
-      <translation>??</translation>
+      <translation type="unfinished">Settings</translation>
     </message>
     <message>
       <location filename="../src/FlightMap/Widgets/PhotoVideoControl.qml" line="337"/>
@@ -12400,7 +12400,7 @@ Note that this will also completely reset everything, including UAVCAN nodes, al
     <message>
       <location filename="../src/FlightMap/Widgets/PhotoVideoControl.qml" line="382"/>
       <source>Video Grid Lines</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Video Grid Lines</translation>
     </message>
     <message>
       <location filename="../src/FlightMap/Widgets/PhotoVideoControl.qml" line="388"/>
@@ -12450,7 +12450,7 @@ Note that this will also completely reset everything, including UAVCAN nodes, al
     <message>
       <location filename="../src/FlightMap/Widgets/PhotoVideoControl.qml" line="534"/>
       <source>Reset</source>
-      <translation>??</translation>
+      <translation type="unfinished">Reset</translation>
     </message>
     <message>
       <location filename="../src/FlightMap/Widgets/PhotoVideoControl.qml" line="538"/>
@@ -12737,7 +12737,7 @@ Note that this will also completely reset everything, including UAVCAN nodes, al
       <location filename="../src/QmlControls/PlanToolBarIndicators.qml" line="67"/>
       <location filename="../src/QmlControls/PlanToolBarIndicators.qml" line="68"/>
       <source>N/A</source>
-      <translation>???</translation>
+      <translation type="unfinished">N/A</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/PlanToolBarIndicators.qml" line="155"/>
@@ -13139,7 +13139,7 @@ Click &apos;Ok&apos; to upload the Plan anyway.</translation>
     <message>
       <location filename="../src/QmlControls/PlanViewToolBar.qml" line="147"/>
       <source>Click anywhere to hide</source>
-      <translation>????????</translation>
+      <translation type="unfinished">Click anywhere to hide</translation>
     </message>
   </context>
   <context>
@@ -14083,7 +14083,7 @@ sudo apt-get 移除调制解调器管理器</translation>
     <message>
       <location filename="../src/QmlControls/QGCPopupDialog.qml" line="137"/>
       <source>Save</source>
-      <translation>??</translation>
+      <translation type="unfinished">Save</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/QGCPopupDialog.qml" line="140"/>
@@ -14098,7 +14098,7 @@ sudo apt-get 移除调制解调器管理器</translation>
     <message>
       <location filename="../src/QmlControls/QGCPopupDialog.qml" line="149"/>
       <source>Yes</source>
-      <translation>?</translation>
+      <translation type="unfinished">Yes</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/QGCPopupDialog.qml" line="152"/>
@@ -14113,7 +14113,7 @@ sudo apt-get 移除调制解调器管理器</translation>
     <message>
       <location filename="../src/QmlControls/QGCPopupDialog.qml" line="158"/>
       <source>Reset</source>
-      <translation>??</translation>
+      <translation type="unfinished">Reset</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/QGCPopupDialog.qml" line="161"/>
@@ -14133,12 +14133,12 @@ sudo apt-get 移除调制解调器管理器</translation>
     <message>
       <location filename="../src/QmlControls/QGCPopupDialog.qml" line="173"/>
       <source>Close</source>
-      <translation>??</translation>
+      <translation type="unfinished">Close</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/QGCPopupDialog.qml" line="176"/>
       <source>No</source>
-      <translation>?</translation>
+      <translation type="unfinished">No</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/QGCPopupDialog.qml" line="179"/>
@@ -14148,7 +14148,7 @@ sudo apt-get 移除调制解调器管理器</translation>
     <message>
       <location filename="../src/QmlControls/QGCPopupDialog.qml" line="182"/>
       <source>Abort</source>
-      <translation>??</translation>
+      <translation type="unfinished">Abort</translation>
     </message>
   </context>
   <context>
@@ -14250,7 +14250,7 @@ sudo apt-get 移除调制解调器管理器</translation>
     <message>
       <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="367"/>
       <source>Mixed Modes</source>
-      <translation>????</translation>
+      <translation type="unfinished">Mixed Modes</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="343"/>
@@ -14260,12 +14260,12 @@ sudo apt-get 移除调制解调器管理器</translation>
     <message>
       <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="359"/>
       <source>Relative To Launch</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Relative To Launch</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="365"/>
       <source>Terrain Frame</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Terrain Frame</translation>
     </message>
   </context>
   <context>
@@ -15024,7 +15024,7 @@ Click the Next button to upload calibration to board. Click Cancel if you don&ap
     <message>
       <location filename="../src/QmlControls/RemoteIDIndicatorPage.qml" line="414"/>
       <source>Configure</source>
-      <translation>??</translation>
+      <translation type="unfinished">Configure</translation>
     </message>
   </context>
   <context>
@@ -15113,12 +15113,12 @@ Click the Next button to upload calibration to board. Click Cancel if you don&ap
     <message>
       <location filename="../src/UI/AppSettings/RemoteIDSettings.qml" line="570"/>
       <source>NMEA GPS Baudrate</source>
-      <translation>NMEA GPS ???</translation>
+      <translation type="unfinished">NMEA GPS Baudrate</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/RemoteIDSettings.qml" line="590"/>
       <source>NMEA stream UDP port</source>
-      <translation>NMEA ? UDP ??</translation>
+      <translation type="unfinished">NMEA stream UDP port</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/RemoteIDSettings.qml" line="343"/>
@@ -15990,7 +15990,7 @@ ROTATION_NONE indicates component points in direction of flight.</translation>
     <message>
       <location filename="../src/Comms/SerialLink.cc" line="228"/>
       <source>Data to Send is Empty</source>
-      <translation>???????</translation>
+      <translation type="unfinished">Data to Send is Empty</translation>
     </message>
     <message>
       <location filename="../src/Comms/SerialLink.cc" line="233"/>
@@ -16005,12 +16005,12 @@ ROTATION_NONE indicates component points in direction of flight.</translation>
     <message>
       <location filename="../src/Comms/SerialLink.cc" line="246"/>
       <source>Could Not Send Data - Write Failed: %1</source>
-      <translation>?????? - ?????%1</translation>
+      <translation type="unfinished">Could Not Send Data - Write Failed: %1</translation>
     </message>
     <message>
       <location filename="../src/Comms/SerialLink.cc" line="249"/>
       <source>Could Not Send Data - Write Returned 0 Bytes</source>
-      <translation>?????? - ???? 0 ??</translation>
+      <translation type="unfinished">Could Not Send Data - Write Returned 0 Bytes</translation>
     </message>
   </context>
   <context>
@@ -16018,7 +16018,7 @@ ROTATION_NONE indicates component points in direction of flight.</translation>
     <message>
       <location filename="../src/UI/AppSettings/SettingsPagesModel.qml" line="17"/>
       <source>General</source>
-      <translation>??</translation>
+      <translation type="unfinished">General</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/SettingsPagesModel.qml" line="24"/>
@@ -16038,7 +16038,7 @@ ROTATION_NONE indicates component points in direction of flight.</translation>
     <message>
       <location filename="../src/UI/AppSettings/SettingsPagesModel.qml" line="45"/>
       <source>Telemetry</source>
-      <translation>??</translation>
+      <translation type="unfinished">Telemetry</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/SettingsPagesModel.qml" line="52"/>
@@ -16240,7 +16240,7 @@ ROTATION_NONE indicates component points in direction of flight.</translation>
     <message>
       <location filename="../src/QmlControls/SimpleItemEditor.qml" line="77"/>
       <source>Transition Direction</source>
-      <translation>??</translation>
+      <translation type="unfinished">Transition Direction</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/SimpleItemEditor.qml" line="77"/>
@@ -16364,12 +16364,12 @@ ROTATION_NONE indicates component points in direction of flight.</translation>
     <message>
       <location filename="../src/MAVLink/StatusTextHandler.cc" line="202"/>
       <source>Critical</source>
-      <translation>??</translation>
+      <translation type="unfinished">Critical</translation>
     </message>
     <message>
       <location filename="../src/MAVLink/StatusTextHandler.cc" line="206"/>
       <source>Error</source>
-      <translation>??</translation>
+      <translation type="unfinished">Error</translation>
     </message>
     <message>
       <location filename="../src/MAVLink/StatusTextHandler.cc" line="210"/>
@@ -16700,7 +16700,7 @@ ROTATION_NONE indicates component points in direction of flight.</translation>
     <message>
       <location filename="../src/MAVLink/SysStatusSensorInfo.cc" line="110"/>
       <source>Disabled</source>
-      <translation>???</translation>
+      <translation type="unfinished">Disabled</translation>
     </message>
   </context>
   <context>
@@ -16777,22 +16777,22 @@ ROTATION_NONE indicates component points in direction of flight.</translation>
     <message>
       <location filename="../src/Comms/TCPLink.cc" line="167"/>
       <source>Data to Send is Empty</source>
-      <translation>???????</translation>
+      <translation type="unfinished">Data to Send is Empty</translation>
     </message>
     <message>
       <location filename="../src/Comms/TCPLink.cc" line="172"/>
       <source>Socket is not connected</source>
-      <translation>Socket ???</translation>
+      <translation type="unfinished">Socket is not connected</translation>
     </message>
     <message>
       <location filename="../src/Comms/TCPLink.cc" line="180"/>
       <source>Could Not Send Data - Write Failed: %1</source>
-      <translation>?????? - ?????%1</translation>
+      <translation type="unfinished">Could Not Send Data - Write Failed: %1</translation>
     </message>
     <message>
       <location filename="../src/Comms/TCPLink.cc" line="183"/>
       <source>Could Not Send Data - Write Returned 0 Bytes</source>
-      <translation>?????? - ???? 0 ??</translation>
+      <translation type="unfinished">Could Not Send Data - Write Returned 0 Bytes</translation>
     </message>
   </context>
   <context>
@@ -16928,7 +16928,7 @@ ROTATION_NONE indicates component points in direction of flight.</translation>
     <message>
       <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="101"/>
       <source>Enable</source>
-      <translation>??</translation>
+      <translation type="unfinished">Enable</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="109"/>
@@ -17094,7 +17094,7 @@ ROTATION_NONE indicates component points in direction of flight.</translation>
     <message>
       <location filename="../src/QmlControls/TransectStyleComplexItemEditor.qml" line="101"/>
       <source>Altitude</source>
-      <translation>??</translation>
+      <translation type="unfinished">Altitude</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/TransectStyleComplexItemEditor.qml" line="102"/>
@@ -17295,13 +17295,13 @@ ROTATION_NONE indicates component points in direction of flight.</translation>
       <location filename="../src/UTMSP/UTMSPAdapterEditor.qml" line="130"/>
       <location filename="../src/UTMSP/UTMSPAdapterEditor.qml" line="421"/>
       <source>Enabled</source>
-      <translation>???</translation>
+      <translation type="unfinished">Enabled</translation>
     </message>
     <message>
       <location filename="../src/UTMSP/UTMSPAdapterEditor.qml" line="130"/>
       <location filename="../src/UTMSP/UTMSPAdapterEditor.qml" line="421"/>
       <source>Disabled</source>
-      <translation>???</translation>
+      <translation type="unfinished">Disabled</translation>
     </message>
     <message>
       <location filename="../src/UTMSP/UTMSPAdapterEditor.qml" line="163"/>
@@ -17316,7 +17316,7 @@ ROTATION_NONE indicates component points in direction of flight.</translation>
     <message>
       <location filename="../src/UTMSP/UTMSPAdapterEditor.qml" line="250"/>
       <source>Password:</source>
-      <translation>???</translation>
+      <translation type="unfinished">Password:</translation>
     </message>
     <message>
       <location filename="../src/UTMSP/UTMSPAdapterEditor.qml" line="275"/>
@@ -17591,7 +17591,7 @@ ROTATION_NONE indicates component points in direction of flight.</translation>
     <message>
       <location filename="../src/Settings/UnitsSettings.cc" line="131"/>
       <source>Speed</source>
-      <translation>??</translation>
+      <translation type="unfinished">Speed</translation>
     </message>
     <message>
       <location filename="../src/Settings/UnitsSettings.cc" line="157"/>
@@ -17606,7 +17606,7 @@ ROTATION_NONE indicates component points in direction of flight.</translation>
     <message>
       <location filename="../src/Settings/UnitsSettings.cc" line="161"/>
       <source>Temperature</source>
-      <translation>??</translation>
+      <translation type="unfinished">Temperature</translation>
     </message>
     <message>
       <location filename="../src/Settings/UnitsSettings.cc" line="187"/>
@@ -17801,7 +17801,7 @@ ROTATION_NONE indicates component points in direction of flight.</translation>
     <message>
       <location filename="../src/QmlControls/VTOLLandingPatternEditor.qml" line="226"/>
       <source>* Avoid tailwind on approach to land.</source>
-      <translation>??</translation>
+      <translation type="unfinished">* Avoid tailwind on approach to land.</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/VTOLLandingPatternEditor.qml" line="235"/>
@@ -18324,7 +18324,7 @@ ROTATION_NONE indicates component points in direction of flight.</translation>
     <message>
       <location filename="../src/UI/AppSettings/VideoSettings.qml" line="85"/>
       <source>Settings</source>
-      <translation>??</translation>
+      <translation type="unfinished">Settings</translation>
     </message>
     <message>
       <location filename="../src/UI/AppSettings/VideoSettings.qml" line="90"/>

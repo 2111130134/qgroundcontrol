@@ -7,31 +7,31 @@
       <extracomment>.QGC.MetaData.Facts[gimbalRoll].shortDesc, </extracomment>
       <location filename="../src/Gimbal/GimbalFact.json"/>
       <source>Gimbal Roll</source>
-      <translation>????</translation>
+      <translation type="unfinished">Gimbal Roll</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[gimbalPitch].shortDesc, </extracomment>
       <location filename="../src/Gimbal/GimbalFact.json"/>
       <source>Gimbal Pitch</source>
-      <translation>????</translation>
+      <translation type="unfinished">Gimbal Pitch</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[gimbalYaw].shortDesc, </extracomment>
       <location filename="../src/Gimbal/GimbalFact.json"/>
       <source>Gimbal Yaw</source>
-      <translation>????</translation>
+      <translation type="unfinished">Gimbal Yaw</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[gimbalAzimuth].shortDesc, </extracomment>
       <location filename="../src/Gimbal/GimbalFact.json"/>
       <source>Azimuth</source>
-      <translation>???</translation>
+      <translation type="unfinished">Azimuth</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[deviceId].shortDesc, </extracomment>
       <location filename="../src/Gimbal/GimbalFact.json"/>
       <source>gimbal device Id</source>
-      <translation>???? ID</translation>
+      <translation type="unfinished">gimbal device Id</translation>
     </message>
   </context>
   <context>
@@ -61,79 +61,79 @@
       <extracomment>.QGC.MetaData.Facts[guidedMinimumAltitude].shortDesc, </extracomment>
       <location filename="../src/Settings/FlyView.SettingsGroup.json"/>
       <source>Minimum altitude for guided actions altitude slider.</source>
-      <translation>??????????????</translation>
+      <translation type="unfinished">Minimum altitude for guided actions altitude slider.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[guidedMaximumAltitude].shortDesc, </extracomment>
       <location filename="../src/Settings/FlyView.SettingsGroup.json"/>
       <source>Maximum altitude for guided actions altitude slider.</source>
-      <translation>??????????????</translation>
+      <translation type="unfinished">Maximum altitude for guided actions altitude slider.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[showLogReplayStatusBar].shortDesc, </extracomment>
       <location filename="../src/Settings/FlyView.SettingsGroup.json"/>
       <source>Show/Hide Log Replay status bar</source>
-      <translation>??/?????????</translation>
+      <translation type="unfinished">Show/Hide Log Replay status bar</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[showAdditionalIndicatorsCompass].shortDesc, </extracomment>
       <location filename="../src/Settings/FlyView.SettingsGroup.json"/>
       <source>Show additional heading indicators on Compass</source>
-      <translation>????????????</translation>
+      <translation type="unfinished">Show additional heading indicators on Compass</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[lockNoseUpCompass].shortDesc, </extracomment>
       <location filename="../src/Settings/FlyView.SettingsGroup.json"/>
       <source>Lock Compass Nose-Up</source>
-      <translation>????????</translation>
+      <translation type="unfinished">Lock Compass Nose-Up</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[keepMapCenteredOnVehicle].shortDesc, </extracomment>
       <location filename="../src/Settings/FlyView.SettingsGroup.json"/>
       <source>Keep map centered on vehicle</source>
-      <translation>???????????</translation>
+      <translation type="unfinished">Keep map centered on vehicle</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[showSimpleCameraControl].shortDesc, </extracomment>
       <location filename="../src/Settings/FlyView.SettingsGroup.json"/>
       <source>Show controls for camera triggering using MAV_CMD_DO_DIGICAM_CONTROL.</source>
-      <translation>???? MAV_CMD_DO_DIGICAM_CONTROL ?????????</translation>
+      <translation type="unfinished">Show controls for camera triggering using MAV_CMD_DO_DIGICAM_CONTROL.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[showObstacleDistanceOverlay].shortDesc, </extracomment>
       <location filename="../src/Settings/FlyView.SettingsGroup.json"/>
       <source>Show obstacle distance overlay on map and video.</source>
-      <translation>?????????????????</translation>
+      <translation type="unfinished">Show obstacle distance overlay on map and video.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[maxGoToLocationDistance].shortDesc, </extracomment>
       <location filename="../src/Settings/FlyView.SettingsGroup.json"/>
       <source>Maximum distance allowed for Go To Location.</source>
-      <translation>??????????????</translation>
+      <translation type="unfinished">Maximum distance allowed for Go To Location.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[forwardFlightGoToLocationLoiterRad].shortDesc, </extracomment>
       <location filename="../src/Settings/FlyView.SettingsGroup.json"/>
       <source>Loiter radius for orbiting the Go To Location during forward flight. This only applies if the firmware supports a radius in MAV_CMD_DO_REPOSITION commands.</source>
-      <translation>??????????????????????? MAV_CMD_DO_REPOSITION ??????????</translation>
+      <translation type="unfinished">Loiter radius for orbiting the Go To Location during forward flight. This only applies if the firmware supports a radius in MAV_CMD_DO_REPOSITION commands.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[goToLocationRequiresConfirmInGuided].shortDesc, </extracomment>
       <location filename="../src/Settings/FlyView.SettingsGroup.json"/>
       <source>Require slide confirmation for Go To Location when the vehicle is already in Guided mode.</source>
-      <translation>???????????????????????????</translation>
+      <translation type="unfinished">Require slide confirmation for Go To Location when the vehicle is already in Guided mode.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[updateHomePosition].shortDesc, </extracomment>
       <location filename="../src/Settings/FlyView.SettingsGroup.json"/>
       <source>Send updated GCS&apos; home position to autopilot in case of change of the home position</source>
-      <translation>???? Home ??????????? Home ??????????</translation>
+      <translation type="unfinished">Send updated GCS&apos; home position to autopilot in case of change of the home position</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[instrumentQmlFile2].shortDesc, </extracomment>
       <location filename="../src/Settings/FlyView.SettingsGroup.json"/>
       <source>Qml file for instrument panel</source>
-      <translation>????? QML ??</translation>
+      <translation type="unfinished">Qml file for instrument panel</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[instrumentQmlFile2].enumStrings, </extracomment>
@@ -161,7 +161,7 @@
       <extracomment>.QGC.MetaData.Facts[offlineEditingFirmwareClass].shortDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>Offline editing firmware class</source>
-      <translation>????????</translation>
+      <translation type="unfinished">Offline editing firmware class</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[offlineEditingFirmwareClass].enumStrings, </extracomment>
@@ -199,7 +199,7 @@
       <extracomment>.QGC.MetaData.Facts[offlineEditingHoverSpeed].shortDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>Offline editing hover speed</source>
-      <translation>????????</translation>
+      <translation type="unfinished">Offline editing hover speed</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[offlineEditingHoverSpeed].longDesc, </extracomment>
@@ -211,7 +211,7 @@
       <extracomment>.QGC.MetaData.Facts[offlineEditingAscentSpeed].shortDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>Offline editing ascent speed</source>
-      <translation>????????</translation>
+      <translation type="unfinished">Offline editing ascent speed</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[offlineEditingAscentSpeed].longDesc, </extracomment>
@@ -223,7 +223,7 @@
       <extracomment>.QGC.MetaData.Facts[offlineEditingDescentSpeed].shortDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>Offline editing descent speed</source>
-      <translation>????????</translation>
+      <translation type="unfinished">Offline editing descent speed</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[offlineEditingDescentSpeed].longDesc, </extracomment>
@@ -235,85 +235,85 @@
       <extracomment>.QGC.MetaData.Facts[batteryPercentRemainingAnnounce].shortDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>Announce battery remaining percent</source>
-      <translation>?????????</translation>
+      <translation type="unfinished">Announce battery remaining percent</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[batteryPercentRemainingAnnounce].longDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>Announce the remaining battery percent when it falls below the specified percentage.</source>
-      <translation>??????????????????</translation>
+      <translation type="unfinished">Announce the remaining battery percent when it falls below the specified percentage.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[defaultMissionItemAltitude].shortDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>Default value for altitude</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Default value for altitude</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[defaultMissionItemAltitude].longDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>This value specifies the default altitude for new items added to a mission.</source>
-      <translation>??????????????????</translation>
+      <translation type="unfinished">This value specifies the default altitude for new items added to a mission.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[audioMuted].shortDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>Mute audio output</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Mute audio output</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[audioMuted].longDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>If this option is enabled all audio output will be muted.</source>
-      <translation>?????????????</translation>
+      <translation type="unfinished">If this option is enabled all audio output will be muted.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[virtualJoystick].shortDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>Show virtual joystick</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Show virtual joystick</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[virtualJoystick].longDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>If this option is enabled the virtual joystick will be shown on the Fly view.</source>
-      <translation>?????????????????</translation>
+      <translation type="unfinished">If this option is enabled the virtual joystick will be shown on the Fly view.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[virtualJoystickAutoCenterThrottle].shortDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>Auto-Center Throttle</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Auto-Center Throttle</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[virtualJoystickAutoCenterThrottle].longDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>If enabled the throttle stick will snap back to center when released.</source>
-      <translation>??????????????????</translation>
+      <translation type="unfinished">If enabled the throttle stick will snap back to center when released.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[virtualJoystickLeftHandedMode].shortDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>Left Handed Mode</source>
-      <translation>????</translation>
+      <translation type="unfinished">Left Handed Mode</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[virtualJoystickLeftHandedMode].longDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>If this option is enabled the virtual joystick layout will be reversed</source>
-      <translation>?????????????</translation>
+      <translation type="unfinished">If this option is enabled the virtual joystick layout will be reversed</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[gstDebugLevel].shortDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>Video streaming debug</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Video streaming debug</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[gstDebugLevel].longDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>Sets the environment variable GST_DEBUG for all pipeline elements on boot.</source>
-      <translation>???????????? GST_DEBUG ?????</translation>
+      <translation type="unfinished">Sets the environment variable GST_DEBUG for all pipeline elements on boot.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[gstDebugLevel].enumStrings, </extracomment>
@@ -332,7 +332,7 @@
       <extracomment>.QGC.MetaData.Facts[useChecklist].longDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>If this option is enabled the preflight checklist will be used.</source>
-      <translation>????????????</translation>
+      <translation type="unfinished">If this option is enabled the preflight checklist will be used.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[enforceChecklist].shortDesc, </extracomment>
@@ -356,7 +356,7 @@
       <extracomment>.QGC.MetaData.Facts[enableMultiVehiclePanel].longDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>Enable Multi-Vehicle Panel when multiple vehicles are connected.</source>
-      <translation>?????????????????</translation>
+      <translation type="unfinished">Enable Multi-Vehicle Panel when multiple vehicles are connected.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[appFontPointSize].shortDesc, </extracomment>
@@ -405,7 +405,7 @@
       <extracomment>.QGC.MetaData.Facts[androidSaveToSDCard].shortDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>Save to SD card</source>
-      <translation>??? SD ?</translation>
+      <translation type="unfinished">Save to SD card</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[androidSaveToSDCard].longDesc, </extracomment>
@@ -423,49 +423,49 @@
       <extracomment>.QGC.MetaData.Facts[mapboxToken].longDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>Your personal access token for Mapbox maps</source>
-      <translation>?? Mapbox ????????</translation>
+      <translation type="unfinished">Your personal access token for Mapbox maps</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[mapboxAccount].shortDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>Account name for Mapbox maps</source>
-      <translation>Mapbox ?????</translation>
+      <translation type="unfinished">Account name for Mapbox maps</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[mapboxAccount].longDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>Your personal account name for Mapbox maps</source>
-      <translation>?? Mapbox ???????</translation>
+      <translation type="unfinished">Your personal account name for Mapbox maps</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[mapboxStyle].shortDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>Map style ID</source>
-      <translation>???? ID</translation>
+      <translation type="unfinished">Map style ID</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[mapboxStyle].longDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>Map design style ID for Mapbox maps</source>
-      <translation>Mapbox ?????? ID</translation>
+      <translation type="unfinished">Map design style ID for Mapbox maps</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[esriToken].shortDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>Access token to Esri maps</source>
-      <translation>Esri ??????</translation>
+      <translation type="unfinished">Access token to Esri maps</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[esriToken].longDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>Your personal access token for Esri maps</source>
-      <translation>?? Esri ????????</translation>
+      <translation type="unfinished">Your personal access token for Esri maps</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[customURL].shortDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>Custom Map URL</source>
-      <translation>????? URL</translation>
+      <translation type="unfinished">Custom Map URL</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[customURL].longDesc, </extracomment>
@@ -477,19 +477,19 @@
       <extracomment>.QGC.MetaData.Facts[vworldToken].shortDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>VWorld Token</source>
-      <translation>VWorld ??</translation>
+      <translation type="unfinished">VWorld Token</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[vworldToken].longDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>Your personal access token for VWorld maps</source>
-      <translation>?? VWorld ????????</translation>
+      <translation type="unfinished">Your personal access token for VWorld maps</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[followTarget].shortDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>Stream GCS&apos; coordinates to Autopilot</source>
-      <translation>?????????????</translation>
+      <translation type="unfinished">Stream GCS&apos; coordinates to Autopilot</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[followTarget].enumStrings, </extracomment>
@@ -508,31 +508,31 @@
       <extracomment>.QGC.MetaData.Facts[disableAllPersistence].shortDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>Disable all data persistence</source>
-      <translation>?????????</translation>
+      <translation type="unfinished">Disable all data persistence</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[disableAllPersistence].longDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>If this option is set, nothing will be saved to disk.</source>
-      <translation>???????????????</translation>
+      <translation type="unfinished">If this option is set, nothing will be saved to disk.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[firstRunPromptIdsShown].shortDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>Comma separated list of first run prompt ids which have already been shown.</source>
-      <translation>?????????? ID ??????????</translation>
+      <translation type="unfinished">Comma separated list of first run prompt ids which have already been shown.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[loginAirLink].shortDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>AirLink User Name</source>
-      <translation>AirLink ???</translation>
+      <translation type="unfinished">AirLink User Name</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[passAirLink].shortDesc, </extracomment>
       <location filename="../src/Settings/App.SettingsGroup.json"/>
       <source>AirLink Password</source>
-      <translation>AirLink ??</translation>
+      <translation type="unfinished">AirLink Password</translation>
     </message>
   </context>
   <context>
@@ -541,13 +541,13 @@
       <extracomment>.QGC.MetaData.Facts[flyViewActionsFile].shortDesc, </extracomment>
       <location filename="../src/Settings/MavlinkActions.SettingsGroup.json"/>
       <source>Name of JSON custom actions file for Fly View</source>
-      <translation>????????? JSON ???</translation>
+      <translation type="unfinished">Name of JSON custom actions file for Fly View</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[joystickActionsFile].shortDesc, </extracomment>
       <location filename="../src/Settings/MavlinkActions.SettingsGroup.json"/>
       <source>Name of JSON custom actions file for Joysticks</source>
-      <translation>??????? JSON ???</translation>
+      <translation type="unfinished">Name of JSON custom actions file for Joysticks</translation>
     </message>
   </context>
   <context>
@@ -556,7 +556,7 @@
       <extracomment>.QGC.MetaData.Facts[defaultFirmwareType].shortDesc, </extracomment>
       <location filename="../src/Settings/FirmwareUpgrade.SettingsGroup.json"/>
       <source>Default firmware type for flashing</source>
-      <translation>??????????</translation>
+      <translation type="unfinished">Default firmware type for flashing</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[apmChibiOS].enumStrings, </extracomment>
@@ -585,13 +585,13 @@
       <extracomment>.QGC.MetaData.Facts[userBrandImageIndoor].longDesc, </extracomment>
       <location filename="../src/Settings/BrandImage.SettingsGroup.json"/>
       <source>Location in file system of user-selected brand image (indoor)</source>
-      <translation>??????????????????????</translation>
+      <translation type="unfinished">Location in file system of user-selected brand image (indoor)</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[userBrandImageOutdoor].longDesc, </extracomment>
       <location filename="../src/Settings/BrandImage.SettingsGroup.json"/>
       <source>Location in file system of user-selected brand image (outdoor)</source>
-      <translation>??????????????????????</translation>
+      <translation type="unfinished">Location in file system of user-selected brand image (outdoor)</translation>
     </message>
   </context>
   <context>
@@ -600,43 +600,43 @@
       <extracomment>.QGC.MetaData.Facts[px4HiddenFlightModes].shortDesc, </extracomment>
       <location filename="../src/Settings/FlightMode.SettingsGroup.json"/>
       <source>Comma separated list of hidden flight modes</source>
-      <translation>???????????????</translation>
+      <translation type="unfinished">Comma separated list of hidden flight modes</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[px4HiddenFlightModesMultiRotor].shortDesc, .QGC.MetaData.Facts[apmHiddenFlightModesMultiRotor].shortDesc, </extracomment>
       <location filename="../src/Settings/FlightMode.SettingsGroup.json"/>
       <source>Comma separated list of hidden flight modes for MultiRotor</source>
-      <translation>??????????????????</translation>
+      <translation type="unfinished">Comma separated list of hidden flight modes for MultiRotor</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[px4HiddenFlightModesFixedWing].shortDesc, .QGC.MetaData.Facts[apmHiddenFlightModesFixedWing].shortDesc, </extracomment>
       <location filename="../src/Settings/FlightMode.SettingsGroup.json"/>
       <source>Comma separated list of hidden flight modes for FixedWing</source>
-      <translation>??????????????????</translation>
+      <translation type="unfinished">Comma separated list of hidden flight modes for FixedWing</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[px4HiddenFlightModesVTOL].shortDesc, .QGC.MetaData.Facts[apmHiddenFlightModesVTOL].shortDesc, </extracomment>
       <location filename="../src/Settings/FlightMode.SettingsGroup.json"/>
       <source>Comma separated list of hidden flight modes for VTOL</source>
-      <translation>VTOL ???????????????</translation>
+      <translation type="unfinished">Comma separated list of hidden flight modes for VTOL</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[px4HiddenFlightModesRoverBoat].shortDesc, .QGC.MetaData.Facts[apmHiddenFlightModesRoverBoat].shortDesc, </extracomment>
       <location filename="../src/Settings/FlightMode.SettingsGroup.json"/>
       <source>Comma separated list of hidden flight modes for RoverBoat</source>
-      <translation>?/????????????????</translation>
+      <translation type="unfinished">Comma separated list of hidden flight modes for RoverBoat</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[px4HiddenFlightModesSub].shortDesc, .QGC.MetaData.Facts[apmHiddenFlightModesSub].shortDesc, </extracomment>
       <location filename="../src/Settings/FlightMode.SettingsGroup.json"/>
       <source>Comma separated list of hidden flight modes for Sub</source>
-      <translation>??????????????????</translation>
+      <translation type="unfinished">Comma separated list of hidden flight modes for Sub</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[px4HiddenFlightModesAirship].shortDesc, .QGC.MetaData.Facts[apmHiddenFlightModesAirship].shortDesc, </extracomment>
       <location filename="../src/Settings/FlightMode.SettingsGroup.json"/>
       <source>Comma separated list of hidden flight modes for Airship</source>
-      <translation>?????????????????</translation>
+      <translation type="unfinished">Comma separated list of hidden flight modes for Airship</translation>
     </message>
   </context>
   <context>
@@ -657,73 +657,73 @@
       <extracomment>.QGC.MetaData.Facts[surveyInMinObservationDuration].shortDesc, </extracomment>
       <location filename="../src/Settings/RTK.SettingsGroup.json"/>
       <source>Min observation time</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Min observation time</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[surveyInMinObservationDuration].longDesc, </extracomment>
       <location filename="../src/Settings/RTK.SettingsGroup.json"/>
       <source>Defines the minimum amount of observation time for the position calculation.</source>
-      <translation>????????????????</translation>
+      <translation type="unfinished">Defines the minimum amount of observation time for the position calculation.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[useFixedBasePosition].shortDesc, </extracomment>
       <location filename="../src/Settings/RTK.SettingsGroup.json"/>
       <source>Use specified base position</source>
-      <translation>????????</translation>
+      <translation type="unfinished">Use specified base position</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[useFixedBasePosition].longDesc, </extracomment>
       <location filename="../src/Settings/RTK.SettingsGroup.json"/>
       <source>Specify the values for the RTK base position without having to do a survey in.</source>
-      <translation>???? RTK ????????? Survey-In?</translation>
+      <translation type="unfinished">Specify the values for the RTK base position without having to do a survey in.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[fixedBasePositionLatitude].shortDesc, </extracomment>
       <location filename="../src/Settings/RTK.SettingsGroup.json"/>
       <source>Base Position Latitude</source>
-      <translation>????</translation>
+      <translation type="unfinished">Base Position Latitude</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[fixedBasePositionLatitude].longDesc, </extracomment>
       <location filename="../src/Settings/RTK.SettingsGroup.json"/>
       <source>Defines the latitude of the fixed RTK base position.</source>
-      <translation>???? RTK ????????</translation>
+      <translation type="unfinished">Defines the latitude of the fixed RTK base position.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[fixedBasePositionLongitude].shortDesc, </extracomment>
       <location filename="../src/Settings/RTK.SettingsGroup.json"/>
       <source>Base Position Longitude</source>
-      <translation>????</translation>
+      <translation type="unfinished">Base Position Longitude</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[fixedBasePositionLongitude].longDesc, </extracomment>
       <location filename="../src/Settings/RTK.SettingsGroup.json"/>
       <source>Defines the longitude of the fixed RTK base position.</source>
-      <translation>???? RTK ????????</translation>
+      <translation type="unfinished">Defines the longitude of the fixed RTK base position.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[fixedBasePositionAltitude].shortDesc, </extracomment>
       <location filename="../src/Settings/RTK.SettingsGroup.json"/>
       <source>Base Position Alt (WGS84)</source>
-      <translation>???? (WGS84)</translation>
+      <translation type="unfinished">Base Position Alt (WGS84)</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[fixedBasePositionAltitude].longDesc, </extracomment>
       <location filename="../src/Settings/RTK.SettingsGroup.json"/>
       <source>Defines the altitude of the fixed RTK base position.</source>
-      <translation>???? RTK ????????</translation>
+      <translation type="unfinished">Defines the altitude of the fixed RTK base position.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[fixedBasePositionAccuracy].shortDesc, </extracomment>
       <location filename="../src/Settings/RTK.SettingsGroup.json"/>
       <source>Base Position Accuracy</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Base Position Accuracy</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[fixedBasePositionAccuracy].longDesc, </extracomment>
       <location filename="../src/Settings/RTK.SettingsGroup.json"/>
       <source>Defines the accuracy of the fixed RTK base position.</source>
-      <translation>???? RTK ????????</translation>
+      <translation type="unfinished">Defines the accuracy of the fixed RTK base position.</translation>
     </message>
   </context>
   <context>
@@ -762,109 +762,109 @@
       <extracomment>.QGC.MetaData.Facts[autoConnectUDP].shortDesc, </extracomment>
       <location filename="../src/Settings/AutoConnect.SettingsGroup.json"/>
       <source>Automatically open a connection over UDP</source>
-      <translation>???? UDP ??</translation>
+      <translation type="unfinished">Automatically open a connection over UDP</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[autoConnectUDP].longDesc, </extracomment>
       <location filename="../src/Settings/AutoConnect.SettingsGroup.json"/>
       <source>If this option is enabled GroundControl will automatically connect to a vehicle which is detected on a UDP communication link.</source>
-      <translation>????GroundControl ?????? UDP ?????????????</translation>
+      <translation type="unfinished">If this option is enabled GroundControl will automatically connect to a vehicle which is detected on a UDP communication link.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[autoConnectPixhawk].shortDesc, </extracomment>
       <location filename="../src/Settings/AutoConnect.SettingsGroup.json"/>
       <source>Automatically connect to a Pixhawk board</source>
-      <translation>???? Pixhawk ???</translation>
+      <translation type="unfinished">Automatically connect to a Pixhawk board</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[autoConnectPixhawk].longDesc, </extracomment>
       <location filename="../src/Settings/AutoConnect.SettingsGroup.json"/>
       <source>If this option is enabled GroundControl will automatically connect to a Pixhawk board which is connected via USB.</source>
-      <translation>????GroundControl ??????? USB ??? Pixhawk ????</translation>
+      <translation type="unfinished">If this option is enabled GroundControl will automatically connect to a Pixhawk board which is connected via USB.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[autoConnectSiKRadio].shortDesc, </extracomment>
       <location filename="../src/Settings/AutoConnect.SettingsGroup.json"/>
       <source>Automatically connect to a SiK Radio</source>
-      <translation>???? SiK Radio</translation>
+      <translation type="unfinished">Automatically connect to a SiK Radio</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[autoConnectSiKRadio].longDesc, </extracomment>
       <location filename="../src/Settings/AutoConnect.SettingsGroup.json"/>
       <source>If this option is enabled GroundControl will automatically connect to a vehicle which is detected on a SiK Radio communication link.</source>
-      <translation>????GroundControl ?????? SiK Radio ?????????????</translation>
+      <translation type="unfinished">If this option is enabled GroundControl will automatically connect to a vehicle which is detected on a SiK Radio communication link.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[autoConnectRTKGPS].shortDesc, </extracomment>
       <location filename="../src/Settings/AutoConnect.SettingsGroup.json"/>
       <source>Automatically connect to an RTK GPS</source>
-      <translation>???? RTK GPS</translation>
+      <translation type="unfinished">Automatically connect to an RTK GPS</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[autoConnectRTKGPS].longDesc, </extracomment>
       <location filename="../src/Settings/AutoConnect.SettingsGroup.json"/>
       <source>If this option is enabled GroundControl will automatically connect to an RTK GPS which is connected via USB.</source>
-      <translation>????GroundControl ??????? USB ??? RTK GPS?</translation>
+      <translation type="unfinished">If this option is enabled GroundControl will automatically connect to an RTK GPS which is connected via USB.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[autoConnectLibrePilot].shortDesc, </extracomment>
       <location filename="../src/Settings/AutoConnect.SettingsGroup.json"/>
       <source>Automatically connect to a LibrePilot</source>
-      <translation>???? LibrePilot</translation>
+      <translation type="unfinished">Automatically connect to a LibrePilot</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[autoConnectLibrePilot].longDesc, </extracomment>
       <location filename="../src/Settings/AutoConnect.SettingsGroup.json"/>
       <source>If this option is enabled GroundControl will automatically connect to a LibrePilot board which is connected via USB.</source>
-      <translation>????GroundControl ??????? USB ??? LibrePilot ????</translation>
+      <translation type="unfinished">If this option is enabled GroundControl will automatically connect to a LibrePilot board which is connected via USB.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[autoConnectNmeaPort].shortDesc, .QGC.MetaData.Facts[autoConnectNmeaPort].longDesc, </extracomment>
       <location filename="../src/Settings/AutoConnect.SettingsGroup.json"/>
       <source>NMEA GPS device for GCS position</source>
-      <translation>???????? NMEA GPS ??</translation>
+      <translation type="unfinished">NMEA GPS device for GCS position</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[autoConnectNmeaBaud].shortDesc, .QGC.MetaData.Facts[autoConnectNmeaBaud].longDesc, </extracomment>
       <location filename="../src/Settings/AutoConnect.SettingsGroup.json"/>
       <source>NMEA GPS Baudrate</source>
-      <translation>NMEA GPS ???</translation>
+      <translation type="unfinished">NMEA GPS Baudrate</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[autoConnectZeroConf].shortDesc, </extracomment>
       <location filename="../src/Settings/AutoConnect.SettingsGroup.json"/>
       <source>Automatically open a connection with Zero-Conf</source>
-      <translation>???? Zero-Conf ??</translation>
+      <translation type="unfinished">Automatically open a connection with Zero-Conf</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[autoConnectZeroConf].longDesc, </extracomment>
       <location filename="../src/Settings/AutoConnect.SettingsGroup.json"/>
       <source>If this option is enabled GroundControl will automatically connect to a vehicle which is detected over Zero-Conf.</source>
-      <translation>????GroundControl ??????? Zero-Conf ????????</translation>
+      <translation type="unfinished">If this option is enabled GroundControl will automatically connect to a vehicle which is detected over Zero-Conf.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[udpListenPort].shortDesc, </extracomment>
       <location filename="../src/Settings/AutoConnect.SettingsGroup.json"/>
       <source>UDP port for autoconnect</source>
-      <translation>???? UDP ??</translation>
+      <translation type="unfinished">UDP port for autoconnect</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[udpTargetHostIP].shortDesc, </extracomment>
       <location filename="../src/Settings/AutoConnect.SettingsGroup.json"/>
       <source>UDP target host IP for autoconnect</source>
-      <translation>???? UDP ???? IP</translation>
+      <translation type="unfinished">UDP target host IP for autoconnect</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[udpTargetHostPort].shortDesc, </extracomment>
       <location filename="../src/Settings/AutoConnect.SettingsGroup.json"/>
       <source>UDP target host port for autoconnect</source>
-      <translation>???? UDP ??????</translation>
+      <translation type="unfinished">UDP target host port for autoconnect</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[nmeaUdpPort].shortDesc, </extracomment>
       <location filename="../src/Settings/AutoConnect.SettingsGroup.json"/>
       <source>Udp port to receive NMEA streams</source>
-      <translation>?? NMEA ?? UDP ??</translation>
+      <translation type="unfinished">Udp port to receive NMEA streams</translation>
     </message>
   </context>
   <context>
@@ -900,13 +900,13 @@
       <extracomment>.QGC.MetaData.Facts[maxCacheDiskSize].shortDesc, </extracomment>
       <location filename="../src/Settings/Maps.SettingsGroup.json"/>
       <source>Max disk cache</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Max disk cache</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[maxCacheMemorySize].shortDesc, </extracomment>
       <location filename="../src/Settings/Maps.SettingsGroup.json"/>
       <source>Max memory cache</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Max memory cache</translation>
     </message>
   </context>
   <context>
@@ -915,26 +915,26 @@
       <extracomment>.QGC.MetaData.Facts[valueDisplay].shortDesc, </extracomment>
       <location filename="../src/Settings/BatteryIndicator.SettingsGroup.json"/>
       <source>Select values to display in indicator</source>
-      <translation>??????????</translation>
+      <translation type="unfinished">Select values to display in indicator</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[valueDisplay].enumStrings, </extracomment>
       <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
       <location filename="../src/Settings/BatteryIndicator.SettingsGroup.json"/>
       <source>Percentage,Voltage,Percentage and Voltage</source>
-      <translation>???,??,??????</translation>
+      <translation type="unfinished">Percentage,Voltage,Percentage and Voltage</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[threshold1].shortDesc, </extracomment>
       <location filename="../src/Settings/BatteryIndicator.SettingsGroup.json"/>
       <source>Battery level threshold 1</source>
-      <translation>?????? 1</translation>
+      <translation type="unfinished">Battery level threshold 1</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[threshold2].shortDesc, </extracomment>
       <location filename="../src/Settings/BatteryIndicator.SettingsGroup.json"/>
       <source>Battery level threshold 2</source>
-      <translation>?????? 2</translation>
+      <translation type="unfinished">Battery level threshold 2</translation>
     </message>
   </context>
   <context>
@@ -1036,7 +1036,7 @@
       <extracomment>.QGC.MetaData.Facts[videoSource].shortDesc, </extracomment>
       <location filename="../src/Settings/Video.SettingsGroup.json"/>
       <source>Video source</source>
-      <translation>???</translation>
+      <translation type="unfinished">Video source</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[videoSource].longDesc, </extracomment>
@@ -1048,7 +1048,7 @@
       <extracomment>.QGC.MetaData.Facts[udpUrl].shortDesc, </extracomment>
       <location filename="../src/Settings/Video.SettingsGroup.json"/>
       <source>Video UDP Url</source>
-      <translation>?? UDP URL</translation>
+      <translation type="unfinished">Video UDP Url</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[udpUrl].longDesc, </extracomment>
@@ -1060,7 +1060,7 @@
       <extracomment>.QGC.MetaData.Facts[rtspUrl].shortDesc, </extracomment>
       <location filename="../src/Settings/Video.SettingsGroup.json"/>
       <source>Video RTSP Url</source>
-      <translation>?? RTSP URL</translation>
+      <translation type="unfinished">Video RTSP Url</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[rtspUrl].longDesc, </extracomment>
@@ -1072,7 +1072,7 @@
       <extracomment>.QGC.MetaData.Facts[tcpUrl].shortDesc, </extracomment>
       <location filename="../src/Settings/Video.SettingsGroup.json"/>
       <source>Video TCP Url</source>
-      <translation>?? TCP URL</translation>
+      <translation type="unfinished">Video TCP Url</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[tcpUrl].longDesc, </extracomment>
@@ -1084,19 +1084,19 @@
       <extracomment>.QGC.MetaData.Facts[videoSavePath].shortDesc, </extracomment>
       <location filename="../src/Settings/Video.SettingsGroup.json"/>
       <source>Video save directory</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Video save directory</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[videoSavePath].longDesc, </extracomment>
       <location filename="../src/Settings/Video.SettingsGroup.json"/>
       <source>Directory to save videos to.</source>
-      <translation>???????</translation>
+      <translation type="unfinished">Directory to save videos to.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[aspectRatio].shortDesc, </extracomment>
       <location filename="../src/Settings/Video.SettingsGroup.json"/>
       <source>Video Aspect Ratio</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Video Aspect Ratio</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[aspectRatio].longDesc, </extracomment>
@@ -1108,7 +1108,7 @@
       <extracomment>.QGC.MetaData.Facts[gridLines].shortDesc, </extracomment>
       <location filename="../src/Settings/Video.SettingsGroup.json"/>
       <source>Video Grid Lines</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Video Grid Lines</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[gridLines].longDesc, </extracomment>
@@ -1139,25 +1139,25 @@
       <extracomment>.QGC.MetaData.Facts[showRecControl].shortDesc, </extracomment>
       <location filename="../src/Settings/Video.SettingsGroup.json"/>
       <source>Show Video Record Control</source>
-      <translation>????????</translation>
+      <translation type="unfinished">Show Video Record Control</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[showRecControl].longDesc, </extracomment>
       <location filename="../src/Settings/Video.SettingsGroup.json"/>
       <source>Show recording control in the UI.</source>
-      <translation>???????????</translation>
+      <translation type="unfinished">Show recording control in the UI.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[recordingFormat].shortDesc, </extracomment>
       <location filename="../src/Settings/Video.SettingsGroup.json"/>
       <source>Video Recording Format</source>
-      <translation>??????</translation>
+      <translation type="unfinished">Video Recording Format</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[recordingFormat].longDesc, </extracomment>
       <location filename="../src/Settings/Video.SettingsGroup.json"/>
       <source>Video recording file format.</source>
-      <translation>?????????</translation>
+      <translation type="unfinished">Video recording file format.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[recordingFormat].enumStrings, </extracomment>
@@ -1176,7 +1176,7 @@
       <extracomment>.QGC.MetaData.Facts[maxVideoSize].longDesc, </extracomment>
       <location filename="../src/Settings/Video.SettingsGroup.json"/>
       <source>Maximum amount of disk space used by video recording.</source>
-      <translation>???????????????</translation>
+      <translation type="unfinished">Maximum amount of disk space used by video recording.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[enableStorageLimit].shortDesc, </extracomment>
@@ -1194,25 +1194,25 @@
       <extracomment>.QGC.MetaData.Facts[rtspTimeout].shortDesc, </extracomment>
       <location filename="../src/Settings/Video.SettingsGroup.json"/>
       <source>RTSP Video Timeout</source>
-      <translation>RTSP ????</translation>
+      <translation type="unfinished">RTSP Video Timeout</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[rtspTimeout].longDesc, </extracomment>
       <location filename="../src/Settings/Video.SettingsGroup.json"/>
       <source>How long to wait before assuming RTSP link is gone.</source>
-      <translation>?? RTSP ???????????</translation>
+      <translation type="unfinished">How long to wait before assuming RTSP link is gone.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[streamEnabled].shortDesc, </extracomment>
       <location filename="../src/Settings/Video.SettingsGroup.json"/>
       <source>Video Stream Enabled</source>
-      <translation>?????</translation>
+      <translation type="unfinished">Video Stream Enabled</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[streamEnabled].longDesc, </extracomment>
       <location filename="../src/Settings/Video.SettingsGroup.json"/>
       <source>Start/Stop Video Stream.</source>
-      <translation>??/??????</translation>
+      <translation type="unfinished">Start/Stop Video Stream.</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[disableWhenDisarmed].shortDesc, </extracomment>
@@ -1230,7 +1230,7 @@
       <extracomment>.QGC.MetaData.Facts[lowLatencyMode].shortDesc, </extracomment>
       <location filename="../src/Settings/Video.SettingsGroup.json"/>
       <source>Tweaks video for lower latency</source>
-      <translation>?????????</translation>
+      <translation type="unfinished">Tweaks video for lower latency</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[lowLatencyMode].longDesc, </extracomment>
@@ -1852,19 +1852,19 @@
       <extracomment>.QGC.MetaData.Facts[mahConsumed].shortDesc, </extracomment>
       <location filename="../src/Vehicle/FactGroups/BatteryFact.json"/>
       <source>Consumed</source>
-      <translation>???</translation>
+      <translation type="unfinished">Consumed</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[current].shortDesc, </extracomment>
       <location filename="../src/Vehicle/FactGroups/BatteryFact.json"/>
       <source>Current</source>
-      <translation>??</translation>
+      <translation type="unfinished">Current</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[temperature].shortDesc, </extracomment>
       <location filename="../src/Vehicle/FactGroups/BatteryFact.json"/>
       <source>Temperature</source>
-      <translation>??</translation>
+      <translation type="unfinished">Temperature</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[instantPower].shortDesc, </extracomment>
@@ -1967,13 +1967,13 @@
       <extracomment>.QGC.MetaData.Facts[lat].shortDesc, </extracomment>
       <location filename="../src/Vehicle/FactGroups/GPSFact.json"/>
       <source>Latitude</source>
-      <translation>??</translation>
+      <translation type="unfinished">Latitude</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[lon].shortDesc, </extracomment>
       <location filename="../src/Vehicle/FactGroups/GPSFact.json"/>
       <source>Longitude</source>
-      <translation>??</translation>
+      <translation type="unfinished">Longitude</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[mgrs].shortDesc, </extracomment>
@@ -1997,13 +1997,13 @@
       <extracomment>.QGC.MetaData.Facts[courseOverGround].shortDesc, </extracomment>
       <location filename="../src/Vehicle/FactGroups/GPSFact.json"/>
       <source>Course Over Ground</source>
-      <translation>????</translation>
+      <translation type="unfinished">Course Over Ground</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[lock].shortDesc, </extracomment>
       <location filename="../src/Vehicle/FactGroups/GPSFact.json"/>
       <source>GPS Lock</source>
-      <translation>GPS ??</translation>
+      <translation type="unfinished">GPS Lock</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[lock].enumStrings, </extracomment>
@@ -2097,13 +2097,13 @@
       <extracomment>.QGC.MetaData.Facts[currentFirst].shortDesc, .QGC.MetaData.Facts[currentSecond].shortDesc, .QGC.MetaData.Facts[currentThird].shortDesc, .QGC.MetaData.Facts[currentFourth].shortDesc, </extracomment>
       <location filename="../src/Vehicle/FactGroups/EscStatusFactGroup.json"/>
       <source>Current</source>
-      <translation>??</translation>
+      <translation type="unfinished">Current</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[voltageFirst].shortDesc, .QGC.MetaData.Facts[voltageSecond].shortDesc, .QGC.MetaData.Facts[voltageThird].shortDesc, .QGC.MetaData.Facts[voltageFourth].shortDesc, </extracomment>
       <location filename="../src/Vehicle/FactGroups/EscStatusFactGroup.json"/>
       <source>Voltage</source>
-      <translation>??</translation>
+      <translation type="unfinished">Voltage</translation>
     </message>
   </context>
   <context>
@@ -2531,7 +2531,7 @@
       <extracomment>.QGC.MetaData.Facts[temperature].shortDesc, </extracomment>
       <location filename="../src/Vehicle/FactGroups/HygrometerFact.json"/>
       <source>Temperature</source>
-      <translation>??</translation>
+      <translation type="unfinished">Temperature</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[humidity].shortDesc, </extracomment>
@@ -2552,25 +2552,25 @@
       <extracomment>.QGC.MetaData.Facts[rpm1].shortDesc, </extracomment>
       <location filename="../src/Vehicle/FactGroups/RPMFact.json"/>
       <source>RPM 1</source>
-      <translation>RPM 1</translation>
+      <translation type="unfinished">RPM 1</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[rpm2].shortDesc, </extracomment>
       <location filename="../src/Vehicle/FactGroups/RPMFact.json"/>
       <source>RPM 2</source>
-      <translation>RPM 2</translation>
+      <translation type="unfinished">RPM 2</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[rpm3].shortDesc, </extracomment>
       <location filename="../src/Vehicle/FactGroups/RPMFact.json"/>
       <source>RPM 3</source>
-      <translation>RPM 3</translation>
+      <translation type="unfinished">RPM 3</translation>
     </message>
     <message>
       <extracomment>.QGC.MetaData.Facts[rpm4].shortDesc, </extracomment>
       <location filename="../src/Vehicle/FactGroups/RPMFact.json"/>
       <source>RPM 4</source>
-      <translation>RPM 4</translation>
+      <translation type="unfinished">RPM 4</translation>
     </message>
   </context>
   <context>
@@ -4036,7 +4036,7 @@
       <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_ACTUATOR].friendlyName, </extracomment>
       <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
       <source>Set actuator</source>
-      <translation>??</translation>
+      <translation type="unfinished">Set actuator</translation>
     </message>
     <message>
       <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_ACTUATOR].description, </extracomment>

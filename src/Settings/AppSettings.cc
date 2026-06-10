@@ -41,25 +41,25 @@ QList<QLocale::Language> AppSettings::_rgPartialLanguages = {
 AppSettings::LanguageInfo_t AppSettings::_rgLanguageInfo[] = {
     { QLocale::AnyLanguage,     "System" },                     // Must be first
     { QLocale::Azerbaijani,     "Azerbaijani (Azerbaijani)" },
-    { QLocale::Bulgarian,       "????????? (Bulgarian)" },
-    { QLocale::Chinese,         "?? (Chinese)" },
+    { QLocale::Bulgarian,       "български (Bulgarian)" },
+    { QLocale::Chinese,         "中文 (Chinese)" },
     { QLocale::Dutch,           "Nederlands (Dutch)" },
     { QLocale::English,         "English" },
     { QLocale::Finnish,         "Suomi (Finnish)" },
-    { QLocale::French,          "Fran?ais (French)" },
+    { QLocale::French,          "Français (French)" },
     { QLocale::German,          "Deutsche (German)" },
-    { QLocale::Greek,           "???????? (Greek)" },
-    { QLocale::Hebrew,          "????? (Hebrew)" },
+    { QLocale::Greek,           "Ελληνικά (Greek)" },
+    { QLocale::Hebrew,          "עברית (Hebrew)" },
     { QLocale::Italian,         "Italiano (Italian)" },
-    { QLocale::Japanese,        "??? (Japanese)" },
-    { QLocale::Korean,          "??? (Korean)" },
+    { QLocale::Japanese,        "日本語 (Japanese)" },
+    { QLocale::Korean,          "한국어 (Korean)" },
     { QLocale::NorwegianBokmal, "Norsk (Norwegian)" },
     { QLocale::Polish,          "Polskie (Polish)" },
-    { QLocale::Portuguese,      "Portugu?s (Portuguese)" },
-    { QLocale::Russian,         "??????? (Russian)" },
-    { QLocale::Spanish,         "Espa?ol (Spanish)" },
+    { QLocale::Portuguese,      "Português (Portuguese)" },
+    { QLocale::Russian,         "Pусский (Russian)" },
+    { QLocale::Spanish,         "Español (Spanish)" },
     { QLocale::Swedish,         "Svenska (Swedish)" },
-    { QLocale::Turkish,         "T?rk?e (Turkish)" }
+    { QLocale::Turkish,         "Türk (Turkish)" }
 };
 
 DECLARE_SETTINGGROUP(App, "")
@@ -371,10 +371,6 @@ QLocale::Language AppSettings::_qLocaleLanguageEarlyAccess(void)
     QSettings settings;
 
     // Note that the AppSettings group has no group name
-    if (!settings.contains(qLocaleLanguageName)) {
-        settings.setValue(qLocaleLanguageName, QLocale::Chinese);
-    }
-
     QLocale::Language localeLanguage = static_cast<QLocale::Language>(settings.value(qLocaleLanguageName).toInt());
     for (auto& languageInfo: _rgLanguageInfo) {
         if (languageInfo.languageId == localeLanguage) {
@@ -382,7 +378,7 @@ QLocale::Language AppSettings::_qLocaleLanguageEarlyAccess(void)
         }
     }
 
-    localeLanguage = QLocale::Chinese;
+    localeLanguage = QLocale::AnyLanguage;
     settings.setValue(qLocaleLanguageName, localeLanguage);
 
     return localeLanguage;
