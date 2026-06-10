@@ -9746,7 +9746,7 @@ Click Ok to start the auto-tuning process.
       <location filename="../src/UI/MainWindow.qml" line="143"/>
       <location filename="../src/UI/MainWindow.qml" line="367"/>
       <source>Analyze Tools</source>
-      <translation type="unfinished">Analyze Tools</translation>
+      <translation>分析工具</translation>
     </message>
     <message>
       <location filename="../src/UI/MainWindow.qml" line="147"/>
@@ -9758,7 +9758,7 @@ Click Ok to start the auto-tuning process.
       <location filename="../src/UI/MainWindow.qml" line="164"/>
       <location filename="../src/UI/MainWindow.qml" line="396"/>
       <source>Application Settings</source>
-      <translation type="unfinished">Application Settings</translation>
+      <translation>应用配置</translation>
     </message>
     <message>
       <location filename="../src/UI/MainWindow.qml" line="226"/>
@@ -9805,7 +9805,8 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/MainWindow.qml" line="353"/>
       <source>Plan Flight</source>
-      <translation type="unfinished">Plan Flight</translation>
+      // <translation type="unfinished">Plan Flight</translation>
+      <translation>飞行规划</translation>
     </message>
     <message>
       <location filename="../src/UI/MainWindow.qml" line="429"/>
