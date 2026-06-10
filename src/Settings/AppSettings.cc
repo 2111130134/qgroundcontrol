@@ -39,7 +39,7 @@ QList<QLocale::Language> AppSettings::_rgPartialLanguages = {
 };
 
 AppSettings::LanguageInfo_t AppSettings::_rgLanguageInfo[] = {
-    { QLocale::AnyLanguage,     "System" },                     // Must be first
+    { QLocale::AnyLanguage,     "系统" },                     // Must be first
     { QLocale::Azerbaijani,     "Azerbaijani (Azerbaijani)" },
     { QLocale::Bulgarian,       "български (Bulgarian)" },
     { QLocale::Chinese,         "中文 (Chinese)" },
@@ -371,14 +371,14 @@ QLocale::Language AppSettings::_qLocaleLanguageEarlyAccess(void)
     QSettings settings;
 
     // Note that the AppSettings group has no group name
-    QLocale::Language localeLanguage = static_cast<QLocale::Language>(settings.value(qLocaleLanguageName).toInt());
+    QLocale::Language localeLanguage = static_cast<QLocale::Language>(settings.value(qLocaleLanguageName, QLocale::Chinese).toInt());
     for (auto& languageInfo: _rgLanguageInfo) {
         if (languageInfo.languageId == localeLanguage) {
             return localeLanguage;
         }
     }
 
-    localeLanguage = QLocale::AnyLanguage;
+    localeLanguage = QLocale::Chinese;
     settings.setValue(qLocaleLanguageName, localeLanguage);
 
     return localeLanguage;
