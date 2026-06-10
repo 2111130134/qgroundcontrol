@@ -1,0 +1,514 @@
+GimbalFact.json	Gimbal Roll
+GimbalFact.json	Gimbal Pitch
+GimbalFact.json	Gimbal Yaw
+GimbalFact.json	Azimuth
+GimbalFact.json	gimbal device Id
+OfflineMaps.SettingsGroup.json	Minimum zoom level for downloads.
+OfflineMaps.SettingsGroup.json	Maximum zoom level for downloads.
+OfflineMaps.SettingsGroup.json	Maximum number of tiles for download.
+FlyView.SettingsGroup.json	Minimum altitude for guided actions altitude slider.
+FlyView.SettingsGroup.json	Maximum altitude for guided actions altitude slider.
+FlyView.SettingsGroup.json	Show/Hide Log Replay status bar
+FlyView.SettingsGroup.json	Show additional heading indicators on Compass
+FlyView.SettingsGroup.json	Lock Compass Nose-Up
+FlyView.SettingsGroup.json	Keep map centered on vehicle
+FlyView.SettingsGroup.json	Show controls for camera triggering using MAV_CMD_DO_DIGICAM_CONTROL.
+FlyView.SettingsGroup.json	Show obstacle distance overlay on map and video.
+FlyView.SettingsGroup.json	Maximum distance allowed for Go To Location.
+FlyView.SettingsGroup.json	Loiter radius for orbiting the Go To Location during forward flight. This only applies if the firmware supports a radius in MAV_CMD_DO_REPOSITION commands.
+FlyView.SettingsGroup.json	Require slide confirmation for Go To Location when the vehicle is already in Guided mode.
+FlyView.SettingsGroup.json	Send updated GCS' home position to autopilot in case of change of the home position
+FlyView.SettingsGroup.json	Qml file for instrument panel
+FlyView.SettingsGroup.json	Integrated Compass & Attitude,Horizontal Compass & Attitude,Large Vertical
+FlyView.SettingsGroup.json	When requesting vehicle control, allow other GCS to override control automatically, or require this GCS to accept the request first.
+FlyView.SettingsGroup.json	Timeout in seconds before a request to a GCS to allow takeover is assumed to be rejected. This is used to display the timeout graphically on requestor and GCS in control.
+App.SettingsGroup.json	Offline editing firmware class
+App.SettingsGroup.json	Offline editing vehicle class
+App.SettingsGroup.json	Offline editing cruise speed
+App.SettingsGroup.json	This value defines the default speed for calculating mission statistics for vehicles which do not support hover or VTOL vehicles in fixed wing mode. It does not modify the flight speed for a specific flight plan.
+App.SettingsGroup.json	Offline editing hover speed
+App.SettingsGroup.json	This value defines the default speed for calculating mission statistics for multi-rotor vehicles or VTOL vehicle in multi-rotor mode. It does not modify the flight speed for a specific flight plan.
+App.SettingsGroup.json	Offline editing ascent speed
+App.SettingsGroup.json	This value defines the ascent speed for multi-rotor vehicles for use in calculating mission duration.
+App.SettingsGroup.json	Offline editing descent speed
+App.SettingsGroup.json	This value defines the cruising speed for multi-rotor vehicles for use in calculating mission duration.
+App.SettingsGroup.json	Announce battery remaining percent
+App.SettingsGroup.json	Announce the remaining battery percent when it falls below the specified percentage.
+App.SettingsGroup.json	Default value for altitude
+App.SettingsGroup.json	This value specifies the default altitude for new items added to a mission.
+App.SettingsGroup.json	Mute audio output
+App.SettingsGroup.json	If this option is enabled all audio output will be muted.
+App.SettingsGroup.json	Show virtual joystick
+App.SettingsGroup.json	If this option is enabled the virtual joystick will be shown on the Fly view.
+App.SettingsGroup.json	Auto-Center Throttle
+App.SettingsGroup.json	If enabled the throttle stick will snap back to center when released.
+App.SettingsGroup.json	Left Handed Mode
+App.SettingsGroup.json	If this option is enabled the virtual joystick layout will be reversed
+App.SettingsGroup.json	Video streaming debug
+App.SettingsGroup.json	Sets the environment variable GST_DEBUG for all pipeline elements on boot.
+App.SettingsGroup.json	Use preflight checklist
+App.SettingsGroup.json	If this option is enabled the preflight checklist will be used.
+App.SettingsGroup.json	Enable Multi-Vehicle Panel
+App.SettingsGroup.json	Enable Multi-Vehicle Panel when multiple vehicles are connected.
+App.SettingsGroup.json	The point size for the default font used.
+App.SettingsGroup.json	The color scheme for the user interface.
+App.SettingsGroup.json	Directory to which all data files are saved/loaded from
+App.SettingsGroup.json	Save to SD card
+App.SettingsGroup.json	Access token to Mapbox maps
+App.SettingsGroup.json	Your personal access token for Mapbox maps
+App.SettingsGroup.json	Account name for Mapbox maps
+App.SettingsGroup.json	Your personal account name for Mapbox maps
+App.SettingsGroup.json	Map style ID
+App.SettingsGroup.json	Map design style ID for Mapbox maps
+App.SettingsGroup.json	Access token to Esri maps
+App.SettingsGroup.json	Your personal access token for Esri maps
+App.SettingsGroup.json	Custom Map URL
+App.SettingsGroup.json	URL for X Y Z map with {x} {y} {z} or {zoom} substitutions. Eg: https://basemaps.linz.govt.nz/v1/tiles/aerial/EPSG:3857/{z}/{x}/{y}.png?api=d01ev80nqcjxddfvc6amyvkk1ka
+App.SettingsGroup.json	VWorld Token
+App.SettingsGroup.json	Your personal access token for VWorld maps
+App.SettingsGroup.json	Stream GCS' coordinates to Autopilot
+App.SettingsGroup.json	Language
+App.SettingsGroup.json	Disable all data persistence
+App.SettingsGroup.json	If this option is set, nothing will be saved to disk.
+App.SettingsGroup.json	Comma separated list of first run prompt ids which have already been shown.
+App.SettingsGroup.json	AirLink User Name
+App.SettingsGroup.json	AirLink Password
+MavlinkActions.SettingsGroup.json	Name of JSON custom actions file for Fly View
+MavlinkActions.SettingsGroup.json	Name of JSON custom actions file for Joysticks
+FirmwareUpgrade.SettingsGroup.json	Default firmware type for flashing
+BrandImage.SettingsGroup.json	User-selected brand image
+BrandImage.SettingsGroup.json	Location in file system of user-selected brand image (indoor)
+BrandImage.SettingsGroup.json	Location in file system of user-selected brand image (outdoor)
+FlightMode.SettingsGroup.json	Comma separated list of hidden flight modes
+FlightMode.SettingsGroup.json	Comma separated list of hidden flight modes for MultiRotor
+FlightMode.SettingsGroup.json	Comma separated list of hidden flight modes for FixedWing
+FlightMode.SettingsGroup.json	Comma separated list of hidden flight modes for VTOL
+FlightMode.SettingsGroup.json	Comma separated list of hidden flight modes for RoverBoat
+FlightMode.SettingsGroup.json	Comma separated list of hidden flight modes for Sub
+FlightMode.SettingsGroup.json	Comma separated list of hidden flight modes for Airship
+RTK.SettingsGroup.json	The minimum accuracy value that Survey-In must achieve before it can complete.
+RTK.SettingsGroup.json	Min observation time
+RTK.SettingsGroup.json	Defines the minimum amount of observation time for the position calculation.
+RTK.SettingsGroup.json	Use specified base position
+RTK.SettingsGroup.json	Specify the values for the RTK base position without having to do a survey in.
+RTK.SettingsGroup.json	Base Position Latitude
+RTK.SettingsGroup.json	Defines the latitude of the fixed RTK base position.
+RTK.SettingsGroup.json	Base Position Longitude
+RTK.SettingsGroup.json	Defines the longitude of the fixed RTK base position.
+RTK.SettingsGroup.json	Base Position Alt (WGS84)
+RTK.SettingsGroup.json	Defines the altitude of the fixed RTK base position.
+RTK.SettingsGroup.json	Base Position Accuracy
+RTK.SettingsGroup.json	Defines the accuracy of the fixed RTK base position.
+FlightMap.SettingsGroup.json	Currently selected map provider for flight maps
+FlightMap.SettingsGroup.json	Currently selected map type for flight maps
+FlightMap.SettingsGroup.json	Currently selected elevation map provider
+AutoConnect.SettingsGroup.json	Automatically open a connection over UDP
+AutoConnect.SettingsGroup.json	If this option is enabled GroundControl will automatically connect to a vehicle which is detected on a UDP communication link.
+AutoConnect.SettingsGroup.json	Automatically connect to a Pixhawk board
+AutoConnect.SettingsGroup.json	If this option is enabled GroundControl will automatically connect to a Pixhawk board which is connected via USB.
+AutoConnect.SettingsGroup.json	Automatically connect to a SiK Radio
+AutoConnect.SettingsGroup.json	If this option is enabled GroundControl will automatically connect to a vehicle which is detected on a SiK Radio communication link.
+AutoConnect.SettingsGroup.json	Automatically connect to an RTK GPS
+AutoConnect.SettingsGroup.json	If this option is enabled GroundControl will automatically connect to an RTK GPS which is connected via USB.
+AutoConnect.SettingsGroup.json	Automatically connect to a LibrePilot
+AutoConnect.SettingsGroup.json	If this option is enabled GroundControl will automatically connect to a LibrePilot board which is connected via USB.
+AutoConnect.SettingsGroup.json	NMEA GPS device for GCS position
+AutoConnect.SettingsGroup.json	NMEA GPS Baudrate
+AutoConnect.SettingsGroup.json	Automatically open a connection with Zero-Conf
+AutoConnect.SettingsGroup.json	If this option is enabled GroundControl will automatically connect to a vehicle which is detected over Zero-Conf.
+AutoConnect.SettingsGroup.json	UDP port for autoconnect
+AutoConnect.SettingsGroup.json	UDP target host IP for autoconnect
+AutoConnect.SettingsGroup.json	UDP target host port for autoconnect
+AutoConnect.SettingsGroup.json	Udp port to receive NMEA streams
+Viewer3D.SettingsGroup.json	Enable the 3D viewer
+Viewer3D.SettingsGroup.json	Path to the OSM file for the 3D viewer.
+Viewer3D.SettingsGroup.json	Average Height for each level of the buildings
+Viewer3D.SettingsGroup.json	Altitude bias for vehicles in the 3D View
+Maps.SettingsGroup.json	Max disk cache
+Maps.SettingsGroup.json	Max memory cache
+BatteryIndicator.SettingsGroup.json	Select values to display in indicator
+BatteryIndicator.SettingsGroup.json	Percentage,Voltage,Percentage and Voltage
+BatteryIndicator.SettingsGroup.json	Battery level threshold 1
+BatteryIndicator.SettingsGroup.json	Battery level threshold 2
+Mavlink.SettingsGroup.json	Save telemetry Log after each flight
+Mavlink.SettingsGroup.json	If this option is enabled a telemetry will be saved after each flight completes.
+Mavlink.SettingsGroup.json	Save telemetry log even if vehicle was not armed
+Mavlink.SettingsGroup.json	If this option is enabled a telemtry log will be saved even if vehicle was never armed.
+Mavlink.SettingsGroup.json	Save CSV Telementry Logs
+Mavlink.SettingsGroup.json	If this option is enabled, all Facts will be written to a CSV file with a 1 Hertz frequency.
+Mavlink.SettingsGroup.json	Enable mavlink forwarding
+Mavlink.SettingsGroup.json	Host name
+Mavlink.SettingsGroup.json	Host name to forward mavlink to. i.e: localhost:14445
+Mavlink.SettingsGroup.json	Ardupilot Support Host name
+Mavlink.SettingsGroup.json	Ardupilot Support server to forward mavlink to. i.e: support.ardupilot.org:xxxx
+Mavlink.SettingsGroup.json	MAVLink 2.0 signing key
+Mavlink.SettingsGroup.json	Send GCS Heartbeat
+Mavlink.SettingsGroup.json	GCS MAVLink System ID
+Video.SettingsGroup.json	Video source
+Video.SettingsGroup.json	Source for video. UDP, TCP, RTSP and UVC Cameras may be supported depending on Vehicle and ground station version.
+Video.SettingsGroup.json	Video UDP Url
+Video.SettingsGroup.json	UDP url address and port to bind to for video stream. Example: 0.0.0.0:5600
+Video.SettingsGroup.json	Video RTSP Url
+Video.SettingsGroup.json	RTSP url address and port to bind to for video stream. Example: rtsp://192.168.42.1:554/live
+Video.SettingsGroup.json	Video TCP Url
+Video.SettingsGroup.json	TCP url address and port to bind to for video stream. Example: 192.168.143.200:3001
+Video.SettingsGroup.json	Video save directory
+Video.SettingsGroup.json	Directory to save videos to.
+Video.SettingsGroup.json	Video Aspect Ratio
+Video.SettingsGroup.json	Video Aspect Ratio (width / height). Use 0.0 to ignore it.
+Video.SettingsGroup.json	Video Grid Lines
+Video.SettingsGroup.json	Handle Video Aspect Ratio.
+Video.SettingsGroup.json	Fit Width,Fit Height,Fill,No Crop
+Video.SettingsGroup.json	Show Video Record Control
+Video.SettingsGroup.json	Show recording control in the UI.
+Video.SettingsGroup.json	Video Recording Format
+Video.SettingsGroup.json	Video recording file format.
+Video.SettingsGroup.json	Max Video Storage Usage
+Video.SettingsGroup.json	Maximum amount of disk space used by video recording.
+Video.SettingsGroup.json	Enable/Disable Limits on Storage Usage
+Video.SettingsGroup.json	When enabled, old video files will be auto-deleted when the total size of QGC-recorded video exceeds the maximum video storage usage.
+Video.SettingsGroup.json	RTSP Video Timeout
+Video.SettingsGroup.json	How long to wait before assuming RTSP link is gone.
+Video.SettingsGroup.json	Video Stream Enabled
+Video.SettingsGroup.json	Start/Stop Video Stream.
+Video.SettingsGroup.json	Video Stream Disnabled When Armed
+Video.SettingsGroup.json	Disable Video Stream when disarmed.
+Video.SettingsGroup.json	Tweaks video for lower latency
+Video.SettingsGroup.json	If this option is enabled, the rtpjitterbuffer is removed and the video sink is set to assynchronous mode, reducing the latency by about 200 ms.
+Video.SettingsGroup.json	Force specific category of video decode
+Video.SettingsGroup.json	Force the change of prioritization between video decode methods, allowing the user to force some video hardware decode plugins if necessary.
+Video.SettingsGroup.json	Default,Force software decoder,Force NVIDIA decoder,Force VA-API decoder,Force DirectX3D 11 decoder,Force VideoToolbox decoder,Force Intel decoder,Force Vulkan decoder
+RemoteID.SettingsGroup.json	Operator ID
+RemoteID.SettingsGroup.json	Operator ID. Maximum 20 characters.
+RemoteID.SettingsGroup.json	Operator ID is valid
+RemoteID.SettingsGroup.json	Operator ID has been checked using checksum.
+RemoteID.SettingsGroup.json	Operator ID type
+RemoteID.SettingsGroup.json	CAA
+RemoteID.SettingsGroup.json	Send Operator ID
+RemoteID.SettingsGroup.json	When enabled, sends operator ID message
+RemoteID.SettingsGroup.json	Flight Purpose
+RemoteID.SettingsGroup.json	Optional plain text for operator to specify operations data (Free Text). Maximum 23 characters.
+RemoteID.SettingsGroup.json	Emergency Text
+RemoteID.SettingsGroup.json	Optional plain text for operator to specify operations data (Emergency Text). Maximum 23 characters.
+RemoteID.SettingsGroup.json	Extended Status
+RemoteID.SettingsGroup.json	Optional plain text for operator to specify operations data (Extended Text). Maximum 23 characters.
+RemoteID.SettingsGroup.json	Self ID type
+RemoteID.SettingsGroup.json	Flight Purpose,Emergency,Extended Status
+RemoteID.SettingsGroup.json	Send Self ID
+RemoteID.SettingsGroup.json	When enabled, sends self ID message
+RemoteID.SettingsGroup.json	Basic ID
+RemoteID.SettingsGroup.json	Basic ID Type
+RemoteID.SettingsGroup.json	None,SerialNumber (ANSI/CTA-2063),CAA,UTM (RFC4122),Specific
+RemoteID.SettingsGroup.json	UA type
+RemoteID.SettingsGroup.json	Undefined,Airplane/FixedWing,Helicopter/Multirrotor,Gyroplane,VTOL,Ornithopter,Glider,Kite,Free Ballon,Captive Ballon,Airship,Parachute,Rocket,Tethered powered aircraft,Ground Obstacle,Other
+RemoteID.SettingsGroup.json	Send Basic ID
+RemoteID.SettingsGroup.json	When enabled, sends basic ID message
+RemoteID.SettingsGroup.json	Region of operation
+RemoteID.SettingsGroup.json	The region of operation the mission will take place in
+RemoteID.SettingsGroup.json	FAA,EU
+RemoteID.SettingsGroup.json	Location Type
+RemoteID.SettingsGroup.json	Operator location Type
+RemoteID.SettingsGroup.json	Takeoff(Not Supported),Live GNNS, Fixed (not for FAA)
+RemoteID.SettingsGroup.json	Latitude Fixed
+RemoteID.SettingsGroup.json	Fixed latitude to send on SYSTEM message
+RemoteID.SettingsGroup.json	Longitude Fixed
+RemoteID.SettingsGroup.json	Fixed Longitude to send on SYSTEM message
+RemoteID.SettingsGroup.json	Altitude Fixed
+RemoteID.SettingsGroup.json	Fixed Altitude to send on SYSTEM message
+RemoteID.SettingsGroup.json	Classification Type
+RemoteID.SettingsGroup.json	Classification Type of UAS
+RemoteID.SettingsGroup.json	Undeclared,EU
+RemoteID.SettingsGroup.json	Category
+RemoteID.SettingsGroup.json	Category of the UAS in the EU region
+RemoteID.SettingsGroup.json	Undeclared,Open,Specific,Certified
+RemoteID.SettingsGroup.json	Class
+RemoteID.SettingsGroup.json	Class of the UAS in the EU region
+RemoteID.SettingsGroup.json	Undeclared,Class 0,Class 1,Class 2,Class 3,Class 4,Class 5,Class 6
+ADSBVehicleManager.SettingsGroup.json	Connect to ADSB SBS server
+ADSBVehicleManager.SettingsGroup.json	Connect to ADSB SBS-1 server using specified address/port
+ADSBVehicleManager.SettingsGroup.json	Host address
+ADSBVehicleManager.SettingsGroup.json	Server port
+GimbalController.SettingsGroup.json	Enable on Screen Camera Control
+GimbalController.SettingsGroup.json	Type of on-screen control
+GimbalController.SettingsGroup.json	Click to point, click and drag
+GimbalController.SettingsGroup.json	Vertical camera field of view
+GimbalController.SettingsGroup.json	Horizontal camera field of view
+GimbalController.SettingsGroup.json	Maximum gimbal speed on click and drag (deg/sec)
+GimbalController.SettingsGroup.json	Show gimbal Azimuth indicator over vehicle icon in map
+GimbalController.SettingsGroup.json	Show Azimuth instead of local yaw on top toolbar gimbal indicator
+GimbalController.SettingsGroup.json	Show Azimuth Acquire/release buttons in the gimbal buttons panel
+GimbalController.SettingsGroup.json	Rate used for joystick button control (deg/sec)
+GimbalController.SettingsGroup.json	When a joystick button is set to gimbal left/right/up/down, it will send this rate when pressed, and it will stop moving when button is released
+PlanView.SettingsGroup.json	Display the presets tab at start
+PlanView.SettingsGroup.json	Show/Hide the mission item status display
+PlanView.SettingsGroup.json	Allow missions to not require a takeoff item
+PlanView.SettingsGroup.json	Allow configuring multiple landing sequences if the firmware supports it. The first one will be used for the mission, but in the event of an RTL, the one that is closest will be used instead.
+PlanView.SettingsGroup.json	Use MAV_CMD_CONDITION_GATE for pattern generation
+PlanView.SettingsGroup.json	Amount of distance required for vehicle to complete a transition
+DistanceSensorFact.json	Forward
+DistanceSensorFact.json	Forward/Right
+DistanceSensorFact.json	Right
+DistanceSensorFact.json	Rear/Right
+DistanceSensorFact.json	Rear
+DistanceSensorFact.json	Rear/Left
+DistanceSensorFact.json	Left
+DistanceSensorFact.json	Forward/Left
+DistanceSensorFact.json	Up
+DistanceSensorFact.json	Down
+DistanceSensorFact.json	Minimum distance sensor can detect
+DistanceSensorFact.json	Maximum distance sensor can detect
+SetpointFact.json	Roll Setpoint
+SetpointFact.json	Pitch Setpoint
+SetpointFact.json	Yaw Setpoint
+SetpointFact.json	Roll Rate Setpoint
+SetpointFact.json	Pitch Rate Setpoint
+SetpointFact.json	Yaw Rate Setpoint
+BatteryFact.json	Battery Id
+BatteryFact.json	Battery Function
+BatteryFact.json	Battery Type
+BatteryFact.json	Voltage
+BatteryFact.json	Percent
+BatteryFact.json	Consumed
+BatteryFact.json	Current
+BatteryFact.json	Temperature
+BatteryFact.json	Watts
+BatteryFact.json	Time Remaining
+BatteryFact.json	Charge State
+GeneratorFact.json	Status
+GeneratorFact.json	Generator Speed
+GeneratorFact.json	Battery Current
+GeneratorFact.json	Load Current
+GeneratorFact.json	Power Generated
+GeneratorFact.json	Bus Voltage
+GeneratorFact.json	Rectifier Temperature
+GeneratorFact.json	Battery Current Setpoint
+GeneratorFact.json	Generator Temperature
+GeneratorFact.json	runtime
+GeneratorFact.json	Time until Maintenance
+GPSFact.json	Latitude
+GPSFact.json	Longitude
+GPSFact.json	MGRS Position
+GPSFact.json	HDOP
+GPSFact.json	VDOP
+GPSFact.json	Course Over Ground
+GPSFact.json	GPS Lock
+GPSFact.json	Sat Count
+VibrationFact.json	Vibe xAxis
+VibrationFact.json	Vibe yAxis
+VibrationFact.json	Vibe zAxis
+VibrationFact.json	Clip Count (1)
+VibrationFact.json	Clip Count (3)
+WindFact.json	Wind Direction
+WindFact.json	Wind Spd
+WindFact.json	Wind Spd (vert)
+EscStatusFactGroup.json	Index Of The First ESC In This Message
+EscStatusFactGroup.json	Rotation Per Minute
+EscStatusFactGroup.json	Current
+EscStatusFactGroup.json	Voltage
+TerrainFactGroup.json	Blocks Pending
+TerrainFactGroup.json	Blocks Loaded
+EFIFact.json	Health
+EFIFact.json	Ecu Index
+EFIFact.json	Rpm
+EFIFact.json	Fuel Consumed
+EFIFact.json	Fuel Flow
+EFIFact.json	Engine Load
+EFIFact.json	Throttle Position
+EFIFact.json	Spark dwell time
+EFIFact.json	BarometricPressure
+EFIFact.json	Intake mainfold pressure
+EFIFact.json	Intake mainfold temperature
+EFIFact.json	Cylinder head temperature
+EFIFact.json	Ignition Timing
+EFIFact.json	Injection Time
+EFIFact.json	Exhaust gas Temperature
+EFIFact.json	Throttle Out
+EFIFact.json	Pt Compensation
+TemperatureFact.json	Temperature (1)
+TemperatureFact.json	Temperature (3)
+SubmarineFact.json	Camera Tilt
+SubmarineFact.json	Tether Turns
+SubmarineFact.json	Lights 1 level
+SubmarineFact.json	Lights 2 level
+SubmarineFact.json	Pilot Gain
+SubmarineFact.json	Input Hold
+SubmarineFact.json	Rangefinder
+SubmarineFact.json	RFTarget
+SubmarineFact.json	Roll/Pitch Toggle
+VehicleFact.json	Roll
+VehicleFact.json	Pitch
+VehicleFact.json	Heading
+VehicleFact.json	Roll Rate
+VehicleFact.json	Pitch Rate
+VehicleFact.json	Yaw Rate
+VehicleFact.json	Ground Speed
+VehicleFact.json	Air Speed
+VehicleFact.json	Climb Rate
+VehicleFact.json	Alt (Rel)
+VehicleFact.json	Alt (AMSL)
+VehicleFact.json	Alt (Above Terrain)
+VehicleFact.json	Flight Distance
+VehicleFact.json	Distance to Home
+VehicleFact.json	Time to Home
+VehicleFact.json	Heading to Home
+VehicleFact.json	Distance to GCS
+VehicleFact.json	Mission Item Index
+VehicleFact.json	Next WP Heading
+VehicleFact.json	Next WP distance
+VehicleFact.json	Flight Time
+VehicleFact.json	Hobbs Meter
+VehicleFact.json	Throttle %
+VehicleFact.json	Imu temperature
+ClockFact.json	Time
+ClockFact.json	UTC Time
+ClockFact.json	Date
+LocalPositionFact.json	X
+LocalPositionFact.json	Y
+LocalPositionFact.json	Z
+LocalPositionFact.json	VX
+LocalPositionFact.json	Vy
+LocalPositionFact.json	Vz
+HygrometerFact.json	Temperature
+HygrometerFact.json	Humidity %
+HygrometerFact.json	ID
+RPMFact.json	RPM 1
+RPMFact.json	RPM 2
+RPMFact.json	RPM 3
+RPMFact.json	RPM 4
+EstimatorStatusFactGroup.json	Good Attitude Esimate
+EstimatorStatusFactGroup.json	Good Horiz Vel Estimate
+EstimatorStatusFactGroup.json	Good Vert Vel Estimate
+EstimatorStatusFactGroup.json	Good Horiz Pos Rel Estimate
+EstimatorStatusFactGroup.json	Good Horiz Pos Abs Estimate
+EstimatorStatusFactGroup.json	Good Vert Pos Abs Estimate
+EstimatorStatusFactGroup.json	Good Vert Pos AGL Estimate
+EstimatorStatusFactGroup.json	Good Const Pos Mode Estimate
+EstimatorStatusFactGroup.json	Good Pred Horiz Pos Rel Estimate
+EstimatorStatusFactGroup.json	Good Pred Horiz Pos Abs Estimate
+EstimatorStatusFactGroup.json	Gps Glitch
+EstimatorStatusFactGroup.json	Accel Error
+EstimatorStatusFactGroup.json	Vel Ratio
+EstimatorStatusFactGroup.json	Horiz Pos Ratio
+EstimatorStatusFactGroup.json	Vert Pos Ratio
+EstimatorStatusFactGroup.json	Mag Ratio
+EstimatorStatusFactGroup.json	HAGL Ratio
+EstimatorStatusFactGroup.json	TAS Ratio
+EstimatorStatusFactGroup.json	Horiz Pos Accuracy
+EstimatorStatusFactGroup.json	Vert Pos Accuracy
+GPSRTKFact.json	Connected
+GPSRTKFact.json	Current Survey-In Accuracy
+GPSRTKFact.json	Current Survey-In Latitude
+GPSRTKFact.json	Current Survey-In Longitude
+GPSRTKFact.json	Current Survey-In Altitude
+GPSRTKFact.json	Current Survey-In Duration
+GPSRTKFact.json	Survey-In Valid
+GPSRTKFact.json	Survey-In Active
+GPSRTKFact.json	Number of Satellites
+RCToParamDialog.FactMetaData.json	Scale the RC range
+RCToParamDialog.FactMetaData.json	Parameter value when RC output is 0
+RCToParamDialog.FactMetaData.json	Minimum parameter value
+RCToParamDialog.FactMetaData.json	Maximum parameter value
+EditPositionDialog.FactMetaData.json	Latitude of item position
+EditPositionDialog.FactMetaData.json	Longitude of item position
+EditPositionDialog.FactMetaData.json	Easting of item position
+EditPositionDialog.FactMetaData.json	Northing of item position
+EditPositionDialog.FactMetaData.json	UTM zone
+EditPositionDialog.FactMetaData.json	Hemisphere for position
+EditPositionDialog.FactMetaData.json	MGRS coordinate
+QGCMapCircle.Facts.json	Radius for geofence circle.
+APMFollowComponent.FactMetaData.json	Angle from ground station to vehicle
+APMFollowComponent.FactMetaData.json	Horizontal distance from ground station to vehicle
+APMFollowComponent.FactMetaData.json	Vertical distance from Launch (home) position to vehicle
+TransectStyle.SettingsGroup.json	Amount of additional distance to add outside the survey area for vehicle turn around.
+TransectStyle.SettingsGroup.json	Camera continues taking images in turn arounds.
+TransectStyle.SettingsGroup.json	Stop and Hover at each image point before taking image
+TransectStyle.SettingsGroup.json	Refly the pattern at a 90 degree angle
+TransectStyle.SettingsGroup.json	Additional waypoints within the transect will be added if the terrain altitude difference grows larger than this tolerance.
+TransectStyle.SettingsGroup.json	The maximum climb rate from one waypoint to another when adjusting for terrain. Set to 0 for no max.
+TransectStyle.SettingsGroup.json	The maximum descent rate from one waypoint to another when adjusting for terrain. Set to 0 for no max.
+VTOLLandingPattern.FactMetaData.json	Distance between landing and approach points.
+VTOLLandingPattern.FactMetaData.json	Heading from approach to land point.
+VTOLLandingPattern.FactMetaData.json	Altitude to begin landing approach from.
+VTOLLandingPattern.FactMetaData.json	Loiter radius.
+VTOLLandingPattern.FactMetaData.json	Loiter clockwise around the final approach point.
+VTOLLandingPattern.FactMetaData.json	Altitude for landing point on ground.
+VTOLLandingPattern.FactMetaData.json	Use a loiter to altitude item for final appoach. Otherwise use a regular waypoint.
+VTOLLandingPattern.FactMetaData.json	Stop taking photos
+VTOLLandingPattern.FactMetaData.json	Stop taking video
+CorridorScan.SettingsGroup.json	Altitude for the bottom layer of the structure scan.
+CorridorScan.SettingsGroup.json	Corridor width. Specify 0 width for a single pass scan.
+CorridorScan.SettingsGroup.json	Distance between each triggering of the camera. 0 specifies not camera trigger.
+CorridorScan.SettingsGroup.json	Amount of spacing in between parallel grid lines.
+CorridorScan.SettingsGroup.json	Amount of additional distance to add outside the survey area for vehicle turnaround.
+StructureScan.SettingsGroup.json	Gimbal pitch rotation.
+StructureScan.SettingsGroup.json	Vehicle will fly to/from the structure at this altitude.
+StructureScan.SettingsGroup.json	Altitude for the bottomost covered area of the scan. You can adjust this value such that the Bottom Layer Alt will fly above obstacles on the ground.
+StructureScan.SettingsGroup.json	Number of scan layers.
+StructureScan.SettingsGroup.json	Height of structure being scanned.
+StructureScan.SettingsGroup.json	Start scanning from top of structure.
+MissionSettings.FactMetaData.json	Launch position altitude
+CameraSpec.FactMetaData.json	Camera name.
+CameraSpec.FactMetaData.json	Width of camera image sensor.
+CameraSpec.FactMetaData.json	Height of camera image sensor.
+CameraSpec.FactMetaData.json	Camera image resolution width.
+CameraSpec.FactMetaData.json	Camera image resolution height.
+CameraSpec.FactMetaData.json	Focal length of camera lens.
+CameraSpec.FactMetaData.json	Camera on vehicle is in landscape orientation.
+CameraSpec.FactMetaData.json	Camera orientation ix fixed and cannot be changed.
+CameraSpec.FactMetaData.json	Minimum amount of time between each camera trigger.
+CameraCalc.FactMetaData.json	Camera name.
+CameraCalc.FactMetaData.json	Value specified is distance to surface.
+CameraCalc.FactMetaData.json	Distance vehicle is away from surface.
+CameraCalc.FactMetaData.json	Image desity at surface.
+CameraCalc.FactMetaData.json	Amount of overlap between images in the forward facing direction.
+CameraCalc.FactMetaData.json	Amount of overlap between images in the side facing direction.
+SpeedSection.FactMetaData.json	Set the current flight speed
+FWLandingPattern.FactMetaData.json	Distance between approach and land points.
+FWLandingPattern.FactMetaData.json	Heading from approach to land point.
+FWLandingPattern.FactMetaData.json	Altitude to begin landing approach from.
+FWLandingPattern.FactMetaData.json	Command a specific speed for the approach, useful for reducing energy before the glide slope.
+FWLandingPattern.FactMetaData.json	Speed to perform the approach at.
+FWLandingPattern.FactMetaData.json	Loiter radius.
+FWLandingPattern.FactMetaData.json	Loiter clockwise around the final approach point.
+FWLandingPattern.FactMetaData.json	Altitude for landing point.
+FWLandingPattern.FactMetaData.json	The glide slope between the loiter and landing point.
+FWLandingPattern.FactMetaData.json	Value controller approach point is distance
+FWLandingPattern.FactMetaData.json	Use a loiter to altitude item for final appoach. Otherwise use a regular waypoint.
+FWLandingPattern.FactMetaData.json	Stop taking photos
+FWLandingPattern.FactMetaData.json	Stop taking video
+RallyPoint.FactMetaData.json	Latitude of rally point position
+RallyPoint.FactMetaData.json	Longitude of rally point position
+RallyPoint.FactMetaData.json	Altitude of rally point position (home relative)
+BreachReturn.FactMetaData.json	Latitude of breach return point position
+BreachReturn.FactMetaData.json	Longitude of breach return point position
+BreachReturn.FactMetaData.json	Altitude of breach return point position (Rel)
+MavCmdInfoCommon.json	Delay until the specified time is reached.
+MavCmdInfoCommon.json	Clockwise,Shortest,Counter-Clockwise
+MavCmdInfoCommon.json	Airspeed,Ground Speed,Ascend Speed,Descend Speed
+MavCmdInfoCommon.json	Set actuator
+MavCmdInfoCommon.json	Set actuator to specified output value (range [-1, 1]).
+MavCmdInfoCommon.json	Actuator 1
+MavCmdInfoCommon.json	Actuator 2
+MavCmdInfoCommon.json	Actuator 3
+MavCmdInfoCommon.json	Actuator 4
+MavCmdInfoCommon.json	Gimbal Manager PitchYaw
+MavCmdInfoCommon.json	Control the gimbal during the mission
+MavCmdInfoCommon.json	Pitch
+MavCmdInfoCommon.json	Pitch rate
+MavCmdInfoCommon.json	Yaw rate
+MavCmdInfoCommon.json	Follow yaw
+MavCmdInfoCommon.json	Follow yaw, Lock yaw
+MavCmdInfoCommon.json	Gimbal
+MavCmdInfoCommon.json	Primary,first gimbal,second gimbal
+MavCmdInfoCommon.json	Enable/Disable auto-release or Release a parachute
+MavCmdInfoCommon.json	Gripper Mechanism
+MavCmdInfoCommon.json	Control a gripper mechanism.
+CameraSection.FactMetaData.json	Specify whether the camera should take photos or video
+CameraSection.FactMetaData.json	Specify the distance between each photo
+CameraSection.FactMetaData.json	Specify the time between each photo
+CameraSection.FactMetaData.json	Gimbal pitch rotation.
+CameraSection.FactMetaData.json	Gimbal yaw rotation.
+CameraSection.FactMetaData.json	Specify whether the camera should switch to Photo, Video or Survey mode
+Survey.SettingsGroup.json	Angle for parallel lines of grid.
+Survey.SettingsGroup.json	Fly every other transect in each pass.
+Survey.SettingsGroup.json	Split mission concave polygons into separate regular, convex polygons.
