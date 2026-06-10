@@ -9805,7 +9805,6 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/UI/MainWindow.qml" line="353"/>
       <source>Plan Flight</source>
-      // <translation type="unfinished">Plan Flight</translation>
       <translation>飞行规划</translation>
     </message>
     <message>
