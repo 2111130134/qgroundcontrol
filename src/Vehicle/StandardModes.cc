@@ -13,6 +13,40 @@
 
 QGC_LOGGING_CATEGORY(StandardModesLog, "StandardModesLog")
 
+static QString localizedModeName(const QString& modeName)
+{
+    const QString upperModeName = modeName.toUpper();
+
+    if (upperModeName == QStringLiteral("STABILIZE"))   return QObject::tr("Stabilize");
+    if (upperModeName == QStringLiteral("ACRO"))        return QObject::tr("Acro");
+    if (upperModeName == QStringLiteral("ALT_HOLD"))    return QObject::tr("Altitude Hold");
+    if (upperModeName == QStringLiteral("AUTO"))        return QObject::tr("Auto");
+    if (upperModeName == QStringLiteral("GUIDED"))      return QObject::tr("Guided");
+    if (upperModeName == QStringLiteral("LOITER"))      return QObject::tr("Loiter");
+    if (upperModeName == QStringLiteral("RTL"))         return QObject::tr("RTL");
+    if (upperModeName == QStringLiteral("CIRCLE"))      return QObject::tr("Circle");
+    if (upperModeName == QStringLiteral("LAND"))        return QObject::tr("Land");
+    if (upperModeName == QStringLiteral("DRIFT"))       return QObject::tr("Drift");
+    if (upperModeName == QStringLiteral("SPORT"))       return QObject::tr("Sport");
+    if (upperModeName == QStringLiteral("FLIP"))        return QObject::tr("Flip");
+    if (upperModeName == QStringLiteral("AUTOTUNE"))    return QObject::tr("Autotune");
+    if (upperModeName == QStringLiteral("POSHOLD"))     return QObject::tr("Position Hold");
+    if (upperModeName == QStringLiteral("BRAKE"))       return QObject::tr("Brake");
+    if (upperModeName == QStringLiteral("THROW"))       return QObject::tr("Throw");
+    if (upperModeName == QStringLiteral("AVOID_ADSB"))  return QObject::tr("Avoid ADSB");
+    if (upperModeName == QStringLiteral("GUIDED_NOGPS"))return QObject::tr("Guided No GPS");
+    if (upperModeName == QStringLiteral("SMARTRTL"))    return QObject::tr("Smart RTL");
+    if (upperModeName == QStringLiteral("FLOWHOLD"))    return QObject::tr("Flow Hold");
+    if (upperModeName == QStringLiteral("FOLLOW"))      return QObject::tr("Follow");
+    if (upperModeName == QStringLiteral("ZIGZAG"))      return QObject::tr("ZigZag");
+    if (upperModeName == QStringLiteral("SYSTEMID"))    return QObject::tr("SystemID");
+    if (upperModeName == QStringLiteral("AUTOROTATE"))  return QObject::tr("AutoRotate");
+    if (upperModeName == QStringLiteral("AUTO_RTL"))    return QObject::tr("AutoRTL");
+    if (upperModeName == QStringLiteral("TURTLE"))      return QObject::tr("Turtle");
+
+    return modeName;
+}
+
 static void requestMessageResultHandler(void *resultHandlerData, MAV_RESULT result,
                                         [[maybe_unused]] Vehicle::RequestMessageResultHandlerFailureCode_t failureCode,
                                         const mavlink_message_t &message)
@@ -41,34 +75,34 @@ void StandardModes::gotMessage(MAV_RESULT result, const mavlink_message_t &messa
         bool cannotBeSet = availableModes.properties & MAV_MODE_PROPERTY_NOT_USER_SELECTABLE;
         bool advanced = availableModes.properties & MAV_MODE_PROPERTY_ADVANCED;
         availableModes.mode_name[sizeof(availableModes.mode_name)-1] = '\0';
-        QString name = availableModes.mode_name;
+        QString name = localizedModeName(QString::fromUtf8(availableModes.mode_name));
         switch (availableModes.standard_mode) {
             case MAV_STANDARD_MODE_POSITION_HOLD:
-                name = "Position";
+                name = QObject::tr("Position");
                 break;
             case MAV_STANDARD_MODE_ORBIT:
-                name = "Orbit";
+                name = QObject::tr("Orbit");
                 cannotBeSet = true; // These are exposed in the UI as separate buttons
                 break;
             case MAV_STANDARD_MODE_CRUISE:
-                name = "Cruise";
+                name = QObject::tr("Cruise");
                 break;
             case MAV_STANDARD_MODE_ALTITUDE_HOLD:
-                name = "Altitude";
+                name = QObject::tr("Altitude");
                 break;
             case MAV_STANDARD_MODE_SAFE_RECOVERY:
-                name = "Safe Recovery";
+                name = QObject::tr("Safe Recovery");
                 cannotBeSet = true; // These are exposed in the UI as separate buttons
                 break;
             case MAV_STANDARD_MODE_MISSION:
-                name = "Mission";
+                name = QObject::tr("Mission");
                 break;
             case MAV_STANDARD_MODE_LAND:
-                name = "Land";
+                name = QObject::tr("Land");
                 cannotBeSet = true; // These are exposed in the UI as separate buttons
                 break;
             case MAV_STANDARD_MODE_TAKEOFF:
-                name = "Takeoff";
+                name = QObject::tr("Takeoff");
                 cannotBeSet = true; // These are exposed in the UI as separate buttons
                 break;
         }

@@ -30,6 +30,8 @@ Item {
 
     //-- The point and pixel font size values are computed at runtime
 
+    readonly property real defaultAppFontScale:      0.64
+
     property real defaultFontPointSize:     10
     property real platformFontPointSize:    10
 
@@ -204,6 +206,11 @@ Item {
             //-- See if we are using a custom size
             var _appFontPointSizeFact = QGroundControl.settingsManager.appSettings.appFontPointSize
             var baseSize = _appFontPointSizeFact.value
+            if (baseSize === 0) {
+                baseSize = Math.round(platformFontPointSize * defaultAppFontScale)
+                baseSize = Math.max(_appFontPointSizeFact.min, Math.min(_appFontPointSizeFact.max, baseSize))
+                _appFontPointSizeFact.value = baseSize
+            }
             //-- Sanity check
             if(baseSize < _appFontPointSizeFact.min || baseSize > _appFontPointSizeFact.max) {
                 baseSize = platformFontPointSize;
