@@ -2,6 +2,162 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="zh-CN" sourcelanguage="en">
   <context>
+    <name>APMCopterMode</name>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="79"/>
+      <source>Stabilize</source>
+      <translation>增稳</translation>
+    </message>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="80"/>
+      <source>Acro</source>
+      <translation>特技</translation>
+    </message>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="81"/>
+      <source>Altitude Hold</source>
+      <translation>定高</translation>
+    </message>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="82"/>
+      <source>Auto</source>
+      <translation>自动</translation>
+    </message>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="83"/>
+      <source>Guided</source>
+      <translation>引导</translation>
+    </message>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="84"/>
+      <source>Loiter</source>
+      <translation>悬停</translation>
+    </message>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="85"/>
+      <source>RTL</source>
+      <translation>返航</translation>
+    </message>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="86"/>
+      <source>Circle</source>
+      <translation>绕圈</translation>
+    </message>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="87"/>
+      <source>Land</source>
+      <translation>着陆</translation>
+    </message>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="88"/>
+      <source>Drift</source>
+      <translation>漂移</translation>
+    </message>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="89"/>
+      <source>Sport</source>
+      <translation>运动</translation>
+    </message>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="90"/>
+      <source>Flip</source>
+      <translation>翻滚</translation>
+    </message>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="91"/>
+      <source>Autotune</source>
+      <translation>自动调参</translation>
+    </message>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="92"/>
+      <source>Position Hold</source>
+      <translation>定点保持</translation>
+    </message>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="93"/>
+      <source>Brake</source>
+      <translation>刹车</translation>
+    </message>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="94"/>
+      <source>Throw</source>
+      <translation>投掷</translation>
+    </message>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="95"/>
+      <source>Avoid ADSB</source>
+      <translation>避让 ADSB</translation>
+    </message>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="96"/>
+      <source>Guided No GPS</source>
+      <translation>无 GPS 引导</translation>
+    </message>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="97"/>
+      <source>Smart RTL</source>
+      <translation>智能返航</translation>
+    </message>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="98"/>
+      <source>Flow Hold</source>
+      <translation>光流保持</translation>
+    </message>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="99"/>
+      <source>Follow</source>
+      <translation>跟随</translation>
+    </message>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="100"/>
+      <source>ZigZag</source>
+      <translation>之字飞行</translation>
+    </message>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="101"/>
+      <source>SystemID</source>
+      <translation>系统 ID</translation>
+    </message>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="102"/>
+      <source>AutoRotate</source>
+      <translation>自动旋转</translation>
+    </message>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="103"/>
+      <source>AutoRTL</source>
+      <translation>自动返航</translation>
+    </message>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="104"/>
+      <source>Turtle</source>
+      <translation>翻正</translation>
+    </message>
+  </context>
+  <context>
+    <name>APMCustomMode</name>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/APMFirmwarePlugin.h" line="102"/>
+      <source>Guided</source>
+      <translation>引导</translation>
+    </message>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/APMFirmwarePlugin.h" line="103"/>
+      <source>RTL</source>
+      <translation>返航</translation>
+    </message>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/APMFirmwarePlugin.h" line="104"/>
+      <source>Smart RTL</source>
+      <translation>智能返航</translation>
+    </message>
+    <message>
+      <location filename="../src/FirmwarePlugin/APM/APMFirmwarePlugin.h" line="105"/>
+      <source>Auto</source>
+      <translation>自动</translation>
+    </message>
+  </context>
+  <context>
     <name>ADSBVehicleManager</name>
     <message>
       <location filename="../src/ADSB/ADSBVehicleManager.cc" line="70"/>
@@ -16535,6 +16691,174 @@ ROTATION_NONE indicates component points in direction of flight.</translation>
       <location filename="../src/comm/TCPLink.cc" line="142"/>
       <source>Error on link %1. Error on socket: %2.</source>
       <translation type="unfinished">Error on link %1. Error on socket: %2.</translation>
+    </message>
+  </context>
+  <context>
+    <name>StandardModes</name>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="18"/>
+      <source>Stabilize</source>
+      <translation>增稳</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="19"/>
+      <source>Acro</source>
+      <translation>特技</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="20"/>
+      <source>Altitude Hold</source>
+      <translation>定高</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="21"/>
+      <source>Auto</source>
+      <translation>自动</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="22"/>
+      <source>Guided</source>
+      <translation>引导</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="23"/>
+      <source>Loiter</source>
+      <translation>悬停</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="24"/>
+      <source>RTL</source>
+      <translation>返航</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="25"/>
+      <source>Circle</source>
+      <translation>绕圈</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="26"/>
+      <source>Land</source>
+      <translation>着陆</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="27"/>
+      <source>Drift</source>
+      <translation>漂移</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="28"/>
+      <source>Sport</source>
+      <translation>运动</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="29"/>
+      <source>Flip</source>
+      <translation>翻滚</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="30"/>
+      <source>Autotune</source>
+      <translation>自动调参</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="31"/>
+      <source>Position Hold</source>
+      <translation>定点保持</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="32"/>
+      <source>Brake</source>
+      <translation>刹车</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="33"/>
+      <source>Throw</source>
+      <translation>投掷</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="34"/>
+      <source>Avoid ADSB</source>
+      <translation>避让 ADSB</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="35"/>
+      <source>Guided No GPS</source>
+      <translation>无 GPS 引导</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="36"/>
+      <source>Smart RTL</source>
+      <translation>智能返航</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="37"/>
+      <source>Flow Hold</source>
+      <translation>光流保持</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="38"/>
+      <source>Follow</source>
+      <translation>跟随</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="39"/>
+      <source>ZigZag</source>
+      <translation>之字飞行</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="40"/>
+      <source>SystemID</source>
+      <translation>系统 ID</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="41"/>
+      <source>AutoRotate</source>
+      <translation>自动旋转</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="42"/>
+      <source>AutoRTL</source>
+      <translation>自动返航</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="43"/>
+      <source>Turtle</source>
+      <translation>翻正</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="79"/>
+      <source>Position</source>
+      <translation>定点</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="82"/>
+      <source>Orbit</source>
+      <translation>盘旋</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="85"/>
+      <source>Cruise</source>
+      <translation>巡航</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="88"/>
+      <source>Altitude</source>
+      <translation>高度保持</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="91"/>
+      <source>Safe Recovery</source>
+      <translation>安全恢复</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="94"/>
+      <source>Mission</source>
+      <translation>任务</translation>
+    </message>
+    <message>
+      <location filename="../src/Vehicle/StandardModes.cc" line="100"/>
+      <source>Takeoff</source>
+      <translation>起飞</translation>
     </message>
   </context>
   <context>
