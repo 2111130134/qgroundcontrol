@@ -6503,7 +6503,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/FlightDisplay/FlyViewMap.qml" line="720"/>
       <source>Set home here</source>
-      <translation type="unfinished">Set home here</translation>
+      <translation>设置家的位置</translation>
     </message>
     <message>
       <location filename="../src/FlightDisplay/FlyViewMap.qml" line="730"/>
@@ -13124,7 +13124,7 @@ Click &apos;Ok&apos; to upload the Plan anyway.</translation>
     <message>
       <location filename="../src/QmlControls/PlanViewToolBar.qml" line="58"/>
       <source>Exit Plan</source>
-      <translation type="unfinished">Exit Plan</translation>
+      <translation>退出</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/PlanViewToolBar.qml" line="131"/>
@@ -14979,17 +14979,17 @@ Click the Next button to upload calibration to board. Click Cancel if you don&ap
     <message>
       <location filename="../src/QmlControls/RemoteIDIndicatorPage.qml" line="232"/>
       <source>Press and Hold below button to declare emergency</source>
-      <translation type="unfinished">Press and Hold below button to declare emergency</translation>
+      <translation>按住下方按钮声明紧急情况</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/RemoteIDIndicatorPage.qml" line="257"/>
       <source>Clear Emergency</source>
-      <translation type="unfinished">Clear Emergency</translation>
+      <translation>清除紧急情况</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/RemoteIDIndicatorPage.qml" line="257"/>
       <source>EMERGENCY</source>
-      <translation type="unfinished">EMERGENCY</translation>
+      <translation>紧急情况</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/RemoteIDIndicatorPage.qml" line="335"/>
