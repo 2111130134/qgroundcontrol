@@ -5419,7 +5419,7 @@ Click Ok to start the auto-tuning process.
       <location filename="../src/QmlControls/EditPositionDialog.qml" line="132"/>
       <location filename="../src/QmlControls/EditPositionDialog.qml" line="142"/>
       <source>Set position</source>
-      <translation type="unfinished">Set position</translation>
+      <translation>设置位置</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/EditPositionDialog.qml" line="73"/>
@@ -5427,7 +5427,7 @@ Click Ok to start the auto-tuning process.
       <location filename="../src/QmlControls/EditPositionDialog.qml" line="133"/>
       <location filename="../src/QmlControls/EditPositionDialog.qml" line="143"/>
       <source>Move</source>
-      <translation type="unfinished">Move</translation>
+      <translation>移动</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/EditPositionDialog.qml" line="82"/>
