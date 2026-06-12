@@ -80,7 +80,7 @@ private:
     const QString _acroFlightMode = tr("Acro");
     const QString _altHoldFlightMode = tr("Altitude Hold");
     const QString _autoFlightMode = tr("Auto");
-    const QString _guidedFlightMode = "引导";
+    const QString _guidedFlightMode = tr("Guided");
     const QString _loiterFlightMode = tr("Loiter");
     const QString _rtlFlightMode = tr("RTL");
     const QString _circleFlightMode = tr("Circle");
