@@ -77,10 +77,10 @@ protected:
 
 private:
     const QString _stabilizeFlightMode = tr("Stabilize");
-    const QString _acroFlightMode = QStringLiteral("特技");
+    const QString _acroFlightMode = tr("Acro");
     const QString _altHoldFlightMode = tr("Altitude Hold");
     const QString _autoFlightMode = tr("Auto");
-    const QString _guidedFlightMode = tr("Guided");
+    const QString _guidedFlightMode = QStringLiteral("引导");
     const QString _loiterFlightMode = tr("Loiter");
     const QString _rtlFlightMode = tr("RTL");
     const QString _circleFlightMode = tr("Circle");
