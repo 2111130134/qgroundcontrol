@@ -11,7 +11,100 @@
 #include "Vehicle.h"
 #include "QGCLoggingCategory.h"
 
+#include <QtCore/QCoreApplication>
+
 QGC_LOGGING_CATEGORY(StandardModesLog, "StandardModesLog")
+
+namespace {
+
+QString trAPMCopterMode(const char* sourceText)
+{
+    return QCoreApplication::translate("APMCopterMode", sourceText);
+}
+
+QString localizeAvailableModeName(QString name)
+{
+    QString normalized = name.trimmed().toUpper();
+    normalized.replace(' ', '_');
+    normalized.replace('-', '_');
+
+    if (normalized == "AUTO_RTL" || normalized == "AUTORTL") {
+        return trAPMCopterMode("AutoRTL");
+    }
+    if (normalized == "AUTO") {
+        return trAPMCopterMode("Auto");
+    }
+    if (normalized == "ACRO") {
+        return trAPMCopterMode("Acro");
+    }
+    if (normalized == "STABILIZE") {
+        return trAPMCopterMode("Stabilize");
+    }
+    if (normalized == "ALT_HOLD" || normalized == "ALTHOLD") {
+        return trAPMCopterMode("Altitude Hold");
+    }
+    if (normalized == "CIRCLE") {
+        return trAPMCopterMode("Circle");
+    }
+    if (normalized == "LOITER") {
+        return trAPMCopterMode("Loiter");
+    }
+    if (normalized == "GUIDED") {
+        return trAPMCopterMode("Guided");
+    }
+    if (normalized == "LAND") {
+        return trAPMCopterMode("Land");
+    }
+    if (normalized == "RTL") {
+        return trAPMCopterMode("RTL");
+    }
+    if (normalized == "DRIFT") {
+        return trAPMCopterMode("Drift");
+    }
+    if (normalized == "FLIP") {
+        return trAPMCopterMode("Flip");
+    }
+    if (normalized == "POSHOLD" || normalized == "POS_HOLD" || normalized == "POSITION_HOLD") {
+        return trAPMCopterMode("Position Hold");
+    }
+    if (normalized == "BRAKE") {
+        return trAPMCopterMode("Brake");
+    }
+    if (normalized == "THROW") {
+        return trAPMCopterMode("Throw");
+    }
+    if (normalized == "AVOID_ADSB" || normalized == "AVOIDADSB") {
+        return trAPMCopterMode("Avoid ADSB");
+    }
+    if (normalized == "GUIDED_NOGPS" || normalized == "GUIDED_NO_GPS") {
+        return trAPMCopterMode("Guided No GPS");
+    }
+    if (normalized == "SMARTRTL" || normalized == "SMART_RTL") {
+        return trAPMCopterMode("Smart RTL");
+    }
+    if (normalized == "FLOWHOLD" || normalized == "FLOW_HOLD") {
+        return trAPMCopterMode("Flow Hold");
+    }
+    if (normalized == "FOLLOW") {
+        return trAPMCopterMode("Follow");
+    }
+    if (normalized == "ZIGZAG" || normalized == "ZUGZAG") {
+        return trAPMCopterMode("ZigZag");
+    }
+    if (normalized == "SYSTEMID" || normalized == "SYSTEM_ID") {
+        return trAPMCopterMode("SystemID");
+    }
+    if (normalized == "TURTLE" || normalized == "TURLE") {
+        return trAPMCopterMode("Turtle");
+    }
+    if (normalized == "AUTOTUNE") {
+        return trAPMCopterMode("Autotune");
+    }
+
+    return name;
+}
+
+}
 
 static void requestMessageResultHandler(void *resultHandlerData, MAV_RESULT result,
                                         [[maybe_unused]] Vehicle::RequestMessageResultHandlerFailureCode_t failureCode,
@@ -41,34 +134,34 @@ void StandardModes::gotMessage(MAV_RESULT result, const mavlink_message_t &messa
         bool cannotBeSet = availableModes.properties & MAV_MODE_PROPERTY_NOT_USER_SELECTABLE;
         bool advanced = availableModes.properties & MAV_MODE_PROPERTY_ADVANCED;
         availableModes.mode_name[sizeof(availableModes.mode_name)-1] = '\0';
-        QString name = availableModes.mode_name;
+        QString name = localizeAvailableModeName(QString::fromUtf8(availableModes.mode_name));
         switch (availableModes.standard_mode) {
             case MAV_STANDARD_MODE_POSITION_HOLD:
-                name = "Position";
+                name = tr("Position");
                 break;
             case MAV_STANDARD_MODE_ORBIT:
-                name = "Orbit";
+                name = tr("Orbit");
                 cannotBeSet = true; // These are exposed in the UI as separate buttons
                 break;
             case MAV_STANDARD_MODE_CRUISE:
-                name = "Cruise";
+                name = tr("Cruise");
                 break;
             case MAV_STANDARD_MODE_ALTITUDE_HOLD:
-                name = "Altitude";
+                name = tr("Altitude");
                 break;
             case MAV_STANDARD_MODE_SAFE_RECOVERY:
-                name = "Safe Recovery";
+                name = tr("Safe Recovery");
                 cannotBeSet = true; // These are exposed in the UI as separate buttons
                 break;
             case MAV_STANDARD_MODE_MISSION:
-                name = "Mission";
+                name = tr("Mission");
                 break;
             case MAV_STANDARD_MODE_LAND:
-                name = "Land";
+                name = tr("Land");
                 cannotBeSet = true; // These are exposed in the UI as separate buttons
                 break;
             case MAV_STANDARD_MODE_TAKEOFF:
-                name = "Takeoff";
+                name = tr("Takeoff");
                 cannotBeSet = true; // These are exposed in the UI as separate buttons
                 break;
         }
