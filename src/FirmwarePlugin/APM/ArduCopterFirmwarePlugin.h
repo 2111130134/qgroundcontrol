@@ -100,7 +100,7 @@ private:
     const QString _zigzagFlightMode = tr("ZigZag");
     const QString _systemIDFlightMode = tr("SystemID");
     const QString _autoRotateFlightMode = tr("AutoRotate");
-    const QString _autoRTLFlightMode = QStringLiteral(自动RTL);
+    const QString _autoRTLFlightMode = tr("AutoRTL");
     const QString _turtleFlightMode = tr("Turtle");
 
     static bool _remapParamNameIntialized;

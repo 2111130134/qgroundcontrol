@@ -4002,17 +4002,17 @@ Please place your vehicle in water, click the button, and wait. Note that the th
     <message>
       <location filename="../src/QmlControls/AltModeDialog.qml" line="20"/>
       <source>Select Altitude Mode</source>
-      <translation type="unfinished">Select Altitude Mode</translation>
+      <translation>选择高度模式</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/AltModeDialog.qml" line="51"/>
       <source>Relative To Launch</source>
-      <translation type="unfinished">Relative To Launch</translation>
+      <translation>相对于起飞点</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/AltModeDialog.qml" line="52"/>
       <source>Specified altitudes are relative to launch position height.</source>
-      <translation type="unfinished">Specified altitudes are relative to launch position height.</translation>
+      <translation>指定的高度是相对于起飞位置高度的。</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/AltModeDialog.qml" line="56"/>
@@ -4022,37 +4022,37 @@ Please place your vehicle in water, click the button, and wait. Note that the th
     <message>
       <location filename="../src/QmlControls/AltModeDialog.qml" line="57"/>
       <source>Specified altitudes are Above Mean Sea Level.</source>
-      <translation type="unfinished">Specified altitudes are Above Mean Sea Level.</translation>
+      <translation>指定的高度是相对于平均海平面的。</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/AltModeDialog.qml" line="61"/>
       <source>Calculated Above Terrain</source>
-      <translation type="unfinished">Calculated Above Terrain</translation>
+      <translation>计算高于地形</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/AltModeDialog.qml" line="62"/>
       <source>Specified altitudes are distance above terrain. Actual altitudes sent to vehicle are calculated from terrain data and sent as AMSL values.</source>
-      <translation type="unfinished">Specified altitudes are distance above terrain. Actual altitudes sent to vehicle are calculated from terrain data and sent as AMSL values.</translation>
+      <translation>指定的高度是相对于地形的高度。发送到飞行器的实际高度是根据地形数据计算的，并以AMSL值发送。</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/AltModeDialog.qml" line="66"/>
       <source>Terrain Frame</source>
-      <translation type="unfinished">Terrain Frame</translation>
+      <translation>地形框架</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/AltModeDialog.qml" line="67"/>
       <source>Specified altitudes are distance above terrain. The actual altitude flown is controlled by the vehicle either from terrain height maps being sent to vehicle or a distance sensor.</source>
-      <translation type="unfinished">Specified altitudes are distance above terrain. The actual altitude flown is controlled by the vehicle either from terrain height maps being sent to vehicle or a distance sensor.</translation>
+      <translation>指定的高度是相对于地形的高度。实际飞行高度由飞行器控制，可以通过发送到飞行器的地形高度图或距离传感器来实现。</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/AltModeDialog.qml" line="71"/>
       <source>Mixed Modes</source>
-      <translation type="unfinished">Mixed Modes</translation>
+      <translation>混合模式</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/AltModeDialog.qml" line="72"/>
       <source>The altitude mode can differ for each individual item.</source>
-      <translation type="unfinished">The altitude mode can differ for each individual item.</translation>
+      <translation>高度模式可以因每个单独的项目而不同。</translation>
     </message>
   </context>
   <context>
@@ -10245,17 +10245,17 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/QmlControls/MissionSettingsEditor.qml" line="68"/>
       <source>All Altitudes</source>
-      <translation type="unfinished">All Altitudes</translation>
+      <translation>所有高度</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/MissionSettingsEditor.qml" line="115"/>
       <source>Initial Waypoint Alt</source>
-      <translation type="unfinished">Initial Waypoint Alt</translation>
+      <translation>初始航点高度</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/MissionSettingsEditor.qml" line="220"/>
       <source>The following speed values are used to calculate total mission time. They do not affect the flight speed for the mission.</source>
-      <translation type="unfinished">The following speed values are used to calculate total mission time. They do not affect the flight speed for the mission.</translation>
+      <translation>以下速度值用于计算任务总时间。它们不会影响任务的飞行速度。</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/MissionSettingsEditor.qml" line="225"/>
@@ -10294,7 +10294,7 @@ Click Ok to start the auto-tuning process.
       <location filename="../src/MissionManager/MissionSettingsItem.h" line="75"/>
       <location filename="../src/MissionManager/MissionSettingsItem.h" line="76"/>
       <source>Mission Start</source>
-      <translation type="unfinished">Mission Start</translation>
+      <translation>任务开始</translation>
     </message>
   </context>
   <context>
@@ -14245,12 +14245,12 @@ sudo apt-get 移除调制解调器管理器</translation>
     <message>
       <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="363"/>
       <source>Calc Above Terrain</source>
-      <translation type="unfinished">Calc Above Terrain</translation>
+      <translation>计算高于地形</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="367"/>
       <source>Mixed Modes</source>
-      <translation type="unfinished">Mixed Modes</translation>
+      <translation>混合模式</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="343"/>
@@ -14260,12 +14260,12 @@ sudo apt-get 移除调制解调器管理器</translation>
     <message>
       <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="359"/>
       <source>Relative To Launch</source>
-      <translation type="unfinished">Relative To Launch</translation>
+      <translation>相对于起飞点</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="365"/>
       <source>Terrain Frame</source>
-      <translation type="unfinished">Terrain Frame</translation>
+      <translation>地形框架</translation>
     </message>
   </context>
   <context>
