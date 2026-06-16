@@ -189,77 +189,59 @@ void QGCCorePlugin::factValueGridCreateDefaultSettings(FactValueGrid* factValueG
             value->setShowUnits(true);
         }
     } else {
-        const bool includeFWValues = ((factValueGrid->vehicleClass() == QGCMAVLink::VehicleClassFixedWing) || (factValueGrid->vehicleClass() == QGCMAVLink::VehicleClassVTOL) || (factValueGrid->vehicleClass() == QGCMAVLink::VehicleClassAirship));
-
         factValueGrid->setFontSize(FactValueGrid::LargeFontSize);
 
         (void) factValueGrid->appendColumn();
         (void) factValueGrid->appendColumn();
         (void) factValueGrid->appendColumn();
-        if (includeFWValues) {
-            (void) factValueGrid->appendColumn();
-        }
         factValueGrid->appendRow();
+        factValueGrid->appendRow();
+        (void) factValueGrid->appendColumn();
+        (void) factValueGrid->appendColumn();
 
-        int rowIndex = 0;
-        QmlObjectListModel *column = factValueGrid->columns()->value<QmlObjectListModel*>(0);
+        auto configureValue = [](InstrumentValueData* value, const QString& factGroup, const QString& factName, const QString& text, bool showUnits = true) {
+            value->setFact(factGroup, factName);
+            value->setIcon(QString());
+            value->setText(text);
+            value->setShowUnits(showUnits);
+        };
 
-        InstrumentValueData *value = column->value<InstrumentValueData*>(rowIndex++);
-        value->setFact(QStringLiteral("Vehicle"), QStringLiteral("AltitudeRelative"));
-        value->setIcon(QStringLiteral("arrow-thick-up.svg"));
-        value->setText(value->fact()->shortDescription());
-        value->setShowUnits(true);
+        static constexpr const char* rgFactGroups[5][3] = {
+            { "Vehicle",  "Vehicle",  "Vehicle"  },
+            { "Vehicle",  "Vehicle",  "Vehicle"  },
+            { "Vehicle",  "Vehicle",  "Vehicle"  },
+            { "Battery0", "Battery0", "Battery0" },
+            { "GPS",      "GPS",      "GPS"      },
+        };
 
-        value = column->value<InstrumentValueData*>(rowIndex++);
-        value->setFact(QStringLiteral("Vehicle"), QStringLiteral("DistanceToHome"));
-        value->setIcon(QStringLiteral("bookmark copy 3.svg"));
-        value->setText(value->fact()->shortDescription());
-        value->setShowUnits(true);
+        static constexpr const char* rgFactNames[5][3] = {
+            { "AltitudeAMSL",     "AltitudeRelative", "RangeFinderDist" },
+            { "ClimbRate",        "GroundSpeed",      "Pitch"           },
+            { "FlightTime",       "FlightDistance",   "DistanceToHome"  },
+            { "Voltage",          "Current",          "InstantPower"    },
+            { "Lat",              "Lon",              "Hdop"            },
+        };
 
-        rowIndex = 0;
-        column = factValueGrid->columns()->value<QmlObjectListModel*>(1);
+        static constexpr const char* rgTexts[5][3] = {
+            { "海拔高度", "相对高度", "雷达高度" },
+            { "升降速率", "飞行速度", "航向角"   },
+            { "飞行时间", "飞行距离", "离家距离" },
+            { "电压",     "电流",     "功率"     },
+            { "纬度",     "经度",     "精度"     },
+        };
 
-        value = column->value<InstrumentValueData*>(rowIndex++);
-        value->setFact(QStringLiteral("Vehicle"), QStringLiteral("ClimbRate"));
-        value->setIcon(QStringLiteral("arrow-simple-up.svg"));
-        value->setText(value->fact()->shortDescription());
-        value->setShowUnits(true);
-
-        value = column->value<InstrumentValueData*>(rowIndex++);
-        value->setFact(QStringLiteral("Vehicle"), QStringLiteral("GroundSpeed"));
-        value->setIcon(QStringLiteral("arrow-simple-right.svg"));
-        value->setText(value->fact()->shortDescription());
-        value->setShowUnits(true);
-
-        if (includeFWValues) {
-            rowIndex = 0;
-            column = factValueGrid->columns()->value<QmlObjectListModel*>(2);
-
-            value = column->value<InstrumentValueData*>(rowIndex++);
-            value->setFact(QStringLiteral("Vehicle"), QStringLiteral("AirSpeed"));
-            value->setText(QStringLiteral("AirSpd"));
-            value->setShowUnits(true);
-
-            value = column->value<InstrumentValueData*>(rowIndex++);
-            value->setFact(QStringLiteral("Vehicle"), QStringLiteral("ThrottlePct"));
-            value->setText(QStringLiteral("Thr"));
-            value->setShowUnits(true);
+        for (int col = 0; col < 5; col++) {
+            QmlObjectListModel* column = factValueGrid->columns()->value<QmlObjectListModel*>(col);
+            for (int row = 0; row < 3; row++) {
+                InstrumentValueData* value = column->value<InstrumentValueData*>(row);
+                const bool showUnits = !(QString::fromLatin1(rgFactNames[col][row]) == QStringLiteral("FlightTime"));
+                configureValue(value,
+                               QString::fromLatin1(rgFactGroups[col][row]),
+                               QString::fromLatin1(rgFactNames[col][row]),
+                               QString::fromUtf8(rgTexts[col][row]),
+                               showUnits);
+            }
         }
-
-        rowIndex = 0;
-        column = factValueGrid->columns()->value<QmlObjectListModel*>(includeFWValues ? 3 : 2);
-
-        value = column->value<InstrumentValueData*>(rowIndex++);
-        value->setFact(QStringLiteral("Vehicle"), QStringLiteral("FlightTime"));
-        value->setIcon(QStringLiteral("timer.svg"));
-        value->setText(value->fact()->shortDescription());
-        value->setShowUnits(false);
-
-        value = column->value<InstrumentValueData*>(rowIndex++);
-        value->setFact(QStringLiteral("Vehicle"), QStringLiteral("FlightDistance"));
-        value->setIcon(QStringLiteral("travel-walk.svg"));
-        value->setText(value->fact()->shortDescription());
-        value->setShowUnits(true);
     }
 }
 
