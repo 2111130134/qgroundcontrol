@@ -840,7 +840,7 @@
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMFollowComponent.qml" line="224"/>
       <source>The vehicle parameters required for follow me are currently set in a way which is not supported. Using follow with this setup may lead to unpredictable/hazardous results.</source>
-      <translation>跟随模式的车辆参数设置不支持。使用此设置可能将导致不可预测或危险的结果。</translation>
+      <translation>跟随模式的无人机参数设置不支持。使用此设置可能将导致不可预测或危险的结果。</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMFollowComponent.qml" line="230"/>
@@ -865,7 +865,7 @@
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMFollowComponent.qml" line="265"/>
       <source>Point Vehicle</source>
-      <translation>点式车辆</translation>
+      <translation>点式无人机</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMFollowComponent.qml" line="275"/>
@@ -885,7 +885,7 @@
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMFollowComponent.qml" line="288"/>
       <source>Vehicle Offsets</source>
-      <translation>车辆补偿值</translation>
+      <translation>无人机补偿值</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMFollowComponent.qml" line="291"/>
@@ -1578,7 +1578,7 @@
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMPowerComponent.qml" line="530"/>
       <source>If the vehicle reports a high current read when there is little or no current going through it, adjust the Amps Offset. It should be equal to the voltage reported by the sensor when the current is zero.</source>
-      <translation>若车辆没有电流通过而传感器读数过高，请调整电流补偿。此值应等于零电流时传感器报告的电压值。</translation>
+      <translation>若无人机没有电流通过而传感器读数过高，请调整电流补偿。此值应等于零电流时传感器报告的电压值。</translation>
     </message>
     <message>
       <location filename="../src/AutoPilotPlugins/APM/APMPowerComponent.qml" line="554"/>
@@ -5401,7 +5401,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/QmlControls/EditPositionDialog.qml" line="51"/>
       <source>Vehicle Position</source>
-      <translation>车辆位置</translation>
+      <translation>无人机位置</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/EditPositionDialog.qml" line="56"/>
@@ -10843,7 +10843,7 @@ Is this really what you want?</translation>
     <message>
       <location filename="../src/FirstRunPromptDialogs/OfflineVehicleFirstRunPrompt.qml" line="21"/>
       <source>Vehicle Information</source>
-      <translation>车辆信息</translation>
+      <translation>无人机信息</translation>
     </message>
     <message>
       <location filename="../src/FirstRunPromptDialogs/OfflineVehicleFirstRunPrompt.qml" line="36"/>
@@ -12538,7 +12538,7 @@ Note that this will also completely reset everything, including UAVCAN nodes, al
     <message>
       <location filename="../src/MissionManager/PlanManager.cc" line="357"/>
       <source>Internal Error: Call to Vehicle _requestNextMissionItem with no more indices to read</source>
-      <translation>内部错误：呼叫车辆_requestNextMission项目没有更多要阅读的索引</translation>
+      <translation>内部错误：呼叫无人机_requestNextMission项目没有更多要阅读的索引</translation>
     </message>
     <message>
       <location filename="../src/MissionManager/PlanManager.cc" line="515"/>
@@ -12548,7 +12548,7 @@ Note that this will also completely reset everything, including UAVCAN nodes, al
     <message>
       <location filename="../src/MissionManager/PlanManager.cc" line="629"/>
       <source>Vehicle remove all failed. Error: %1</source>
-      <translation>车辆移除所有失败。错误： %1</translation>
+      <translation>无人机移除所有失败。错误： %1</translation>
     </message>
     <message>
       <location filename="../src/MissionManager/PlanManager.cc" line="704"/>
@@ -14552,7 +14552,7 @@ sudo apt-get 移除调制解调器管理器</translation>
     <message>
       <location filename="../src/QmlControls/RCToParamDialog.qml" line="47"/>
       <source>Waiting on parameter update from Vehicle.</source>
-      <translation>正在等待车辆的参数更新。</translation>
+      <translation>正在等待无人机的参数更新。</translation>
     </message>
     <message>
       <location filename="../src/QmlControls/RCToParamDialog.qml" line="58"/>
@@ -18160,7 +18160,7 @@ ROTATION_NONE indicates component points in direction of flight.</translation>
     <message>
       <location filename="../src/FlightDisplay/VehicleWarnings.qml" line="56"/>
       <source>The vehicle has failed a pre-arm check. In order to arm the vehicle, resolve the failure.</source>
-      <translation>车辆未能进行武装前检查。为了装备车辆，解决故障。</translation>
+      <translation>无人机未能进行武装前检查。为了装备无人机，解决故障。</translation>
     </message>
   </context>
   <context>

@@ -17,7 +17,7 @@
 #include "PlanMasterController.h"
 #include "MissionItem.h"
 #include "QGCApplication.h"
-#include "Vehicle.h"
+#include "Vehicle.h"s
 #include "QGCLoggingCategory.h"
 
 #include <QtGui/QPolygonF>
@@ -26,7 +26,7 @@
 
 QGC_LOGGING_CATEGORY(SurveyComplexItemLog, "SurveyComplexItemLog")
 
-const QString SurveyComplexItem::name(SurveyComplexItem::tr("Survey"));
+const QString SurveyComplexItem::name(QStringLiteral("勘测"));
 
 SurveyComplexItem::SurveyComplexItem(PlanMasterController* masterController, bool flyView, const QString& kmlOrShpFile)
     : TransectStyleComplexItem  (masterController, flyView, settingsGroup)
