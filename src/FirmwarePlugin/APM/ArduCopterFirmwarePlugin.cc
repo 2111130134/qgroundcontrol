@@ -11,35 +11,34 @@
 #include "ParameterManager.h"
 #include "Vehicle.h"
 
-#include <QtCore/QSet>
-
 bool ArduCopterFirmwarePlugin::_remapParamNameIntialized = false;
 FirmwarePlugin::remapParamNameMajorVersionMap_t ArduCopterFirmwarePlugin::_remapParamName;
 
 namespace {
 
-const QSet<QString>& hiddenCopterFlightModes()
+bool isHiddenCopterMode(uint32_t customMode)
 {
-    static const QSet<QString> hiddenModes{
-        QStringLiteral("Stabilize"),
-        QStringLiteral("Acro"),
-        QStringLiteral("Circle"),
-        QStringLiteral("Drift"),
-        QStringLiteral("Sport"),
-        QStringLiteral("Flip"),
-        QStringLiteral("Autotune"),
-        QStringLiteral("Throw"),
-        QStringLiteral("Avoid ADSB"),
-        QStringLiteral("Guided No GPS"),
-        QStringLiteral("Flow Hold"),
-        QStringLiteral("Follow"),
-        QStringLiteral("ZigZag"),
-        QStringLiteral("SystemID"),
-        QStringLiteral("AutoRotate"),
-        QStringLiteral("Turtle")
-    };
-
-    return hiddenModes;
+    switch (customMode) {
+    case APMCopterMode::STABILIZE:
+    case APMCopterMode::ACRO:
+    case APMCopterMode::CIRCLE:
+    case APMCopterMode::DRIFT:
+    case APMCopterMode::SPORT:
+    case APMCopterMode::FLIP:
+    case APMCopterMode::AUTOTUNE:
+    case APMCopterMode::THROW:
+    case APMCopterMode::AVOID_ADSB:
+    case APMCopterMode::GUIDED_NOGPS:
+    case APMCopterMode::FLOWHOLD:
+    case APMCopterMode::FOLLOW:
+    case APMCopterMode::ZIGZAG:
+    case APMCopterMode::SYSTEMID:
+    case APMCopterMode::AUTOROTATE:
+    case APMCopterMode::TURTLE:
+        return true;
+    default:
+        return false;
+    }
 }
 
 }
@@ -180,13 +179,11 @@ QString ArduCopterFirmwarePlugin::stabilizedFlightMode() const
 
 void ArduCopterFirmwarePlugin::updateAvailableFlightModes(FlightModeList &modeList)
 {
-    const QSet<QString>& hiddenModes = hiddenCopterFlightModes();
-
     for (FirmwareFlightMode &mode: modeList) {
         mode.fixedWing = false;
         mode.multiRotor = true;
 
-        if (hiddenModes.contains(mode.mode_name)) {
+        if (isHiddenCopterMode(mode.custom_mode)) {
             mode.canBeSet = false;
         }
     }
