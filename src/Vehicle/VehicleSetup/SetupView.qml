@@ -95,8 +95,8 @@ Rectangle {
     function showParametersPanel() {
         if (mainWindow.allowViewSwitch()) {
             _parameterPasswordError = ""
-            parameterPasswordField.text = ""
-            parameterPasswordDialog.open()
+            parametersButton.checked = true
+            panelLoader.setSourceComponent(parameterLoginComponent)
         }
     }
 
@@ -327,69 +327,72 @@ Rectangle {
 
         property var vehicleComponent
     }
-    QGCPopupDialog {
-        id:                 parameterPasswordDialog
-        title:              qsTr("Password Required")
-        buttons:            Dialog.NoButton
-        anchors.centerIn:   parent
+    Component {
+        id: parameterLoginComponent
 
-        ColumnLayout {
-            spacing: _defaultTextHeight / 2
+        Rectangle {
+            color: qgcPal.window
 
-            QGCLabel {
-                Layout.fillWidth: true
-                wrapMode: Text.WordWrap
-                text: qsTr("Enter the password to open Parameters.")
-            }
+            ColumnLayout {
+                anchors.centerIn: parent
+                width: Math.min(parent.width - _horizontalMargin * 4, _defaultTextWidth * 34)
+                spacing: _defaultTextHeight
 
-            QGCTextField {
-                id:                 parameterPasswordField
-                Layout.fillWidth:   true
-                echoMode:           TextInput.Password
-                placeholderText:    qsTr("Password")
-                onAccepted:         parameterPasswordDialog.confirmParameterPassword()
-            }
+                QGCLabel {
+                    Layout.fillWidth: true
+                    font.pointSize: ScreenTools.mediumFontPointSize
+                    wrapMode: Text.WordWrap
+                    text: qsTr("Enter the password to open Parameters.")
+                }
 
-            QGCLabel {
-                Layout.fillWidth:   true
-                color:              qgcPal.warningText
-                visible:            _parameterPasswordError !== ""
-                wrapMode:           Text.WordWrap
-                text:               _parameterPasswordError
-            }
+                QGCTextField {
+                    id:                 parameterPasswordField
+                    Layout.fillWidth:   true
+                    echoMode:           TextInput.Password
+                    placeholderText:    qsTr("Password")
+                    onAccepted:         confirmParameterPassword()
+                }
 
-            RowLayout {
-                Layout.alignment: Qt.AlignRight
-                spacing: _defaultTextWidth
+                QGCLabel {
+                    Layout.fillWidth: true
+                    color: qgcPal.warningText
+                    visible: _parameterPasswordError !== ""
+                    wrapMode: Text.WordWrap
+                    text: _parameterPasswordError
+                }
 
-                QGCButton {
-                    text: qsTr("Cancel")
-                    onClicked: {
-                        _parameterPasswordError = ""
-                        parameterPasswordField.text = ""
-                        parameterPasswordDialog.close()
+                RowLayout {
+                    Layout.alignment: Qt.AlignRight
+                    spacing: _defaultTextWidth
+
+                    QGCButton {
+                        text: qsTr("Clear")
+                        onClicked: {
+                            _parameterPasswordError = ""
+                            parameterPasswordField.text = ""
+                            parameterPasswordField.forceActiveFocus()
+                        }
+                    }
+
+                    QGCButton {
+                        text: qsTr("Login")
+                        onClicked: confirmParameterPassword()
                     }
                 }
-
-                QGCButton {
-                    text: qsTr("OK")
-                    onClicked: parameterPasswordDialog.confirmParameterPassword()
-                }
             }
-        }
 
-        onOpened: parameterPasswordField.forceActiveFocus()
+            Component.onCompleted: parameterPasswordField.forceActiveFocus()
 
-        function confirmParameterPassword() {
-            if (parameterPasswordField.text === _parameterPassword) {
-                _parameterPasswordError = ""
-                parameterPasswordField.text = ""
-                parameterPasswordDialog.close()
-                openParametersEditor()
-            } else {
-                _parameterPasswordError = qsTr("Incorrect password")
-                parameterPasswordField.selectAll()
-                parameterPasswordField.forceActiveFocus()
+            function confirmParameterPassword() {
+                if (parameterPasswordField.text === _parameterPassword) {
+                    _parameterPasswordError = ""
+                    parameterPasswordField.text = ""
+                    openParametersEditor()
+                } else {
+                    _parameterPasswordError = qsTr("Incorrect password")
+                    parameterPasswordField.selectAll()
+                    parameterPasswordField.forceActiveFocus()
+                }
             }
         }
     }
