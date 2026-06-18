@@ -6584,7 +6584,7 @@ Click Ok to start the auto-tuning process.
     <message>
       <location filename="../src/FlightDisplay/FlyViewPreFlightChecklistPopup.qml" line="21"/>
       <source>Pre-Flight Checklist</source>
-      <translation type="unfinished">Pre-Flight Checklist</translation>
+      <translation>飞行前检查</translation>
     </message>
   </context>
   <context>
@@ -13494,7 +13494,7 @@ Click &apos;Ok&apos; to upload the Plan anyway.</translation>
     <message>
       <location filename="../src/FlightDisplay/PreFlightCheckList.qml" line="134"/>
       <source>In Progress</source>
-      <translation type="unfinished">In Progress</translation>
+      <translation>进行中</translation>
     </message>
   </context>
   <context>
