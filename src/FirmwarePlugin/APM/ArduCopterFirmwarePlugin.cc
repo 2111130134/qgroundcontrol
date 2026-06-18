@@ -11,8 +11,38 @@
 #include "ParameterManager.h"
 #include "Vehicle.h"
 
+#include <QtCore/QSet>
+
 bool ArduCopterFirmwarePlugin::_remapParamNameIntialized = false;
 FirmwarePlugin::remapParamNameMajorVersionMap_t ArduCopterFirmwarePlugin::_remapParamName;
+
+namespace {
+
+const QSet<QString>& hiddenCopterFlightModes()
+{
+    static const QSet<QString> hiddenModes{
+        QStringLiteral("Stabilize"),
+        QStringLiteral("Acro"),
+        QStringLiteral("Circle"),
+        QStringLiteral("Drift"),
+        QStringLiteral("Sport"),
+        QStringLiteral("Flip"),
+        QStringLiteral("Autotune"),
+        QStringLiteral("Throw"),
+        QStringLiteral("Avoid ADSB"),
+        QStringLiteral("Guided No GPS"),
+        QStringLiteral("Flow Hold"),
+        QStringLiteral("Follow"),
+        QStringLiteral("ZigZag"),
+        QStringLiteral("SystemID"),
+        QStringLiteral("AutoRotate"),
+        QStringLiteral("Turtle")
+    };
+
+    return hiddenModes;
+}
+
+}
 
 ArduCopterFirmwarePlugin::ArduCopterFirmwarePlugin(QObject *parent)
     : APMFirmwarePlugin(parent)
@@ -150,9 +180,15 @@ QString ArduCopterFirmwarePlugin::stabilizedFlightMode() const
 
 void ArduCopterFirmwarePlugin::updateAvailableFlightModes(FlightModeList &modeList)
 {
+    const QSet<QString>& hiddenModes = hiddenCopterFlightModes();
+
     for (FirmwareFlightMode &mode: modeList) {
         mode.fixedWing = false;
         mode.multiRotor = true;
+
+        if (hiddenModes.contains(mode.mode_name)) {
+            mode.canBeSet = false;
+        }
     }
 
     _updateFlightModeList(modeList);
