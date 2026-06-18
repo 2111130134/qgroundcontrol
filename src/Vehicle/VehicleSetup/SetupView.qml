@@ -36,9 +36,10 @@ Rectangle {
     readonly property real      _verticalMargin:    _defaultTextHeight / 2
     readonly property real      _buttonWidth:       _defaultTextWidth * 18
     readonly property string    _armedVehicleText:  qsTr("This operation cannot be performed while the vehicle is armed.")
-
+    readonly property string    _parameterPassword: "123456"
     property bool   _vehicleArmed:                  QGroundControl.multiVehicleManager.activeVehicle ? QGroundControl.multiVehicleManager.activeVehicle.armed : false
     property string _messagePanelText:              qsTr("missing message panel text")
+    property string _parameterPasswordError:        ""
     property bool   _fullParameterVehicleAvailable: QGroundControl.multiVehicleManager.parameterReadyVehicleAvailable && !QGroundControl.multiVehicleManager.activeVehicle.parameterManager.missingParameters
     property var    _corePlugin:                    QGroundControl.corePlugin
 
@@ -93,9 +94,15 @@ Rectangle {
 
     function showParametersPanel() {
         if (mainWindow.allowViewSwitch()) {
-            parametersButton.checked = true
-            panelLoader.setSource("qrc:/qml/QGroundControl/VehicleSetup/SetupParameterEditor.qml")
+            _parameterPasswordError = ""
+            parameterPasswordField.text = ""
+            parameterPasswordDialog.open()
         }
+    }
+
+    function openParametersEditor() {
+        parametersButton.checked = true
+        panelLoader.setSource("qrc:/qml/QGroundControl/VehicleSetup/SetupParameterEditor.qml")
     }
 
     Component.onCompleted: _showSummaryPanel()
@@ -268,7 +275,7 @@ Rectangle {
                 text:               qsTr("Parameters")
                 Layout.fillWidth:   true
                 icon.source:        "/qmlimages/subMenuButtonImage.png"
-                onClicked:          showPanel(this, "qrc:/qml/QGroundControl/VehicleSetup/SetupParameterEditor.qml")
+                onClicked:          showParametersPanel()
             }
 
             ConfigButton {
@@ -319,5 +326,71 @@ Rectangle {
         }
 
         property var vehicleComponent
+    }
+    QGCPopupDialog {
+        id:                 parameterPasswordDialog
+        title:              qsTr("Password Required")
+        buttons:            Dialog.NoButton
+        anchors.centerIn:   parent
+
+        ColumnLayout {
+            spacing: _defaultTextHeight / 2
+
+            QGCLabel {
+                Layout.fillWidth: true
+                wrapMode: Text.WordWrap
+                text: qsTr("Enter the password to open Parameters.")
+            }
+
+            QGCTextField {
+                id:                 parameterPasswordField
+                Layout.fillWidth:   true
+                echoMode:           TextInput.Password
+                placeholderText:    qsTr("Password")
+                onAccepted:         parameterPasswordDialog.confirmParameterPassword()
+            }
+
+            QGCLabel {
+                Layout.fillWidth:   true
+                color:              qgcPal.warningText
+                visible:            _parameterPasswordError !== ""
+                wrapMode:           Text.WordWrap
+                text:               _parameterPasswordError
+            }
+
+            RowLayout {
+                Layout.alignment: Qt.AlignRight
+                spacing: _defaultTextWidth
+
+                QGCButton {
+                    text: qsTr("Cancel")
+                    onClicked: {
+                        _parameterPasswordError = ""
+                        parameterPasswordField.text = ""
+                        parameterPasswordDialog.close()
+                    }
+                }
+
+                QGCButton {
+                    text: qsTr("OK")
+                    onClicked: parameterPasswordDialog.confirmParameterPassword()
+                }
+            }
+        }
+
+        onOpened: parameterPasswordField.forceActiveFocus()
+
+        function confirmParameterPassword() {
+            if (parameterPasswordField.text === _parameterPassword) {
+                _parameterPasswordError = ""
+                parameterPasswordField.text = ""
+                parameterPasswordDialog.close()
+                openParametersEditor()
+            } else {
+                _parameterPasswordError = qsTr("Incorrect password")
+                parameterPasswordField.selectAll()
+                parameterPasswordField.forceActiveFocus()
+            }
+        }
     }
 }

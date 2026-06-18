@@ -60,7 +60,6 @@ const QVariantList &APMAutoPilotPlugin::vehicleComponents()
         if (_vehicle->parameterManager()->parametersReady()) {
             _airframeComponent = new APMAirframeComponent(_vehicle, this);
             _airframeComponent->setupTriggerSignals();
-            _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_airframeComponent)));
 
             if (_vehicle->supportsRadio()) {
                 _radioComponent = new APMRadioComponent(_vehicle, this);
@@ -81,12 +80,10 @@ const QVariantList &APMAutoPilotPlugin::vehicleComponents()
 
             _powerComponent = new APMPowerComponent(_vehicle, this);
             _powerComponent->setupTriggerSignals();
-            _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_powerComponent)));
 
             if (!_vehicle->sub() || (_vehicle->sub() && (_vehicle->versionCompare(3, 5, 3) >= 0))) {
                 _motorComponent = new APMMotorComponent(_vehicle, this);
                 _motorComponent->setupTriggerSignals();
-                _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_motorComponent)));
             }
 
             _safetyComponent = new APMSafetyComponent(_vehicle, this);
@@ -98,7 +95,6 @@ const QVariantList &APMAutoPilotPlugin::vehicleComponents()
                     _vehicle->parameterManager()->parameterExists(-1, QStringLiteral("FOLL_ENABLE"))) {
                 _followComponent = new APMFollowComponent(_vehicle, this);
                 _followComponent->setupTriggerSignals();
-                _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_followComponent)));
             }
 #endif
 
@@ -110,7 +106,6 @@ const QVariantList &APMAutoPilotPlugin::vehicleComponents()
 
             _tuningComponent = new APMTuningComponent(_vehicle, this);
             _tuningComponent->setupTriggerSignals();
-            _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_tuningComponent)));
 
             if (_vehicle->parameterManager()->parameterExists(-1, "MNT1_TYPE")) {
                 _cameraComponent = new APMCameraComponent(_vehicle, this);
