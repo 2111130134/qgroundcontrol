@@ -315,11 +315,13 @@ Rectangle {
 
         function setSource(source, vehicleComponent) {
             panelLoader.source = ""
+            panelLoader.sourceComponent = undefined
             panelLoader.vehicleComponent = vehicleComponent
             panelLoader.source = source
         }
 
         function setSourceComponent(sourceComponent, vehicleComponent) {
+            panelLoader.source = ""
             panelLoader.sourceComponent = undefined
             panelLoader.vehicleComponent = vehicleComponent
             panelLoader.sourceComponent = sourceComponent
