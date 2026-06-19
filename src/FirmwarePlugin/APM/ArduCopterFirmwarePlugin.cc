@@ -101,7 +101,7 @@ ArduCopterFirmwarePlugin::ArduCopterFirmwarePlugin(QObject *parent)
         { _zigzagFlightMode      , APMCopterMode::ZIGZAG,        false, true },
         { _systemIDFlightMode    , APMCopterMode::SYSTEMID,      false, true },
         { _autoRotateFlightMode  , APMCopterMode::AUTOROTATE,    false, true },
-        { _autoRTLFlightMode     , APMCopterMode::AUTO_RTL,      true , true },
+        { _autoRTLFlightMode     , APMCopterMode::AUTO_RTL,      false, true },
         { _turtleFlightMode      , APMCopterMode::TURTLE,        false, true },
     };
     updateAvailableFlightModes(availableFlightModes);
