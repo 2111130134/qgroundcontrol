@@ -428,7 +428,7 @@
     <message>
       <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="81"/>
       <source>Altitude Hold</source>
-      <translation>定高模式</translation>
+      <translation>定高模式-请谨慎使用</translation>
     </message>
     <message>
       <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="82"/>
