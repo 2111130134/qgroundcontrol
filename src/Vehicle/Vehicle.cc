@@ -4306,7 +4306,9 @@ void Vehicle::_textMessageReceived(MAV_COMPONENT componentid, MAV_SEVERITY sever
             skipSpoken = true;
         } else {
             (void) _noisySpokenPrearmMap.insert(originalText, QTime::currentTime());
-            if (text == QStringLiteral("PreArm: GPS1: Bad fix") || text == QStringLiteral("PreArm:GPS1:Bad fix")) {
+            if (text.startsWith(QStringLiteral("PreArm"), Qt::CaseInsensitive)
+                    && text.contains(QStringLiteral("GPS1"), Qt::CaseInsensitive)
+                    && text.contains(QStringLiteral("Bad fix"), Qt::CaseInsensitive)) {
                 text = QStringLiteral("解锁自检：GPS尚未锁定");
             }
             setPrearmError(text);

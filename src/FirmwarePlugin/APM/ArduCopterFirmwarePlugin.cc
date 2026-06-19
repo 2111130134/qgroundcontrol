@@ -34,6 +34,7 @@ bool isHiddenCopterMode(uint32_t customMode)
     case APMCopterMode::ZIGZAG:
     case APMCopterMode::SYSTEMID:
     case APMCopterMode::AUTOROTATE:
+    case APMCopterMode::AUTO_RTL:
     case APMCopterMode::TURTLE:
         return true;
     default:
