@@ -117,10 +117,10 @@ void CustomFirmwarePlugin::updateAvailableFlightModes(FlightModeList &modeList)
         // Update CanBeSet
         switch (cMode){
         case PX4CustomMode::AUTO_LOITER:
-        case PX4CustomMode::AUTO_RTL:
         case PX4CustomMode::AUTO_MISSION:
             mode.canBeSet = true;
             break;
+        case PX4CustomMode::AUTO_RTL:
         case PX4CustomMode::OFFBOARD          :
         case PX4CustomMode::SIMPLE            :
         case PX4CustomMode::POSCTL_ORBIT      :

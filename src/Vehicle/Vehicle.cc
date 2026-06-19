@@ -4288,6 +4288,7 @@ void Vehicle::_textMessageReceived(MAV_COMPONENT componentid, MAV_SEVERITY sever
         return;
     }
 
+    const QString originalText = text;
     bool skipSpoken = false;
     const bool ardupilotPrearm = text.startsWith(QStringLiteral("PreArm"));
     const bool px4Prearm = text.startsWith(QStringLiteral("preflight"), Qt::CaseInsensitive) && (severity >= MAV_SEVERITY::MAV_SEVERITY_CRITICAL);
@@ -4301,10 +4302,13 @@ void Vehicle::_textMessageReceived(MAV_COMPONENT componentid, MAV_SEVERITY sever
         }
 
         // Limit repeated PreArm message to once every 10 seconds
-        if (_noisySpokenPrearmMap.contains(text) && _noisySpokenPrearmMap.value(text).msecsTo(QTime::currentTime()) < (10 * 1000)) {
+        if (_noisySpokenPrearmMap.contains(originalText) && _noisySpokenPrearmMap.value(originalText).msecsTo(QTime::currentTime()) < (10 * 1000)) {
             skipSpoken = true;
         } else {
-            (void) _noisySpokenPrearmMap.insert(text, QTime::currentTime());
+            (void) _noisySpokenPrearmMap.insert(originalText, QTime::currentTime());
+            if (text == QStringLiteral("PreArm: GPS1: Bad fix") || text == QStringLiteral("PreArm:GPS1:Bad fix")) {
+                text = QStringLiteral("解锁自检：GPS尚未锁定");
+            }
             setPrearmError(text);
         }
     }
