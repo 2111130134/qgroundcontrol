@@ -18160,7 +18160,7 @@ ROTATION_NONE indicates component points in direction of flight.</translation>
     <message>
       <location filename="../src/FlightDisplay/VehicleWarnings.qml" line="56"/>
       <source>The vehicle has failed a pre-arm check. In order to arm the vehicle, resolve the failure.</source>
-      <translation>无人机未能自检未通过，请先排除提示的错误！</translation>
+      <translation>⚠️警告：无人机自检未能通过，请先排除提示错误！</translation>
     </message>
   </context>
   <context>
