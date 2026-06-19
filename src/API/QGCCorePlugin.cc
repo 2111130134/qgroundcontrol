@@ -211,7 +211,7 @@ void QGCCorePlugin::factValueGridCreateDefaultSettings(FactValueGrid* factValueG
             { "Vehicle",  "Vehicle",  "Vehicle"  },
             { "Vehicle",  "Vehicle",  "Vehicle"  },
             { "Battery0", "Battery0", "Battery0" },
-            { "GPS",      "GPS",      "GPS"      },
+            { "GPS",      "GPS",      "Rpm"      },
         };
 
         static constexpr const char* rgFactNames[5][3] = {
@@ -219,7 +219,7 @@ void QGCCorePlugin::factValueGridCreateDefaultSettings(FactValueGrid* factValueG
             { "ClimbRate",        "GroundSpeed",      "Pitch"           },
             { "FlightTime",       "FlightDistance",   "DistanceToHome"  },
             { "Voltage",          "Current",          "InstantPower"    },
-            { "Lat",              "Lon",              "Hdop"            },
+            { "Lat",              "Lon",              "Rpm1"            },
         };
 
         static constexpr const char* rgTexts[5][3] = {
@@ -227,7 +227,7 @@ void QGCCorePlugin::factValueGridCreateDefaultSettings(FactValueGrid* factValueG
             { "升降速率", "飞行速度", "航向角"   },
             { "飞行时间", "飞行距离", "离家距离" },
             { "电压",     "电流",     "功率"     },
-            { "纬度",     "经度",     "精度"     },
+            { "纬度",     "经度",     "发动机转速"     },
         };
 
         for (int col = 0; col < 5; col++) {
