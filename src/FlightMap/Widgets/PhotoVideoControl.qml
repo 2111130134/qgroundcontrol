@@ -27,8 +27,9 @@ Rectangle {
     height:     mainLayout.height + (_margins * 2)
     color:      Qt.rgba(qgcPal.window.r, qgcPal.window.g, qgcPal.window.b, 0.5)
     radius:     _margins
-    visible:    _camera.capturesVideo || _camera.capturesPhotos
+    visible:    !_hidePhotoVideoControls && (_camera.capturesVideo || _camera.capturesPhotos)
 
+    property bool   _hidePhotoVideoControls:    true
     property real   _margins:                   ScreenTools.defaultFontPixelHeight / 2
     property real   _smallMargins:              ScreenTools.defaultFontPixelWidth / 2
     property var    _activeVehicle:             globals.activeVehicle
