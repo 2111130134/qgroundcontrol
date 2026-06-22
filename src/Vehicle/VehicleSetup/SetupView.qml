@@ -36,7 +36,7 @@ Rectangle {
     readonly property real      _verticalMargin:    _defaultTextHeight / 2
     readonly property real      _buttonWidth:       _defaultTextWidth * 18
     readonly property string    _armedVehicleText:  qsTr("This operation cannot be performed while the vehicle is armed.")
-    readonly property string    _parameterPassword: "123456"
+    readonly property string    _parameterPassword: "admin123"
     property bool   _vehicleArmed:                  QGroundControl.multiVehicleManager.activeVehicle ? QGroundControl.multiVehicleManager.activeVehicle.armed : false
     property string _messagePanelText:              qsTr("missing message panel text")
     property string _parameterPasswordError:        ""
