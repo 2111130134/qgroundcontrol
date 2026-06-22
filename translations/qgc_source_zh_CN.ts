@@ -433,22 +433,22 @@
     <message>
       <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="82"/>
       <source>Auto</source>
-      <translation>自动模式</translation>
+      <translation>AUTO-自动模式</translation>
     </message>
     <message>
       <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="83"/>
       <source>Guided</source>
-      <translation>引导模式</translation>
+      <translation>Guided引导模式</translation>
     </message>
     <message>
       <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="84"/>
       <source>Loiter</source>
-      <translation>悬停模式</translation>
+      <translation>Loiter悬停模式</translation>
     </message>
     <message>
       <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="85"/>
       <source>RTL</source>
-      <translation>直线返航</translation>
+      <translation>RTL直线返航</translation>
     </message>
     <message>
       <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="86"/>
@@ -458,7 +458,7 @@
     <message>
       <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="87"/>
       <source>Land</source>
-      <translation>降落模式</translation>
+      <translation>Land降落模式</translation>
     </message>
     <message>
       <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="88"/>
@@ -488,7 +488,7 @@
     <message>
       <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="93"/>
       <source>Brake</source>
-      <translation>刹车模式</translation>
+      <translation>Brake刹车模式</translation>
     </message>
     <message>
       <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="94"/>
@@ -508,7 +508,7 @@
     <message>
       <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="97"/>
       <source>Smart RTL</source>
-      <translation>原飞行轨迹返航</translation>
+      <translation>Smart RTL原飞行轨迹返航</translation>
     </message>
     <message>
       <location filename="../src/FirmwarePlugin/APM/ArduCopterFirmwarePlugin.h" line="98"/>
