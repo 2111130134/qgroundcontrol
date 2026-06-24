@@ -37,6 +37,7 @@ SettingsPage {
     property Fact   _maxGoToLocationDistance:               _flyViewSettings.maxGoToLocationDistance
     property Fact   _forwardFlightGoToLocationLoiterRad:    _flyViewSettings.forwardFlightGoToLocationLoiterRad
     property Fact   _goToLocationRequiresConfirmInGuided:   _flyViewSettings.goToLocationRequiresConfirmInGuided
+    property Fact   _showRemoteControlSignal:               _flyViewSettings.showRemoteControlSignal
     property var    _viewer3DSettings:                      _settingsManager.viewer3DSettings
     property Fact   _viewer3DEnabled:                       _viewer3DSettings.enabled
     property Fact   _viewer3DOsmFilePath:                   _viewer3DSettings.osmFilePath
@@ -94,6 +95,13 @@ SettingsPage {
             fact:               _showLogReplayStatusBar
             visible:            _showLogReplayStatusBar.visible
             property Fact _showLogReplayStatusBar: _flyViewSettings.showLogReplayStatusBar
+        }
+
+        FactCheckBoxSlider {
+            Layout.fillWidth:   true
+            text:               qsTr("Remote Control Signal")
+            fact:               _showRemoteControlSignal
+            visible:            _showRemoteControlSignal.visible
         }
 
         FactCheckBoxSlider {

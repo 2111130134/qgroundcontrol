@@ -6604,6 +6604,11 @@ Click Ok to start the auto-tuning process.
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="100"/>
+        <source>Remote Control Signal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="101"/>
         <source>Show simple camera controls (DIGICAM_CONTROL)</source>
         <translation type="unfinished"></translation>
@@ -6817,6 +6822,14 @@ Click Ok to start the auto-tuning process.
     <message>
         <location filename="../src/FlightDisplay/FlyViewTopRightPanel.qml" line="198"/>
         <source>Pause</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>RemoteControlSignalWindow</name>
+    <message>
+        <location filename="../src/FlightDisplay/RemoteControlSignalWindow.qml" line="105"/>
+        <source>Remote Control Signal</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -30,6 +30,7 @@ public:
     DEFINE_SETTINGFACT(keepMapCenteredOnVehicle)
     DEFINE_SETTINGFACT(showSimpleCameraControl)
     DEFINE_SETTINGFACT(showObstacleDistanceOverlay)
+    DEFINE_SETTINGFACT(showRemoteControlSignal)
     DEFINE_SETTINGFACT(updateHomePosition)
     DEFINE_SETTINGFACT(instrumentQmlFile2)
     DEFINE_SETTINGFACT(requestControlAllowTakeover)

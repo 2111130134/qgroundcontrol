@@ -54,6 +54,12 @@
     "default":      false
 },
 {
+    "name":         "showRemoteControlSignal",
+    "shortDesc":    "Show remote control signal floating window on Fly View.",
+    "type":         "bool",
+    "default":      true
+},
+{
     "name":             "maxGoToLocationDistance",
     "shortDesc": "Maximum distance allowed for Go To Location.",
     "type":             "double",

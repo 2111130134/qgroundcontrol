@@ -146,6 +146,33 @@ Item {
             visible:            !QGroundControl.videoManager.fullScreen
         }
 
+        RemoteControlSignalWindow {
+            id:                 remoteControlSignalWindow
+            alpha:              0.75
+            areaRatio:          0.25
+            visible:            QGroundControl.settingsManager.flyViewSettings.showRemoteControlSignal.rawValue &&
+                                    windowVisible &&
+                                    !QGroundControl.videoManager.fullScreen
+
+            Connections {
+                target: QGroundControl.settingsManager.flyViewSettings.showRemoteControlSignal
+
+                function onRawValueChanged() {
+                    if (QGroundControl.settingsManager.flyViewSettings.showRemoteControlSignal.rawValue) {
+                        remoteControlSignalWindow.showWindow()
+                    }
+                }
+            }
+        }
+
+        Shortcut {
+            sequence:   "Ctrl+Shift+R"
+            enabled:    QGroundControl.settingsManager.flyViewSettings.showRemoteControlSignal.rawValue &&
+                            !QGroundControl.videoManager.fullScreen
+
+            onActivated: remoteControlSignalWindow.showWindow()
+        }
+
         // Development tool for visualizing the insets for a paticular layer, show if needed
         FlyViewInsetViewer {
             id:                     widgetLayerInsetViewer

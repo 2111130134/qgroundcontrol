@@ -7182,6 +7182,14 @@ Click Ok to start the auto-tuning process.
     </message>
   </context>
   <context>
+    <name>RemoteControlSignalWindow</name>
+    <message>
+      <location filename="../src/FlightDisplay/RemoteControlSignalWindow.qml" line="105"/>
+      <source>Remote Control Signal</source>
+      <translation>遥控器信号</translation>
+    </message>
+  </context>
+  <context>
     <name>FlyViewVideo</name>
     <message>
       <location filename="../src/FlightDisplay/FlyViewVideo.qml" line="68"/>
@@ -7466,6 +7474,11 @@ Click Ok to start the auto-tuning process.
       <location filename="../src/ui/preferences/GeneralSettings.qml" line="128"/>
       <source>Show Telemetry Log Replay Status Bar</source>
       <translation type="unfinished">Show Telemetry Log Replay Status Bar</translation>
+    </message>
+    <message>
+      <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="100"/>
+      <source>Remote Control Signal</source>
+      <translation>遥控器信号</translation>
     </message>
     <message>
       <location filename="../src/ui/preferences/GeneralSettings.qml" line="139"/>

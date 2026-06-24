@@ -6625,6 +6625,11 @@ Click Ok to start the auto-tuning process.
       <translation>显示遥测日志回放状态栏</translation>
     </message>
     <message>
+      <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="100"/>
+      <source>Remote Control Signal</source>
+      <translation>遥控器信号</translation>
+    </message>
+    <message>
       <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="101"/>
       <source>Show simple camera controls (DIGICAM_CONTROL)</source>
       <translation>显示简单相机控制（DIGICAM_CONTROL）</translation>
@@ -6839,6 +6844,14 @@ Click Ok to start the auto-tuning process.
       <location filename="../src/FlightDisplay/FlyViewTopRightPanel.qml" line="198"/>
       <source>Pause</source>
       <translation type="unfinished">Pause</translation>
+    </message>
+  </context>
+  <context>
+    <name>RemoteControlSignalWindow</name>
+    <message>
+      <location filename="../src/FlightDisplay/RemoteControlSignalWindow.qml" line="105"/>
+      <source>Remote Control Signal</source>
+      <translation>遥控器信号</translation>
     </message>
   </context>
   <context>
