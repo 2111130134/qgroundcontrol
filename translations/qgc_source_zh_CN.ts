@@ -9764,7 +9764,7 @@ Click Ok to start the auto-tuning process.
       <location filename="../src/UI/MainWindow.qml" line="226"/>
       <location filename="../src/UI/MainWindow.qml" line="412"/>
       <source>Close %1</source>
-      <translation type="unfinished">Close %1</translation>
+      <translation>退出FGC</translation>
     </message>
     <message>
       <location filename="../src/UI/MainWindow.qml" line="231"/>
