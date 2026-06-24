@@ -492,7 +492,7 @@ target_compile_definitions(${CMAKE_PROJECT_NAME}
         QGC_ORG_DOMAIN="${QGC_ORG_DOMAIN}"
         QGC_APP_VERSION_STR="${QGC_APP_VERSION_STR}"
         QGC_SETTINGS_VERSION=${QGC_SETTINGS_VERSION}
-        $<$<AND:$<NOT:$<BOOL:${QGC_STABLE_BUILD}>>,$<NOT:$<CONFIG:Debug>>>:QGC_DAILY_BUILD>
+        $<$<NOT:$<BOOL:${QGC_STABLE_BUILD}>>:QGC_DAILY_BUILD>
 )
 
 set_target_properties(${CMAKE_PROJECT_NAME}
