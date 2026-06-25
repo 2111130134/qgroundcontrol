@@ -61,7 +61,6 @@
 #include "QGCImageProvider.h"
 #include "QGCLoggingCategory.h"
 #include "QGroundControlQmlGlobal.h"
-#include "FlightDisplay/RemoteControlSignalReceiver.h"
 #include "SettingsManager.h"
 #include "AppSettings.h"
 #include "ShapeFileHelper.h"
@@ -293,7 +292,6 @@ void QGCApplication::init()
     qmlRegisterType<GeoTagController>("QGroundControl.Controllers", 1, 0, "GeoTagController");
     qmlRegisterType<LogDownloadController>("QGroundControl.Controllers", 1, 0, "LogDownloadController");
     qmlRegisterType<MAVLinkConsoleController>("QGroundControl.Controllers", 1, 0, "MAVLinkConsoleController");
-    qmlRegisterType<RemoteControlSignalReceiver>("QGroundControl.FlightDisplay", 1, 0, "RemoteControlSignalReceiver");
 
 
     qmlRegisterUncreatableType<AutoPilotPlugin>("QGroundControl.AutoPilotPlugin", 1, 0, "AutoPilotPlugin", "Reference only");

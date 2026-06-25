@@ -1,9 +1,3 @@
-target_sources(${CMAKE_PROJECT_NAME}
-    PRIVATE
-        RemoteControlSignalReceiver.cc
-        RemoteControlSignalReceiver.h
-)
-
 qt_add_library(FlightDisplayModule STATIC)
 
 qt_add_qml_module(FlightDisplayModule
