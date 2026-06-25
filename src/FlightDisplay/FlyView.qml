@@ -64,6 +64,8 @@ Item {
     property real   _fullItemZorder:    0
     property real   _pipItemZorder:     QGroundControl.zOrderWidgets
 
+    QGCPalette { id: qgcPal; colorGroupEnabled: true }
+
     function _calcCenterViewPort() {
         var newToolInset = Qt.rect(0, 0, width, height)
         toolstrip.adjustToolInset(newToolInset)
@@ -165,12 +167,34 @@ Item {
             }
         }
 
-        Shortcut {
-            sequence:   "Ctrl+Shift+R"
-            enabled:    QGroundControl.settingsManager.flyViewSettings.showRemoteControlSignal.rawValue &&
-                            !QGroundControl.videoManager.fullScreen
+        Rectangle {
+            id:                 remoteControlSignalShowButton
+            width:              ScreenTools.defaultFontPixelHeight * 5
+            height:             width
+            radius:             ScreenTools.defaultFontPixelHeight * 0.5
+            anchors.centerIn:   parent
+            z:                  QGroundControl.zOrderTopMost - 1
+            color:              qgcPal.window
+            opacity:            0.75
+            border.color:       qgcPal.text
+            border.width:       1
+            visible:            QGroundControl.settingsManager.flyViewSettings.showRemoteControlSignal.rawValue &&
+                                    !remoteControlSignalWindow.windowVisible &&
+                                    !QGroundControl.videoManager.fullScreen
 
-            onActivated: remoteControlSignalWindow.showWindow()
+            QGCColoredImage {
+                anchors.centerIn:   parent
+                width:              parent.width * 0.58
+                height:             width
+                source:             "qrc:/InstrumentValueIcons/view-show.svg"
+                color:              qgcPal.text
+                fillMode:           Image.PreserveAspectFit
+            }
+
+            MouseArea {
+                anchors.fill:   parent
+                onClicked:      remoteControlSignalWindow.showWindow()
+            }
         }
 
         // Development tool for visualizing the insets for a paticular layer, show if needed
