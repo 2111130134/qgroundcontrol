@@ -11,6 +11,10 @@
 
 #include <QtCore/QtGlobal>
 #include <QtCore/QJsonDocument>
+#include <QtCore/QJsonObject>
+#include <QtCore/QRegularExpression>
+#include <QtCore/QJsonValue>
+#include <QtCore/QStringList>
 #include <QtNetwork/QAbstractSocket>
 #include <QtNetwork/QNetworkDatagram>
 #include <QtNetwork/QUdpSocket>
@@ -60,12 +64,14 @@ void RemoteControlSignalReceiver::setPort(int port)
 
 void RemoteControlSignalReceiver::clear()
 {
-    if (_lastPayload.isEmpty()) {
+    if (_lastPayload.isEmpty() && _latestValues.isEmpty()) {
         return;
     }
 
     _lastPayload.clear();
+    _latestValues.clear();
     emit lastPayloadChanged();
+    emit latestValuesChanged();
 }
 
 void RemoteControlSignalReceiver::_start()
@@ -115,8 +121,17 @@ void RemoteControlSignalReceiver::_readPendingDatagrams()
 
     while (_socket->hasPendingDatagrams()) {
         const QNetworkDatagram datagram = _socket->receiveDatagram();
-        _lastPayload = _formatPayload(datagram.data());
+        QJsonParseError parseError;
+        const QJsonDocument json = QJsonDocument::fromJson(datagram.data(), &parseError);
+        if (parseError.error == QJsonParseError::NoError && !json.isNull()) {
+            _lastPayload = QString::fromUtf8(json.toJson(QJsonDocument::Indented));
+            _latestValues = _extractValues(json);
+        } else {
+            _lastPayload = QString::fromUtf8(datagram.data());
+            _latestValues.clear();
+        }
         emit lastPayloadChanged();
+        emit latestValuesChanged();
         _setStatusText(tr("Received %1 bytes from %2:%3")
                            .arg(datagram.data().size())
                            .arg(datagram.senderAddress().toString())
@@ -153,4 +168,54 @@ QString RemoteControlSignalReceiver::_formatPayload(const QByteArray &payload) c
     }
 
     return QString::fromUtf8(payload);
+}
+
+QVariantMap RemoteControlSignalReceiver::_extractValues(const QJsonDocument &json) const
+{
+    QVariantMap values;
+    if (!json.isObject()) {
+        return values;
+    }
+
+    const QJsonObject obj = json.object();
+    values.insert(QStringLiteral("airRSSI1"), _jsonValueToString(obj.value(QStringLiteral("rssi1_a"))));
+    values.insert(QStringLiteral("gndRSSI1"), _jsonValueToString(obj.value(QStringLiteral("rssi1_g"))));
+    values.insert(QStringLiteral("airRSSI2"), _jsonValueToString(obj.value(QStringLiteral("rssi2_a"))));
+    values.insert(QStringLiteral("gndRSSI2"), _jsonValueToString(obj.value(QStringLiteral("rssi2_g"))));
+    values.insert(QStringLiteral("airSNR"), _normalizeDelimitedNumberString(_jsonValueToString(obj.value(QStringLiteral("snr_a")))));
+    values.insert(QStringLiteral("gndSNR"), _normalizeDelimitedNumberString(_jsonValueToString(obj.value(QStringLiteral("snr_g")))));
+    values.insert(QStringLiteral("airPass"), _jsonValueToString(obj.value(QStringLiteral("pass_a"))));
+    values.insert(QStringLiteral("gndPass"), _jsonValueToString(obj.value(QStringLiteral("pass_g"))));
+    values.insert(QStringLiteral("airFailed"), _jsonValueToString(obj.value(QStringLiteral("failed_a"))));
+    values.insert(QStringLiteral("gndFailed"), _jsonValueToString(obj.value(QStringLiteral("failed_g"))));
+    values.insert(QStringLiteral("airAnt"), _jsonValueToString(obj.value(QStringLiteral("ant_a"))));
+    values.insert(QStringLiteral("gndAnt"), _jsonValueToString(obj.value(QStringLiteral("ant_g"))));
+    values.insert(QStringLiteral("freq"), _jsonValueToString(obj.value(QStringLiteral("freq_tx"))));
+    values.insert(QStringLiteral("mcs"), _jsonValueToString(obj.value(QStringLiteral("mcs"))));
+    values.insert(QStringLiteral("range"), _jsonValueToString(obj.value(QStringLiteral("distance"))));
+    values.insert(QStringLiteral("rate"), QString());
+
+    return values;
+}
+
+QString RemoteControlSignalReceiver::_jsonValueToString(const QJsonValue &value)
+{
+    if (value.isString()) {
+        return value.toString();
+    }
+    if (value.isDouble()) {
+        return QString::number(value.toDouble());
+    }
+    if (value.isBool()) {
+        return value.toBool() ? QStringLiteral("true") : QStringLiteral("false");
+    }
+    return QString();
+}
+
+QString RemoteControlSignalReceiver::_normalizeDelimitedNumberString(QString value)
+{
+    value.replace(QLatin1Char('"'), QLatin1Char(' '));
+    value.replace(QLatin1Char('/'), QLatin1Char(' '));
+    const QStringList parts = value.split(QRegularExpression(QStringLiteral("[\\s,]+")), Qt::SkipEmptyParts);
+    return parts.isEmpty() ? QString() : parts.constFirst();
 }

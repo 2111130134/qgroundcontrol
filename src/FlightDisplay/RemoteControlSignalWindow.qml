@@ -25,6 +25,7 @@ Item {
     property real   alpha:                  0.75
     property real   defaultAspectRatio:     16 / 9
     property alias  receiver:               remoteControlSignalReceiver
+    readonly property var _values:          remoteControlSignalReceiver.latestValues
 
     visible:    windowVisible
     width:      Math.min(parent ? parent.width * 0.85 : 0, Math.sqrt((parent ? parent.width * parent.height : 0) * areaRatio * defaultAspectRatio))
@@ -53,6 +54,11 @@ Item {
 
     function closeWindow() {
         windowVisible = false
+    }
+
+    function _displayValue(key, suffix) {
+        const value = _values && _values[key] !== undefined ? _values[key] : ""
+        return value === "" ? "--" + suffix : value + suffix
     }
 
     function _clampPosition() {
@@ -130,28 +136,57 @@ Item {
         GridLayout {
             Layout.fillWidth:   true
             Layout.fillHeight:  true
-            columns:            1
+            columns:            4
+            columnSpacing:      _margin * 0.8
             rowSpacing:         ScreenTools.defaultFontPixelHeight * 0.4
 
             QGCLabel {
                 Layout.fillWidth:   true
+                Layout.columnSpan:  4
                 text:               remoteControlSignalReceiver.statusText
                 color:              qgcPal.text
                 elide:              Text.ElideRight
             }
 
-            ScrollView {
-                Layout.fillWidth:   true
-                Layout.fillHeight:  true
-                clip:               true
+            QGCLabel { Layout.fillWidth: true; text: qsTr("airRSSI1"); horizontalAlignment: Text.AlignRight }
+            QGCLabel { Layout.fillWidth: true; text: _displayValue("airRSSI1", " dBm") }
+            QGCLabel { Layout.fillWidth: true; text: qsTr("gndRSSI1"); horizontalAlignment: Text.AlignRight }
+            QGCLabel { Layout.fillWidth: true; text: _displayValue("gndRSSI1", " dBm") }
 
-                QGCLabel {
-                    width:              parent.width
-                    text:               remoteControlSignalReceiver.lastPayload === "" ? qsTr("Waiting for JSON data on UDP 16789...") : remoteControlSignalReceiver.lastPayload
-                    color:              qgcPal.text
-                    wrapMode:           Text.WrapAnywhere
-                }
-            }
+            QGCLabel { Layout.fillWidth: true; text: qsTr("airRSSI2"); horizontalAlignment: Text.AlignRight }
+            QGCLabel { Layout.fillWidth: true; text: _displayValue("airRSSI2", " dBm") }
+            QGCLabel { Layout.fillWidth: true; text: qsTr("gndRSSI2"); horizontalAlignment: Text.AlignRight }
+            QGCLabel { Layout.fillWidth: true; text: _displayValue("gndRSSI2", " dBm") }
+
+            QGCLabel { Layout.fillWidth: true; text: qsTr("airSNR"); horizontalAlignment: Text.AlignRight }
+            QGCLabel { Layout.fillWidth: true; text: _displayValue("airSNR", " dB") }
+            QGCLabel { Layout.fillWidth: true; text: qsTr("gndSNR"); horizontalAlignment: Text.AlignRight }
+            QGCLabel { Layout.fillWidth: true; text: _displayValue("gndSNR", " dB") }
+
+            QGCLabel { Layout.fillWidth: true; text: qsTr("airPass"); horizontalAlignment: Text.AlignRight }
+            QGCLabel { Layout.fillWidth: true; text: _displayValue("airPass", "") }
+            QGCLabel { Layout.fillWidth: true; text: qsTr("gndPass"); horizontalAlignment: Text.AlignRight }
+            QGCLabel { Layout.fillWidth: true; text: _displayValue("gndPass", "") }
+
+            QGCLabel { Layout.fillWidth: true; text: qsTr("airFailed"); horizontalAlignment: Text.AlignRight }
+            QGCLabel { Layout.fillWidth: true; text: _displayValue("airFailed", "") }
+            QGCLabel { Layout.fillWidth: true; text: qsTr("gndFailed"); horizontalAlignment: Text.AlignRight }
+            QGCLabel { Layout.fillWidth: true; text: _displayValue("gndFailed", "") }
+
+            QGCLabel { Layout.fillWidth: true; text: qsTr("airAnt"); horizontalAlignment: Text.AlignRight }
+            QGCLabel { Layout.fillWidth: true; text: _displayValue("airAnt", "") }
+            QGCLabel { Layout.fillWidth: true; text: qsTr("gndAnt"); horizontalAlignment: Text.AlignRight }
+            QGCLabel { Layout.fillWidth: true; text: _displayValue("gndAnt", "") }
+
+            QGCLabel { Layout.fillWidth: true; text: qsTr("freq"); horizontalAlignment: Text.AlignRight }
+            QGCLabel { Layout.fillWidth: true; text: _displayValue("freq", "") }
+            QGCLabel { Layout.fillWidth: true; text: qsTr("mcs"); horizontalAlignment: Text.AlignRight }
+            QGCLabel { Layout.fillWidth: true; text: _displayValue("mcs", "") }
+
+            QGCLabel { Layout.fillWidth: true; text: qsTr("range"); horizontalAlignment: Text.AlignRight }
+            QGCLabel { Layout.fillWidth: true; text: _displayValue("range", " m") }
+            QGCLabel { Layout.fillWidth: true; text: qsTr("rate"); horizontalAlignment: Text.AlignRight }
+            QGCLabel { Layout.fillWidth: true; text: _displayValue("rate", " kbps") }
         }
     }
 }
