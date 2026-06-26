@@ -8,10 +8,12 @@
  ****************************************************************************/
 
 import QtQuick
+import QtQuick.Controls
 import QtQuick.Layouts
 
 import QGroundControl
 import QGroundControl.Controls
+import QGroundControl.FlightDisplay
 import QGroundControl.Palette
 import QGroundControl.ScreenTools
 
@@ -22,6 +24,7 @@ Item {
     property real   areaRatio:              0.25
     property real   alpha:                  0.75
     property real   defaultAspectRatio:     16 / 9
+    property alias  receiver:               remoteControlSignalReceiver
 
     visible:    windowVisible
     width:      Math.min(parent ? parent.width * 0.85 : 0, Math.sqrt((parent ? parent.width * parent.height : 0) * areaRatio * defaultAspectRatio))
@@ -36,6 +39,12 @@ Item {
     property real _maxY:        parent ? Math.max(0, parent.height - height) : 0
 
     QGCPalette { id: qgcPal; colorGroupEnabled: true }
+
+    RemoteControlSignalReceiver {
+        id:         remoteControlSignalReceiver
+        port:       16789
+        active:     QGroundControl.settingsManager.flyViewSettings.showRemoteControlSignal.rawValue
+    }
 
     function showWindow() {
         windowVisible = true
@@ -121,28 +130,26 @@ Item {
         GridLayout {
             Layout.fillWidth:   true
             Layout.fillHeight:  true
-            columns:            4
-            columnSpacing:      _margin * 0.8
-            rowSpacing:         ScreenTools.defaultFontPixelHeight * 0.35
+            columns:            1
+            rowSpacing:         ScreenTools.defaultFontPixelHeight * 0.4
 
-            Repeater {
-                model: [
-                    qsTr("airRSSI1"), "-- dBm", qsTr("gndRSSI1"), "-- dBm",
-                    qsTr("airRSSI2"), "-- dBm", qsTr("gndRSSI2"), "-- dBm",
-                    qsTr("airSNR"), "-- dB", qsTr("gndSNR"), "-- dB",
-                    qsTr("airPass"), "--", qsTr("gndPass"), "--",
-                    qsTr("airFailed"), "--", qsTr("gndFailed"), "--",
-                    qsTr("airAnt"), "--", qsTr("gndAnt"), "--",
-                    qsTr("freq"), "--", qsTr("mcs"), "--",
-                    qsTr("range"), "-- m", qsTr("rate"), "-- kbps"
-                ]
+            QGCLabel {
+                Layout.fillWidth:   true
+                text:               remoteControlSignalReceiver.statusText
+                color:              qgcPal.text
+                elide:              Text.ElideRight
+            }
+
+            ScrollView {
+                Layout.fillWidth:   true
+                Layout.fillHeight:  true
+                clip:               true
 
                 QGCLabel {
-                    Layout.fillWidth:   true
-                    text:               modelData
+                    width:              parent.width
+                    text:               remoteControlSignalReceiver.lastPayload === "" ? qsTr("Waiting for JSON data on UDP 16789...") : remoteControlSignalReceiver.lastPayload
                     color:              qgcPal.text
-                    horizontalAlignment: index % 2 === 0 ? Text.AlignRight : Text.AlignLeft
-                    elide:              Text.ElideRight
+                    wrapMode:           Text.WrapAnywhere
                 }
             }
         }
