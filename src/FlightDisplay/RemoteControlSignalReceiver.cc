@@ -9,6 +9,7 @@
 
 #include "RemoteControlSignalReceiver.h"
 
+#include <QtCore/QtGlobal>
 #include <QtCore/QJsonDocument>
 #include <QtNetwork/QAbstractSocket>
 #include <QtNetwork/QNetworkDatagram>
@@ -41,13 +42,14 @@ void RemoteControlSignalReceiver::setActive(bool active)
     }
 }
 
-void RemoteControlSignalReceiver::setPort(quint16 port)
+void RemoteControlSignalReceiver::setPort(int port)
 {
-    if (_port == port) {
+    const quint16 normalizedPort = static_cast<quint16>(qBound(0, port, 65535));
+    if (_port == normalizedPort) {
         return;
     }
 
-    _port = port;
+    _port = normalizedPort;
     emit portChanged();
 
     if (_active) {
