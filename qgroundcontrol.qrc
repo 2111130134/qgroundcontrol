@@ -2,12 +2,12 @@
     <qresource prefix="/qml">
         <file alias="AirLinkSettings.qml">src/Comms/AirLink/AirLinkSettings.qml</file>
         <file alias="Viewer3D/Viewer3D.qml">src/Viewer3D/Viewer3DQml/Viewer3D.qml</file>
-        <file alias="Viewer3D/qmldir">src/QmlControls/Viewer3D/qmldir</file>
+        <file alias="Viewer3D/qmldir">src/Viewer3D/Viewer3DQml/qmldir</file>
         <file alias="Viewer3D/Models3D/CameraLightModel.qml">src/Viewer3D/Viewer3DQml/Models3D/CameraLightModel.qml</file>
         <file alias="Viewer3D/Models3D/Viewer3DModel.qml">src/Viewer3D/Viewer3DQml/Models3D/Viewer3DModel.qml</file>
-        <file alias="Viewer3D/Models3D/qmldir">src/QmlControls/Viewer3D/Models3D/qmldir</file>
+        <file alias="Viewer3D/Models3D/qmldir">src/Viewer3D/Viewer3DQml/Models3D/qmldir</file>
         <file alias="Viewer3D/Models3D/Drones/DroneModelDjiF450.qml">src/Viewer3D/Viewer3DQml/Drones/DroneModelDjiF450.qml</file>
-        <file alias="Viewer3D/Models3D/Drones/qmldir">src/QmlControls/Viewer3D/Models3D/Drones/qmldir</file>
+        <file alias="Viewer3D/Models3D/Drones/qmldir">src/Viewer3D/Viewer3DQml/Drones/qmldir</file>
         <file alias="Viewer3D/Models3D/Drones/Djif450/DroneModel_arm_1/node.mesh">src/Viewer3D/Viewer3DQml/Drones/Djif450/DroneModel_arm_1/node.mesh</file>
         <file alias="Viewer3D/Models3D/Drones/Djif450/DroneModel_arm_1/DroneModel_arm_1.qml">src/Viewer3D/Viewer3DQml/Drones/Djif450/DroneModel_arm_1/DroneModel_arm_1.qml</file>
         <file alias="Viewer3D/Models3D/Drones/Djif450/DroneModel_arm_2/node.mesh">src/Viewer3D/Viewer3DQml/Drones/Djif450/DroneModel_arm_2/node.mesh</file>
