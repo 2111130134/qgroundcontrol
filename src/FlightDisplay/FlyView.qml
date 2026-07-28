@@ -171,8 +171,7 @@ Item {
             id:                 remoteControlSignalShowButton
             width:              ScreenTools.defaultFontPixelHeight * 5
             height:             width
-            radius:             ScreenTools.defaultFontPixelHeight * 0.5
-            anchors.centerIn:   parent
+            radius:             ScreenTools.defaultFontPixelHeight * 0.5  
             z:                  QGroundControl.zOrderTopMost - 1
             color:              qgcPal.window
             opacity:            0.75
@@ -181,6 +180,31 @@ Item {
             visible:            QGroundControl.settingsManager.flyViewSettings.showRemoteControlSignal.rawValue &&
                                     !remoteControlSignalWindow.windowVisible &&
                                     !QGroundControl.videoManager.fullScreen
+
+            // 新增：初始居中并支持拖拽后位置约束
+            Component.onCompleted: {
+                x = parent ? (parent.width - width) / 2 : 0
+                y = parent ? (parent.height - height) / 2 : 0
+            }
+
+            property real _btnMinX: 0
+            property real _btnMinY: 0
+            property real _btnMaxX: parent ? Math.max(0, parent.width - width) : 0
+            property real _btnMaxY: parent ? Math.max(0, parent.height - height) : 0
+
+            function _clampBtnPosition() {
+                x = Math.max(_btnMinX, Math.min(x, _btnMaxX))
+                y = Math.max(_btnMinY, Math.min(y, _btnMaxY))
+            }
+
+            onWidthChanged:  _clampBtnPosition()
+            onHeightChanged: _clampBtnPosition()
+
+            Connections {
+                target: mapHolder
+                function onWidthChanged()  { _clampBtnPosition() }
+                function onHeightChanged() { _clampBtnPosition() }
+            }
 
             QGCColoredImage {
                 anchors.centerIn:   parent
@@ -193,7 +217,13 @@ Item {
 
             MouseArea {
                 anchors.fill:   parent
-                onClicked:      remoteControlSignalWindow.showWindow()
+                drag.target:    remoteControlSignalShowButton
+                drag.axis:      Drag.XAndYAxis
+                drag.minimumX:  0
+                drag.maximumX:  mapHolder.width - remoteControlSignalShowButton.width
+                drag.minimumY:  0
+                drag.maximumY:  mapHolder.height - remoteControlSignalShowButton.height
+                onClicked:      drag.active ? null : remoteControlSignalWindow.showWindow()
             }
         }
 
