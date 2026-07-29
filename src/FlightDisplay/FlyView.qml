@@ -187,23 +187,25 @@ Item {
                 y = parent ? (parent.height - height) / 2 : 0
             }
 
-            property real _btnMinX: 0
-            property real _btnMinY: 0
-            property real _btnMaxX: parent ? Math.max(0, parent.width - width) : 0
-            property real _btnMaxY: parent ? Math.max(0, parent.height - height) : 0
+            property real _btnMinX: 5
+            property real _btnMinY: 5
+            property real _btnMaxX: parent ? Math.max(5, parent.width - width - 5) : 5
+            property real _btnMaxY: parent ? Math.max(5, parent.height - height - 5) : 5
 
             function _clampBtnPosition() {
                 x = Math.max(_btnMinX, Math.min(x, _btnMaxX))
                 y = Math.max(_btnMinY, Math.min(y, _btnMaxY))
             }
 
-            onWidthChanged:  _clampBtnPosition()
-            onHeightChanged: _clampBtnPosition()
 
             Connections {
                 target: mapHolder
-                function onWidthChanged()  { _clampBtnPosition() }
-                function onHeightChanged() { _clampBtnPosition() }
+                function onWidthChanged() {
+                    if (!buttonMouseArea.drag.active) _clampBtnPosition()
+                }
+                function onHeightChanged() {
+                    if (!buttonMouseArea.drag.active) _clampBtnPosition()
+                }
             }
 
             QGCColoredImage {
@@ -220,10 +222,10 @@ Item {
                 anchors.fill:       parent
                 drag.target:        remoteControlSignalShowButton
                 drag.axis:          Drag.XAndYAxis
-                drag.minimumX:      0
-                drag.maximumX:      mapHolder.width - remoteControlSignalShowButton.width
-                drag.minimumY:      0
-                drag.maximumY:      mapHolder.height - remoteControlSignalShowButton.height
+                drag.minimumX:      5
+                drag.maximumX:      mapHolder.width - remoteControlSignalShowButton.width-5
+                drag.minimumY:      5
+                drag.maximumY:      mapHolder.height - remoteControlSignalShowButton.height-5
                 preventStealing:    true                    // ←防止 DeadMouseArea 抢事件
 
                 property bool _wasDragged: false
