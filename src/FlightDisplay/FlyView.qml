@@ -191,7 +191,8 @@ Item {
             Connections {
                 target: mapHolder
                 function onWidthChanged() {
-                    remoteControlSignalShowButton.x = Math.max(0, Math.min(remoteControlSignalShowButton.x, mapHolder.width - remoteControlSignalShowButton.width))
+                    var m = ScreenTools.defaultFontPixelHeight * 2
+                    remoteControlSignalShowButton.x = Math.max(m, Math.min(remoteControlSignalShowButton.x, mapHolder.width - remoteControlSignalShowButton.width - m))
                 }
                 function onHeightChanged() {
                     remoteControlSignalShowButton.y = Math.max(0, Math.min(remoteControlSignalShowButton.y, mapHolder.height - remoteControlSignalShowButton.height))
@@ -230,7 +231,8 @@ Item {
                     if (Math.abs(dx) > 3 || Math.abs(dy) > 3) {
                         _wasDragged = true
                     }
-                    remoteControlSignalShowButton.x = Math.max(0, Math.min(_startX + dx, mapHolder.width - remoteControlSignalShowButton.width))
+                    var m = ScreenTools.defaultFontPixelHeight * 2
+                    remoteControlSignalShowButton.x = Math.max(m, Math.min(_startX + dx, mapHolder.width - remoteControlSignalShowButton.width - m))
                     remoteControlSignalShowButton.y = Math.max(0, Math.min(_startY + dy, mapHolder.height - remoteControlSignalShowButton.height))
                 }
 
