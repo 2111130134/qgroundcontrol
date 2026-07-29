@@ -169,7 +169,7 @@ Item {
 
         Rectangle {
             id:                 remoteControlSignalShowButton
-            width:              ScreenTools.defaultFontPixelHeight * 3
+            width:              ScreenTools.defaultFontPixelHeight * 4
             height:             width
             radius:             ScreenTools.defaultFontPixelHeight * 0.5  
             z:                  QGroundControl.zOrderTopMost + 2          //优先级最高
@@ -216,14 +216,25 @@ Item {
             }
 
             MouseArea {
-                anchors.fill:   parent
-                drag.target:    remoteControlSignalShowButton
-                drag.axis:      Drag.XAndYAxis
-                drag.minimumX:  0
-                drag.maximumX:  mapHolder.width - remoteControlSignalShowButton.width
-                drag.minimumY:  0
-                drag.maximumY:  mapHolder.height - remoteControlSignalShowButton.height
-                onClicked:      drag.active ? null : remoteControlSignalWindow.showWindow()
+                id:                 buttonMouseArea
+                anchors.fill:       parent
+                drag.target:        remoteControlSignalShowButton
+                drag.axis:          Drag.XAndYAxis
+                drag.minimumX:      0
+                drag.maximumX:      mapHolder.width - remoteControlSignalShowButton.width
+                drag.minimumY:      0
+                drag.maximumY:      mapHolder.height - remoteControlSignalShowButton.height
+                preventStealing:    true                    // ←防止 DeadMouseArea 抢事件
+
+                property bool _wasDragged: false
+
+                onPressed:          _wasDragged = false
+                onPositionChanged:  _wasDragged = true
+                onReleased: {
+                    if (!_wasDragged) {
+                    remoteControlSignalWindow.showWindow()
+                    }
+                }
             }
         }
 
