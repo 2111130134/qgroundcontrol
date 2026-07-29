@@ -181,30 +181,20 @@ Item {
                                     !remoteControlSignalWindow.windowVisible &&
                                     !QGroundControl.videoManager.fullScreen
 
-            // 新增：初始居中并支持拖拽后位置约束
+            // 初始居中
             Component.onCompleted: {
                 x = parent ? (parent.width - width) / 2 : 0
                 y = parent ? (parent.height - height) / 2 : 0
             }
 
-            property real _btnMinX: 5
-            property real _btnMinY: 5
-            property real _btnMaxX: parent ? Math.max(5, parent.width - width - 5) : 5
-            property real _btnMaxY: parent ? Math.max(5, parent.height - height - 5) : 5
-
-            function _clampBtnPosition() {
-                x = Math.max(_btnMinX, Math.min(x, _btnMaxX))
-                y = Math.max(_btnMinY, Math.min(y, _btnMaxY))
-            }
-
-
+            // 窗口缩放时保持在视野内
             Connections {
                 target: mapHolder
                 function onWidthChanged() {
-                    if (!buttonMouseArea.drag.active) _clampBtnPosition()
+                    remoteControlSignalShowButton.x = Math.max(0, Math.min(remoteControlSignalShowButton.x, mapHolder.width - remoteControlSignalShowButton.width))
                 }
                 function onHeightChanged() {
-                    if (!buttonMouseArea.drag.active) _clampBtnPosition()
+                    remoteControlSignalShowButton.y = Math.max(0, Math.min(remoteControlSignalShowButton.y, mapHolder.height - remoteControlSignalShowButton.height))
                 }
             }
 
@@ -220,27 +210,34 @@ Item {
             MouseArea {
                 id:                 buttonMouseArea
                 anchors.fill:       parent
-                drag.target:        remoteControlSignalShowButton
-                drag.axis:          Drag.XAndYAxis
-                drag.minimumX:      5
-                drag.maximumX:      mapHolder.width - remoteControlSignalShowButton.width-5
-                drag.minimumY:      5
-                drag.maximumY:      mapHolder.height - remoteControlSignalShowButton.height-5
-                preventStealing:    true                    // ←防止 DeadMouseArea 抢事件
 
+                property real _startX: 0
+                property real _startY: 0
+                property point _pressPos: Qt.point(0, 0)
                 property bool _wasDragged: false
 
-                onPressed:          _wasDragged = false
-                onPositionChanged:  _wasDragged = true
+                onPressed: {
+                    _startX = remoteControlSignalShowButton.x
+                    _startY = remoteControlSignalShowButton.y
+                    _pressPos = mapToItem(mapHolder, mouse.x, mouse.y)
+                    _wasDragged = false
+                }
+
+                onPositionChanged: {
+                    var pos = mapToItem(mapHolder, mouse.x, mouse.y)
+                    var dx = pos.x - _pressPos.x
+                    var dy = pos.y - _pressPos.y
+                    if (Math.abs(dx) > 3 || Math.abs(dy) > 3) {
+                        _wasDragged = true
+                    }
+                    remoteControlSignalShowButton.x = Math.max(0, Math.min(_startX + dx, mapHolder.width - remoteControlSignalShowButton.width))
+                    remoteControlSignalShowButton.y = Math.max(0, Math.min(_startY + dy, mapHolder.height - remoteControlSignalShowButton.height))
+                }
+
                 onReleased: {
                     if (!_wasDragged) {
-                    remoteControlSignalWindow.showWindow()
+                        remoteControlSignalWindow.showWindow()
                     }
-                    // 松手后离开边界
-                    if (remoteControlSignalShowButton.x <= _btnMinX) remoteControlSignalShowButton.x = _btnMinX + 3
-                    if (remoteControlSignalShowButton.yn<= _btnMinY) remoteControlSignalShowButton.y = _btnMinY + 3
-                    if (remoteControlSignalShowButton.x >= _btnMaxX) remoteControlSignalShowButton.x = _btnMaxX - 3
-                    if (remoteControlSignalShowButton.y >= _btnMaxY) remoteControlSignalShowButton.y = _btnMaxY - 3
                 }
             }
         }
