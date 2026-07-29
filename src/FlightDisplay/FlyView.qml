@@ -236,6 +236,11 @@ Item {
                     if (!_wasDragged) {
                     remoteControlSignalWindow.showWindow()
                     }
+                    // 松手后离开边界
+                    if (remoteControlSignalShowButton.x <= _btnMinX) remoteControlSignalShowButton.x = _btnMinX + 3
+                    if (remoteControlSignalShowButton.yn<= _btnMinY) remoteControlSignalShowButton.y = _btnMinY + 3
+                    if (remoteControlSignalShowButton.x >= _btnMaxX) remoteControlSignalShowButton.x = _btnMaxX - 3
+                    if (remoteControlSignalShowButton.y >= _btnMaxY) remoteControlSignalShowButton.y = _btnMaxY - 3
                 }
             }
         }
