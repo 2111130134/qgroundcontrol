@@ -169,10 +169,10 @@ Item {
 
         Rectangle {
             id:                 remoteControlSignalShowButton
-            width:              ScreenTools.defaultFontPixelHeight * 5
+            width:              ScreenTools.defaultFontPixelHeight * 3
             height:             width
             radius:             ScreenTools.defaultFontPixelHeight * 0.5  
-            z:                  QGroundControl.zOrderTopMost - 1
+            z:                  QGroundControl.zOrderTopMost + 2          //优先级最高
             color:              qgcPal.window
             opacity:            0.75
             border.color:       qgcPal.text
