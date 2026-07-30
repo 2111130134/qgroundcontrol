@@ -36,14 +36,14 @@
     "shortDesc": "Enable mavlink forwarding",
     "longDesc":  "Enable mavlink forwarding",
     "type":             "bool",
-    "default":     false
+    "default":     true
 },
 {
     "name":             "forwardMavlinkHostName",
     "shortDesc": "Host name",
     "longDesc":  "Host name to forward mavlink to. i.e: localhost:14445",
     "type":             "string",
-    "default":     "localhost:14445",
+    "default":     "localhost:5000",
     "qgcRebootRequired":    true
 },
 {
