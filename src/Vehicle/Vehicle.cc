@@ -1109,6 +1109,9 @@ void Vehicle::_handleHomePosition(mavlink_message_t& message)
     QGeoCoordinate newHomePosition (homePos.latitude / 10000000.0,
                                     homePos.longitude / 10000000.0,
                                     homePos.altitude / 1000.0);
+    if (homePos.latitude == 0 && homePos.longitude == 0) {
+        return;  // 忽略无效家位置
+    }
     _setHomePosition(newHomePosition);
 }
 

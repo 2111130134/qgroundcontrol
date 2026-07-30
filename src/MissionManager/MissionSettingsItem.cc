@@ -290,6 +290,9 @@ QString MissionSettingsItem::abbreviation(void) const
 void MissionSettingsItem::_updateHomePosition(const QGeoCoordinate& homePosition)
 {
     if (_flyView) {
-        setCoordinate(homePosition);
+        if (homePosition.isValid() && 
+            !(homePosition.latitude() == 0 && homePosition.longitude() == 0)) {    
+            setCoordinate(homePosition);
+        }
     }
 }
