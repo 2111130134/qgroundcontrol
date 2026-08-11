@@ -211,7 +211,7 @@ void QGCCorePlugin::factValueGridCreateDefaultSettings(FactValueGrid* factValueG
             { "Vehicle",  "Vehicle",  "Vehicle"  },
             { "Vehicle",  "Vehicle",  "Vehicle"  },
             { "Battery0", "Battery0", "Battery0" },
-            { "GPS",      "GPS",      "Rpm"      },
+            { "Gps",      "Gps",      "Rpm"      },
         };
 
         static constexpr const char* rgFactNames[5][3] = {
