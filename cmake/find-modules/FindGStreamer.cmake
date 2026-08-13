@@ -92,11 +92,17 @@ elseif(LINUX)
 
     set(ENV{PKG_CONFIG_PATH} "${GSTREAMER_LIB_PATH}/pkgconfig:$ENV{PKG_CONFIG_PATH}")
 elseif(ANDROID)
-    # https://gstreamer.freedesktop.org/data/pkg/android/${GStreamer_FIND_VERSION}/gstreamer-1.0-android-universal-${GStreamer_FIND_VERSION}.tar.xz.sha256sum
+    if(GStreamer_FIND_VERSION VERSION_EQUAL "1.16.3")
+        set(GSTREAMER_ANDROID_ARCHIVE_SUFFIX "tar.bz2")
+    else()
+        set(GSTREAMER_ANDROID_ARCHIVE_SUFFIX "tar.xz")
+    endif()
+
+    # https://gstreamer.freedesktop.org/data/pkg/android/${GStreamer_FIND_VERSION}/gstreamer-1.0-android-universal-${GStreamer_FIND_VERSION}.${GSTREAMER_ANDROID_ARCHIVE_SUFFIX}.sha256sum
     CPMAddPackage(
         NAME gstreamer
         VERSION ${GStreamer_FIND_VERSION}
-        URL "https://gstreamer.freedesktop.org/data/pkg/android/${GStreamer_FIND_VERSION}/gstreamer-1.0-android-universal-${GStreamer_FIND_VERSION}.tar.xz"
+        URL "https://gstreamer.freedesktop.org/data/pkg/android/${GStreamer_FIND_VERSION}/gstreamer-1.0-android-universal-${GStreamer_FIND_VERSION}.${GSTREAMER_ANDROID_ARCHIVE_SUFFIX}"
         # URL_HASH be92cf477d140c270b480bd8ba0e26b1e01c8db042c46b9e234d87352112e485
     )
 
