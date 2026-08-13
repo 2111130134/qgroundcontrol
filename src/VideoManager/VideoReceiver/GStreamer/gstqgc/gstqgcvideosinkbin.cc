@@ -62,10 +62,17 @@ G_DEFINE_TYPE_WITH_CODE(
         0,
         "QGC Video Sink Bin"));
 
-GST_ELEMENT_REGISTER_DEFINE_WITH_CODE(qgcvideosinkbin,"qgcvideosinkbin",
-                                      GST_RANK_NONE,
-                                      GST_TYPE_QGC_VIDEO_SINK_BIN,
-                                      qgc_element_init(plugin));
+gboolean
+gst_element_register_qgcvideosinkbin(GstPlugin *plugin)
+{
+    qgc_element_init(plugin);
+    return gst_element_register(
+        plugin,
+        "qgcvideosinkbin",
+        GST_RANK_NONE,
+        GST_TYPE_QGC_VIDEO_SINK_BIN
+    );
+}
 
 static void gst_qgc_video_sink_bin_set_property(GObject *object, guint prop_id, const GValue *value, GParamSpec *pspec);
 static void gst_qgc_video_sink_bin_get_property(GObject *object, guint prop_id, GValue *value, GParamSpec *pspec);

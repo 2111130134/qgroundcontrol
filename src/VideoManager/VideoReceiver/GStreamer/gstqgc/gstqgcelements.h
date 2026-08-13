@@ -6,6 +6,6 @@ G_BEGIN_DECLS
 
 void qgc_element_init(GstPlugin *plugin);
 
-GST_ELEMENT_REGISTER_DECLARE(qgcvideosinkbin);
+gboolean gst_element_register_qgcvideosinkbin(GstPlugin *plugin);
 
 G_END_DECLS

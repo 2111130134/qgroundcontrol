@@ -14,7 +14,7 @@ plugin_init(GstPlugin *plugin)
 {
     gboolean ret = FALSE;
 
-    ret |= GST_ELEMENT_REGISTER(qgcvideosinkbin, plugin);
+    ret |= gst_element_register_qgcvideosinkbin(plugin);
 
     return ret;
 }
