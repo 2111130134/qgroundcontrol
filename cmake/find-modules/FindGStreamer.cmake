@@ -92,20 +92,28 @@ elseif(LINUX)
 
     set(ENV{PKG_CONFIG_PATH} "${GSTREAMER_LIB_PATH}/pkgconfig:$ENV{PKG_CONFIG_PATH}")
 elseif(ANDROID)
-    if(GStreamer_FIND_VERSION VERSION_EQUAL "1.16.3")
-        set(GSTREAMER_ANDROID_ARCHIVE_SUFFIX "tar.bz2")
+
+    if(DEFINED GStreamer_ROOT_DIR)
+
+        message(STATUS "Using manually provided GStreamer: ${GStreamer_ROOT_DIR}")
+
+        set(gstreamer_SOURCE_DIR ${GStreamer_ROOT_DIR})
+
     else()
-        set(GSTREAMER_ANDROID_ARCHIVE_SUFFIX "tar.xz")
+
+        if(GStreamer_FIND_VERSION VERSION_EQUAL "1.16.3")
+            set(GSTREAMER_ANDROID_ARCHIVE_SUFFIX "tar.bz2")
+        else()
+            set(GSTREAMER_ANDROID_ARCHIVE_SUFFIX "tar.xz")
+        endif()
+
+        CPMAddPackage(
+            NAME gstreamer
+            VERSION ${GStreamer_FIND_VERSION}
+            URL "https://gstreamer.freedesktop.org/data/pkg/android/${GStreamer_FIND_VERSION}/gstreamer-1.0-android-universal-${GStreamer_FIND_VERSION}.${GSTREAMER_ANDROID_ARCHIVE_SUFFIX}"
+        )
+
     endif()
-
-    # https://gstreamer.freedesktop.org/data/pkg/android/${GStreamer_FIND_VERSION}/gstreamer-1.0-android-universal-${GStreamer_FIND_VERSION}.${GSTREAMER_ANDROID_ARCHIVE_SUFFIX}.sha256sum
-    CPMAddPackage(
-        NAME gstreamer
-        VERSION ${GStreamer_FIND_VERSION}
-        URL "https://gstreamer.freedesktop.org/data/pkg/android/${GStreamer_FIND_VERSION}/gstreamer-1.0-android-universal-${GStreamer_FIND_VERSION}.${GSTREAMER_ANDROID_ARCHIVE_SUFFIX}"
-        # URL_HASH be92cf477d140c270b480bd8ba0e26b1e01c8db042c46b9e234d87352112e485
-    )
-
     # 修复GStreamer 1.16.3 的 pkg-config 文件和当前 NDK r26/Qt 6.8 构建链兼容问题
     if(GStreamer_FIND_VERSION VERSION_EQUAL "1.16.3")
         message(STATUS "Patching GStreamer 1.16.3 pkg-config files: removing gnustl backtick libs")
