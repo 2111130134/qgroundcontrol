@@ -30,7 +30,7 @@ Item {
 
     //-- The point and pixel font size values are computed at runtime
 
-    readonly property real defaultAppFontScale:      0.64
+    readonly property real defaultAppFontScale:      0.57
 
     property real defaultFontPointSize:     10
     property real platformFontPointSize:    10

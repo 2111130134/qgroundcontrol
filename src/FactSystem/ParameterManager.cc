@@ -473,7 +473,7 @@ void ParameterManager::refreshAllParameters(uint8_t componentId)
         (void) connect(ftpManager, &FTPManager::downloadComplete, this, &ParameterManager::_ftpDownloadComplete);
         _waitingParamTimeoutTimer.stop();
         if (ftpManager->download(MAV_COMP_ID_AUTOPILOT1,
-                                 QStringLiteral("@PARAM/fanya.pck"),
+                                 QStringLiteral("@PARAM/param.pck"),
                                  QStandardPaths::writableLocation(QStandardPaths::TempLocation),
                                  QStringLiteral(""),
                                  false /* No filesize check */)) {
