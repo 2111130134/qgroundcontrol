@@ -30,7 +30,6 @@ bool isHiddenCopterMode(uint32_t customMode)
     case APMCopterMode::AVOID_ADSB:
     case APMCopterMode::GUIDED_NOGPS:
     case APMCopterMode::FLOWHOLD:
-    case APMCopterMode::FOLLOW:
     case APMCopterMode::ZIGZAG:
     case APMCopterMode::SYSTEMID:
     case APMCopterMode::AUTOROTATE:
@@ -98,7 +97,7 @@ ArduCopterFirmwarePlugin::ArduCopterFirmwarePlugin(QObject *parent)
         { _guidedNoGPSFlightMode , APMCopterMode::GUIDED_NOGPS,  false, true },
         { _smartRtlFlightMode    , APMCopterMode::SMART_RTL,     true , true },
         { _flowHoldFlightMode    , APMCopterMode::FLOWHOLD,      false, true },
-        { _followFlightMode      , APMCopterMode::FOLLOW,        false, true },
+        { _followFlightMode      , APMCopterMode::FOLLOW,        true , true },
         { _zigzagFlightMode      , APMCopterMode::ZIGZAG,        false, true },
         { _systemIDFlightMode    , APMCopterMode::SYSTEMID,      false, true },
         { _autoRotateFlightMode  , APMCopterMode::AUTOROTATE,    false, true },

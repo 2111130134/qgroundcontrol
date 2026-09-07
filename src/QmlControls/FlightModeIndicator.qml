@@ -106,6 +106,24 @@ RowLayout {
                         if (hiddenFlightModesFact && hiddenFlightModesFact.value !== "") {
                             hiddenFlightModesList = hiddenFlightModesFact.value.split(",")
                         }
+
+                        // Follow was previously hidden by default. Remove it from existing saved settings so
+                        // upgrading does not leave the mode hidden after the default list is changed.
+                        if (activeVehicle.apmFirmware && activeVehicle.multiRotor) {
+                            var followMode = activeVehicle.followFlightMode
+                            var followIndex = hiddenFlightModesList.indexOf(followMode)
+                            var englishFollowIndex = hiddenFlightModesList.indexOf("Follow")
+                            if (followIndex >= 0 || englishFollowIndex >= 0) {
+                                if (followIndex >= 0) {
+                                    hiddenFlightModesList.splice(followIndex, 1)
+                                }
+                                englishFollowIndex = hiddenFlightModesList.indexOf("Follow")
+                                if (englishFollowIndex >= 0) {
+                                    hiddenFlightModesList.splice(englishFollowIndex, 1)
+                                }
+                                hiddenFlightModesFact.value = hiddenFlightModesList.join(",")
+                            }
+                        }
                     } else {
                         control.allowEditMode = false
                     }
